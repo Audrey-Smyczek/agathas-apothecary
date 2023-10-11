@@ -1,0 +1,37 @@
+[gd_scene load_steps=4 format=3 uid="uid://dwd0is40eq5wj"]
+
+[ext_resource type="Texture2D" uid="uid://bp1pbx2nhnig7" path="res://Graphics/AABackground.png" id="1_eny1x"]
+[ext_resource type="PackedScene" uid="uid://caciatigfr468" path="res://cauldron.tscn" id="2_ha7i4"]
+[ext_resource type="PackedScene" uid="uid://saa8d5nb64bu" path="res://bowl.tscn" id="3_6bmcy"]
+
+[node name="Back" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1600.0
+offset_bottom = 1000.0
+color = Color(0.717647, 0.764706, 0.796078, 1)
+
+[node name="AaBackground" type="Sprite2D" parent="."]
+position = Vector2(801, 502)
+scale = Vector2(1.598, 0.996)
+texture = ExtResource("1_eny1x")
+
+[node name="Cauldron" parent="." instance=ExtResource("2_ha7i4")]
+position = Vector2(680, 800)
+scale = Vector2(0.14, 0.14)
+
+[node name="Bowl1" parent="." instance=ExtResource("3_6bmcy")]
+position = Vector2(416, 912)
+scale = Vector2(0.05, 0.05)
+
+[node name="Bowl2" parent="." instance=ExtResource("3_6bmcy")]
+position = Vector2(552, 952)
+scale = Vector2(0.05, 0.05)
+
+[node name="Bowl3" parent="." instance=ExtResource("3_6bmcy")]
+position = Vector2(712, 952)
+scale = Vector2(0.05, 0.05)
+
+[node name="Bowl4" parent="." instance=ExtResource("3_6bmcy")]
+position = Vector2(880, 928)
+scale = Vector2(0.05, 0.05)
