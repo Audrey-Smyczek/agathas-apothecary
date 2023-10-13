@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://caciatigfr468" path="res://cauldron.tscn" id="2_ha7i4"]
 [ext_resource type="PackedScene" uid="uid://saa8d5nb64bu" path="res://bowl.tscn" id="3_6bmcy"]
 
-[node name="Back" type="Node2D"]
+[node name="Main" type="Node2D"]
 
 [node name="ColorRect" type="ColorRect" parent="."]
 offset_right = 1600.0

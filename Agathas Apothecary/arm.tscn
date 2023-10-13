@@ -1,6 +1,7 @@
-[gd_scene load_steps=11 format=3 uid="uid://c5ru4y1y4hlog"]
+[gd_scene load_steps=12 format=3 uid="uid://c5ru4y1y4hlog"]
 
 [ext_resource type="Texture2D" uid="uid://bypov2xdy2c8s" path="res://Graphics/Drop1&2.png" id="1_8yg1q"]
+[ext_resource type="Script" path="res://arm.gd" id="1_i7q36"]
 [ext_resource type="Texture2D" uid="uid://b5t3faypspigr" path="res://Graphics/Success.png" id="2_wutvp"]
 [ext_resource type="Texture2D" uid="uid://00dp0l22ybuk" path="res://Graphics/PotionReach.png" id="3_07ylu"]
 [ext_resource type="Texture2D" uid="uid://bwns2al03hwdf" path="res://Graphics/Ingred2.png" id="4_6i0f8"]
@@ -46,6 +47,7 @@ animations = [{
 }]
 
 [node name="Arm" type="CanvasLayer"]
+script = ExtResource("1_i7q36")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_68r2u")
