@@ -21,6 +21,7 @@ func _input(event): # Mouse in viewport coordinates.
    # Print the size of the viewport.
 	#print("Viewport Resolution is: ", get_viewport().get_visible_rect().size)
 
+#https://stackoverflow.com/questions/69728827/how-do-i-detect-collisions-in-godot
 #func _on_body_entered(Bowl:Node):
 #	print(Bowl1, " entered")
 

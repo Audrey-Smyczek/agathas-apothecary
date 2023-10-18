@@ -1,12 +1,17 @@
-[gd_scene load_steps=5 format=3 uid="uid://dwd0is40eq5wj"]
+[gd_scene load_steps=6 format=3 uid="uid://dwd0is40eq5wj"]
 
 [ext_resource type="Script" path="res://Main.gd" id="1_rwysu"]
 [ext_resource type="Texture2D" uid="uid://bp1pbx2nhnig7" path="res://Graphics/AABackground.png" id="2_ukhki"]
 [ext_resource type="PackedScene" uid="uid://caciatigfr468" path="res://cauldron.tscn" id="3_l70ch"]
 [ext_resource type="PackedScene" uid="uid://saa8d5nb64bu" path="res://bowl.tscn" id="4_b7mlc"]
+[ext_resource type="PackedScene" uid="uid://bxwa4uarkhkhd" path="res://bowl_test.tscn" id="5_4wa7y"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_rwysu")
+
+[node name="BowlTest" parent="." instance=ExtResource("5_4wa7y")]
+position = Vector2(486, 471)
+scale = Vector2(0.2, 0.2)
 
 [node name="ColorRect" type="ColorRect" parent="."]
 offset_right = 1600.0
