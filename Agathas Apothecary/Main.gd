@@ -13,8 +13,18 @@ func _input(event): # Mouse in viewport coordinates.
 	#Vector2 armPos(0.0,0.0)
 	if event is InputEventMouseButton: 
 		print("Mouse Click/Unclick at: ", event.position)
-		if (event.position) == get_position():
-			print("TEST")
+		if (event.position.x >= 370 && event.position.x <= 470 && event.position.y >= 870 && event.position.y <= 940):
+			print("bowl 1")
+		if (event.position.x >= 500 && event.position.x <= 610 && event.position.y >= 900 && event.position.y <= 1000):
+			print("bowl 2")
+		if (event.position.x >= 640 && event.position.x <= 770 && event.position.y >= 900 && event.position.y <= 1000):
+			print("bowl 3")
+		if (event.position.x >= 805 && event.position.x <= 950 && event.position.y >= 890 && event.position.y <= 960):
+			print("bowl 4")
+		if (event.position.x >= 600 && event.position.x <= 800 && event.position.y >= 700 && event.position.y <= 900):
+			print("cauldron")
+
+
 #	elif event is InputEventMouseMotion:
 #		print("Mouse Motion at: ", event.position)
 
