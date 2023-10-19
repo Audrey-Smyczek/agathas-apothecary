@@ -1,11 +1,12 @@
-[gd_scene load_steps=5 format=3 uid="uid://dwd0is40eq5wj"]
+[gd_scene load_steps=6 format=3 uid="uid://dwd0is40eq5wj"]
 
 [ext_resource type="Script" path="res://Main.gd" id="1_rwysu"]
 [ext_resource type="Texture2D" uid="uid://bp1pbx2nhnig7" path="res://Graphics/AABackground.png" id="2_ukhki"]
 [ext_resource type="PackedScene" uid="uid://caciatigfr468" path="res://cauldron.tscn" id="3_l70ch"]
 [ext_resource type="PackedScene" uid="uid://saa8d5nb64bu" path="res://bowl.tscn" id="4_b7mlc"]
+[ext_resource type="Texture2D" uid="uid://v5an73ixobd1" path="res://Graphics/Lavender.png" id="5_wl47x"]
 
-[node name="Main" type="Node2D"]
+[node name="Main" type="Node2D" groups=["Bowls", "Ingreds"]]
 script = ExtResource("1_rwysu")
 
 [node name="ColorRect" type="ColorRect" parent="."]
@@ -23,18 +24,23 @@ texture = ExtResource("2_ukhki")
 position = Vector2(680, 800)
 scale = Vector2(0.14, 0.14)
 
-[node name="Bowl1" parent="." instance=ExtResource("4_b7mlc")]
+[node name="Bowl1" parent="." groups=["Bowls"] instance=ExtResource("4_b7mlc")]
 position = Vector2(416, 912)
 scale = Vector2(0.05, 0.05)
 
-[node name="Bowl2" parent="." instance=ExtResource("4_b7mlc")]
+[node name="Bowl2" parent="." groups=["Bowls"] instance=ExtResource("4_b7mlc")]
 position = Vector2(552, 952)
 scale = Vector2(0.05, 0.05)
 
-[node name="Bowl3" parent="." instance=ExtResource("4_b7mlc")]
+[node name="Bowl3" parent="." groups=["Bowls"] instance=ExtResource("4_b7mlc")]
 position = Vector2(712, 952)
 scale = Vector2(0.05, 0.05)
 
-[node name="Bowl4" parent="." instance=ExtResource("4_b7mlc")]
+[node name="Bowl4" parent="." groups=["Bowls"] instance=ExtResource("4_b7mlc")]
 position = Vector2(880, 928)
 scale = Vector2(0.05, 0.05)
+
+[node name="Lavender" type="Sprite2D" parent="." groups=["Ingreds"]]
+position = Vector2(266, 624)
+scale = Vector2(0.277864, 0.337579)
+texture = ExtResource("5_wl47x")
