@@ -4,10 +4,18 @@
 [ext_resource type="Texture2D" uid="uid://bp1pbx2nhnig7" path="res://Graphics/AABackground.png" id="2_ukhki"]
 [ext_resource type="PackedScene" uid="uid://caciatigfr468" path="res://cauldron.tscn" id="3_l70ch"]
 [ext_resource type="PackedScene" uid="uid://saa8d5nb64bu" path="res://bowl.tscn" id="4_b7mlc"]
-[ext_resource type="Texture2D" uid="uid://71wuybyura52" path="res://Graphics/Florals/Lavender.png" id="5_nhxjn"]
-[ext_resource type="Texture2D" uid="uid://t5h07nyl66i6" path="res://Graphics/Florals/Daisy.png" id="6_jo08g"]
-[ext_resource type="Texture2D" uid="uid://yufqyi5jsvqh" path="res://Graphics/Florals/Rose.png" id="7_sxs0h"]
-[ext_resource type="Texture2D" uid="uid://dtx3xf7wsp1q3" path="res://Graphics/Florals/St.JohnsWort.png" id="8_bar43"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_no418"]
+load_path = "res://.godot/imported/Lavender.png-3bf74167f100e7b54898126e849c7ae9.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_elbqk"]
+load_path = "res://.godot/imported/Daisy.png-f4835600bf5d9d3e1a8b2e482edd1ea0.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_m06g2"]
+load_path = "res://.godot/imported/Rose.png-1f4c6dc58133e93cbe5b188260c2e3eb.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_y1ehh"]
+load_path = "res://.godot/imported/St.JohnsWort.png-82922f75d476a756db79e1dd148c2ba0.ctex"
 
 [node name="Main" type="Node2D" groups=["Bowls", "Ingreds"]]
 script = ExtResource("1_rwysu")
@@ -45,14 +53,17 @@ scale = Vector2(0.05, 0.05)
 
 [node name="Lavender" type="Sprite2D" parent="." groups=["Ingreds"]]
 position = Vector2(266, 624)
-scale = Vector2(0.277864, 0.337579)
-texture = ExtResource("5_nhxjn")
+scale = Vector2(0.05, 0.06)
+texture = SubResource("CompressedTexture2D_no418")
 
 [node name="Daisy" type="Sprite2D" parent="."]
-texture = ExtResource("6_jo08g")
+scale = Vector2(0.05, 0.05)
+texture = SubResource("CompressedTexture2D_elbqk")
 
 [node name="Rose" type="Sprite2D" parent="."]
-texture = ExtResource("7_sxs0h")
+scale = Vector2(0.05, 0.05)
+texture = SubResource("CompressedTexture2D_m06g2")
 
 [node name="StJohnWorts" type="Sprite2D" parent="."]
-texture = ExtResource("8_bar43")
+scale = Vector2(0.05, 0.05)
+texture = SubResource("CompressedTexture2D_y1ehh")
