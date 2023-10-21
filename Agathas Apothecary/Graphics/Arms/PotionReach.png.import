@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://00dp0l22ybuk"
-path="res://.godot/imported/PotionReach.png-90cddccc070123821b0cceee21cc9d8c.ctex"
+path="res://.godot/imported/PotionReach.png-479e475c05e0580422639b7f65d6fb59.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Graphics/PotionReach.png"
-dest_files=["res://.godot/imported/PotionReach.png-90cddccc070123821b0cceee21cc9d8c.ctex"]
+source_file="res://Graphics/Arms/PotionReach.png"
+dest_files=["res://.godot/imported/PotionReach.png-479e475c05e0580422639b7f65d6fb59.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dry8d4h0hqsr"
-path="res://.godot/imported/HoldPotion.png-9b7fde6b0b642586d6e05f648e6b1360.ctex"
+uid="uid://gbt7td16bi5w"
+path="res://.godot/imported/Ingred1.png-47bff159b48497ab9fef487c49321647.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Graphics/HoldPotion.png"
-dest_files=["res://.godot/imported/HoldPotion.png-9b7fde6b0b642586d6e05f648e6b1360.ctex"]
+source_file="res://Graphics/Arms/Ingred1.png"
+dest_files=["res://.godot/imported/Ingred1.png-47bff159b48497ab9fef487c49321647.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b5t3faypspigr"
-path="res://.godot/imported/Success.png-ce8117a098fa36f409db30e27510de22.ctex"
+uid="uid://dry8d4h0hqsr"
+path="res://.godot/imported/HoldPotion.png-d6955c4753e2074d4da8f2e900142856.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Graphics/Success.png"
-dest_files=["res://.godot/imported/Success.png-ce8117a098fa36f409db30e27510de22.ctex"]
+source_file="res://Graphics/Arms/HoldPotion.png"
+dest_files=["res://.godot/imported/HoldPotion.png-d6955c4753e2074d4da8f2e900142856.ctex"]
 
 [params]
 
