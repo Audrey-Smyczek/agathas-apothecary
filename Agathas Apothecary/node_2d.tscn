@@ -1,8 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://j85pstxhwag"]
+[gd_scene load_steps=4 format=3 uid="uid://j85pstxhwag"]
 
 [ext_resource type="Texture2D" uid="uid://cq4bq8kt7i7iw" path="res://Graphics/Background 2.0.png" id="1_6cbe8"]
 [ext_resource type="Texture2D" uid="uid://p70o8c44mf1v" path="res://Graphics/Cauldron.png" id="2_11sdc"]
-[ext_resource type="Script" path="res://cauldron.gd" id="3_gvajh"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_qig85"]
 radius = 97.0
@@ -26,7 +25,6 @@ texture = ExtResource("1_6cbe8")
 position = Vector2(699, 800)
 scale = Vector2(0.1, 0.1)
 texture = ExtResource("2_11sdc")
-script = ExtResource("3_gvajh")
 
 [node name="Area2D" type="Area2D" parent="cauldron"]
 position = Vector2(-4631.17, -6650.89)
