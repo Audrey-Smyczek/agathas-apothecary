@@ -17,6 +17,10 @@ func _input(event): # Mouse in viewport coordinates.
 		if (event.position.x >= 370 && event.position.x <= 470 && event.position.y >= 870 && event.position.y <= 940):
 			print("bowl 1\n")
 			var newIngred1 = get_node("Lavender").duplicate()
+			#Daniela added these new florals
+			var newIngred2 = get_node("Daisy").duplicate()
+			var newIngred3 = get_node("Rose").duplicate()
+			var newIngred4 = get_node("StJohnWorts").duplicate()
 			# the parent can be get_tree().get_root() or some other node
 			get_tree().get_root().add_child(newIngred1)
 			# ownership is different, I think it's not the same root as the root node

@@ -1,10 +1,13 @@
-[gd_scene load_steps=6 format=3 uid="uid://dwd0is40eq5wj"]
+[gd_scene load_steps=9 format=3 uid="uid://dwd0is40eq5wj"]
 
 [ext_resource type="Script" path="res://Main.gd" id="1_rwysu"]
 [ext_resource type="Texture2D" uid="uid://bp1pbx2nhnig7" path="res://Graphics/AABackground.png" id="2_ukhki"]
 [ext_resource type="PackedScene" uid="uid://caciatigfr468" path="res://cauldron.tscn" id="3_l70ch"]
 [ext_resource type="PackedScene" uid="uid://saa8d5nb64bu" path="res://bowl.tscn" id="4_b7mlc"]
-[ext_resource type="Texture2D" uid="uid://v5an73ixobd1" path="res://Graphics/Lavender.png" id="5_wl47x"]
+[ext_resource type="Texture2D" uid="uid://71wuybyura52" path="res://Graphics/Florals/Lavender.png" id="5_nhxjn"]
+[ext_resource type="Texture2D" uid="uid://t5h07nyl66i6" path="res://Graphics/Florals/Daisy.png" id="6_jo08g"]
+[ext_resource type="Texture2D" uid="uid://yufqyi5jsvqh" path="res://Graphics/Florals/Rose.png" id="7_sxs0h"]
+[ext_resource type="Texture2D" uid="uid://dtx3xf7wsp1q3" path="res://Graphics/Florals/St.JohnsWort.png" id="8_bar43"]
 
 [node name="Main" type="Node2D" groups=["Bowls", "Ingreds"]]
 script = ExtResource("1_rwysu")
@@ -43,4 +46,13 @@ scale = Vector2(0.05, 0.05)
 [node name="Lavender" type="Sprite2D" parent="." groups=["Ingreds"]]
 position = Vector2(266, 624)
 scale = Vector2(0.277864, 0.337579)
-texture = ExtResource("5_wl47x")
+texture = ExtResource("5_nhxjn")
+
+[node name="Daisy" type="Sprite2D" parent="."]
+texture = ExtResource("6_jo08g")
+
+[node name="Rose" type="Sprite2D" parent="."]
+texture = ExtResource("7_sxs0h")
+
+[node name="StJohnWorts" type="Sprite2D" parent="."]
+texture = ExtResource("8_bar43")
