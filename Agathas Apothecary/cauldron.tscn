@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://caciatigfr468"]
 
-[ext_resource type="Texture2D" uid="uid://p70o8c44mf1v" path="res://Graphics/Cauldron.png" id="1_0xhtg"]
+[ext_resource type="Texture2D" uid="uid://d3pydcqdxpd5v" path="res://Graphics/FillerCauldron.png" id="1_sfuny"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_xwqf8"]
 radius = 259.339
@@ -8,7 +8,7 @@ radius = 259.339
 [node name="Cauldron" type="StaticBody2D"]
 
 [node name="Image" type="Sprite2D" parent="."]
-texture = ExtResource("1_0xhtg")
+texture = ExtResource("1_sfuny")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(8, -40)
