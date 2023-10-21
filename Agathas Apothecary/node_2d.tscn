@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://cq4bq8kt7i7iw" path="res://Graphics/Background 2.0.png" id="1_6cbe8"]
 [ext_resource type="Texture2D" uid="uid://p70o8c44mf1v" path="res://Graphics/Cauldron.png" id="2_11sdc"]
-[ext_resource type="Script" path="res://Area2D.gd" id="3_k34l5"]
+[ext_resource type="Script" path="res://cauldron.gd" id="3_gvajh"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_qig85"]
 radius = 97.0
@@ -14,6 +14,7 @@ position = Vector2(-147, 91)
 [node name="ColorRect" type="ColorRect" parent="."]
 offset_right = 40.0
 offset_bottom = 40.0
+color = Color(0.398933, 0.53386, 0.820446, 1)
 metadata/_edit_use_anchors_ = true
 
 [node name="background" type="Sprite2D" parent="."]
@@ -23,14 +24,17 @@ texture = ExtResource("1_6cbe8")
 
 [node name="cauldron" type="Sprite2D" parent="."]
 position = Vector2(699, 800)
-scale = Vector2(0.150934, 0.120285)
+scale = Vector2(0.1, 0.1)
 texture = ExtResource("2_11sdc")
+script = ExtResource("3_gvajh")
 
 [node name="Area2D" type="Area2D" parent="cauldron"]
 position = Vector2(-4631.17, -6650.89)
 scale = Vector2(6.62542, 8.31362)
-script = ExtResource("3_k34l5")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="cauldron/Area2D"]
 position = Vector2(700, 794)
 shape = SubResource("CapsuleShape2D_qig85")
+
+[connection signal="mouse_entered" from="cauldron/Area2D" to="cauldron" method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="cauldron/Area2D" to="cauldron" method="_on_area_2d_mouse_exited"]

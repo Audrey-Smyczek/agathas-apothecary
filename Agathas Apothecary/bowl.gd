@@ -3,7 +3,6 @@ extends StaticBody2D
 # Imput function from: https://docs.godotengine.org/en/stable/tutorials/inputs/mouse_and_input_coordinates.html
 
 
-
 #func _input(event): # Mouse in viewport coordinates.
 	#Vector2 armPos(0.0,0.0)
 	
