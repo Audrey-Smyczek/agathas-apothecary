@@ -8,6 +8,7 @@ var newIngred
 @onready var panel = get_node("Bowl1")
 
 # visibility change working here
+# code for visibility from: https://godotforums.org/d/22061-show-hide-visibility/2
 func _pressed():
 	panel.visible = !panel.visible
 
