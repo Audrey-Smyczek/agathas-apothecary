@@ -45,14 +45,17 @@ scale = Vector2(0.05, 0.05)
 
 [node name="Lavender" type="Sprite2D" parent="." groups=["Ingreds"]]
 position = Vector2(266, 624)
-scale = Vector2(0.277864, 0.337579)
+scale = Vector2(0.05, 0.06)
 texture = ExtResource("5_nhxjn")
 
 [node name="Daisy" type="Sprite2D" parent="."]
+scale = Vector2(0.05, 0.05)
 texture = ExtResource("6_jo08g")
 
 [node name="Rose" type="Sprite2D" parent="."]
+scale = Vector2(0.05, 0.05)
 texture = ExtResource("7_sxs0h")
 
 [node name="StJohnWorts" type="Sprite2D" parent="."]
+scale = Vector2(0.05, 0.05)
 texture = ExtResource("8_bar43")
