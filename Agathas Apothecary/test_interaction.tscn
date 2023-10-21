@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://chb4i8m7pajki"]
+
+[ext_resource type="Script" path="res://test_interaction.gd" id="1_kbfqv"]
+[ext_resource type="Texture2D" uid="uid://dknt5r58tpvhs" path="res://Graphics/Florals/Rose.png" id="2_s0lyj"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_pigdn"]
+radius = 190.024
+
+[node name="Test Interaction" type="Area2D"]
+script = ExtResource("1_kbfqv")
+
+[node name="Rose" type="Sprite2D" parent="."]
+position = Vector2(624, 319)
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("2_s0lyj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(622, 322)
+shape = SubResource("CircleShape2D_pigdn")
