@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bwns2al03hwdf"
-path="res://.godot/imported/Ingred2.png-223f7d672f6032bc69288c129a335130.ctex"
+path="res://.godot/imported/Ingred2.png-312aace4446418e898ce8796b669f427.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Graphics/Ingred2.png"
-dest_files=["res://.godot/imported/Ingred2.png-223f7d672f6032bc69288c129a335130.ctex"]
+source_file="res://Graphics/Arms/Ingred2.png"
+dest_files=["res://.godot/imported/Ingred2.png-312aace4446418e898ce8796b669f427.ctex"]
 
 [params]
 
