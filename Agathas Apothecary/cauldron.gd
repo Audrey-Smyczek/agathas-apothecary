@@ -2,10 +2,11 @@ extends Sprite2D
 
 var original_size = texture.get_size()
 
+#size of sprite is 1000,1000
+
 func _on_area_2d_mouse_entered():
-	
-	print("mouse entered")
-	var sizeto = Vector2(170,170)
+#	print("mouse entered")
+	var sizeto = Vector2(1100,1100)
 	var size=texture.get_size()
 	var scale_factor=sizeto/size
 	scale=scale_factor
@@ -18,8 +19,8 @@ func _on_area_2d_mouse_entered():
 
 
 func _on_area_2d_mouse_exited():
-	print("mouse exited")
-	var sizeto = Vector2(150,150)
+#	print("mouse exited")
+	var sizeto = Vector2(1000,1000)
 	var size=texture.get_size()
 	var scale_factor=sizeto/size
 	scale=scale_factor
