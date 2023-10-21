@@ -3,10 +3,7 @@ extends Node2D
 # Input function from: https://docs.godotengine.org/en/stable/tutorials/inputs/mouse_and_input_coordinates.html
 # Get Position: https://ask.godotengine.org/11729/how-do-i-get-the-objects-coordinates-needed-for-movement
 
-#var ingred1
 
-#func _init():
-#	var ingred1 = get_node("Bowl1")
 var newIngred
 
 
