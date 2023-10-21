@@ -9,18 +9,22 @@ extends Node2D
 @onready var bowl4 = get_node("StJohnWorts")
 
 func _ready():
-	!bowl1.visible
-	!bowl2.visible
-	!bowl3.visible
-	!bowl4.visible
-
-# visibility change working here
-# code for visibility from: https://godotforums.org/d/22061-show-hide-visibility/2
-func _pressed():
 	bowl1.visible = !bowl1.visible
 	bowl2.visible = !bowl2.visible
 	bowl3.visible = !bowl3.visible
 	bowl4.visible = !bowl4.visible
+
+# visibility change working here
+# code for visibility from: https://godotforums.org/d/22061-show-hide-visibility/2
+func _pressed(item):
+	if (item == bowl1):
+		bowl1.visible = !bowl1.visible
+	if (item == bowl2):
+		bowl2.visible = !bowl2.visible
+	if (item == bowl3):
+		bowl3.visible = !bowl3.visible
+	if (item == bowl4):
+		bowl4.visible = !bowl4.visible
 
 func _input(event): # Mouse in viewport coordinates.
 	#Vector2 armPos(0.0,0.0)
@@ -29,15 +33,15 @@ func _input(event): # Mouse in viewport coordinates.
 		if (event.pressed == true):
 			if (event.position.x >= 370 && event.position.x <= 470 && event.position.y >= 870 && event.position.y <= 940):
 				print("bowl 1\n")
-				_pressed()
+				_pressed(bowl1)
 			if (event.position.x >= 500 && event.position.x <= 610 && event.position.y >= 900 && event.position.y <= 1000):
 				print("bowl 2\n")
-				_pressed()
+				_pressed(bowl2)
 			if (event.position.x >= 640 && event.position.x <= 770 && event.position.y >= 900 && event.position.y <= 1000):
-				_pressed()
+				_pressed(bowl3)
 				print("bowl 3\n")
 			if (event.position.x >= 805 && event.position.x <= 950 && event.position.y >= 890 && event.position.y <= 960):
-				_pressed()
+				_pressed(bowl4)
 				print("bowl 4")
 			if (event.position.x >= 580 && event.position.x <= 800 && event.position.y >= 700 && event.position.y <= 900):
 				print("cauldron")

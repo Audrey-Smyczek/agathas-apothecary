@@ -54,22 +54,22 @@ scale = Vector2(0.05, 0.05)
 
 [node name="Lavender" type="Sprite2D" parent="." groups=["Ingreds"]]
 position = Vector2(685, 617)
-scale = Vector2(0.05, 0.06)
+scale = Vector2(0.08, 0.096)
 texture = SubResource("CompressedTexture2D_no418")
 
 [node name="Daisy" type="Sprite2D" parent="."]
 position = Vector2(683, 623)
-scale = Vector2(0.05, 0.05)
+scale = Vector2(0.08, 0.08)
 texture = SubResource("CompressedTexture2D_elbqk")
 
 [node name="Rose" type="Sprite2D" parent="."]
 position = Vector2(684, 626)
-scale = Vector2(0.0676295, 0.0714497)
+scale = Vector2(0.1, 0.104)
 texture = SubResource("CompressedTexture2D_m06g2")
 
 [node name="StJohnWorts" type="Sprite2D" parent="."]
 position = Vector2(685, 618)
-scale = Vector2(0.05, 0.05)
+scale = Vector2(0.06, 0.06)
 texture = SubResource("CompressedTexture2D_y1ehh")
 
 [node name="CaulderonFiller" type="StaticBody2D" parent="."]
