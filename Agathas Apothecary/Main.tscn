@@ -74,6 +74,12 @@ position = Vector2(685, 618)
 scale = Vector2(0.06, 0.06)
 texture = SubResource("CompressedTexture2D_y1ehh")
 
+[node name="LavenderLabel" type="Node2D" parent="."]
+
+[node name="RichTextLabel" type="RichTextLabel" parent="LavenderLabel"]
+offset_right = 40.0
+offset_bottom = 40.0
+
 [node name="CaulderonFiller" type="StaticBody2D" parent="."]
 script = ExtResource("5_yove0")
 
