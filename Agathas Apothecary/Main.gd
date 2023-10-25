@@ -33,14 +33,14 @@ func _pressed(item):
 func mixInBowl():
 	pass
 #
-## _input takes the current input event.
-## If the event was a mouse button event, execute
-## code based on which item the user has selected.
+# _input takes the current input event.
+# If the event was a mouse button event, execute
+# code based on which item the user has selected.
 #func _inputGargle(event):
 ## if the event is a mouse button even, continue 
 #	if event is InputEventMouseButton:
 #		#print("Mouse Click/Unclick at: ", event.position) #Print mouse coords
-## If the mouse is pressed, execute the following code.
+# If the mouse is pressed, execute the following code.
 ## This is so the following code does not execute when 
 ## the mouse is unclicked.
 #		if (event.pressed):
@@ -50,7 +50,7 @@ func mixInBowl():
 ## Call _pressed on bowl1 
 #				_pressed(bowl1)
 ## If a click happens on the bowl 2 location:
-#			if (event.position.x >= 500 && event.position.x <= 610 && event.position.y >= 900 && event.position.y <= 1000):
+#		if (event.position.x >= 500 && event.position.x <= 610 && event.position.y >= 900 && event.position.y <= 1000):
 #				#print("bowl 2")
 ## Call _pressed on bowl2
 #				_pressed(bowl2)
