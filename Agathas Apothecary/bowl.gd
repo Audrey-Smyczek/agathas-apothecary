@@ -31,3 +31,11 @@ func _on_area_2d_input_event(viewport, event, shape_idx):
 
    # Print the size of the viewport.
 	#print("Viewport Resolution is: ", get_viewport().get_visible_rect().size)
+
+#perhaps start adding buttons to allow for clicks
+func _on_button_pressed():
+	print("clcik")
+
+
+func _on_button_button_up():
+	pass # Replace with function body.
