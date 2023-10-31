@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="IngredientClass" load_steps=3 format=3 uid="uid://cvvi47u2uk8f3"]
+
+[ext_resource type="Texture2D" uid="uid://cps8ox7yiud4l" path="res://Graphics/Florals/Daisy.png" id="1_7n6u0"]
+[ext_resource type="Script" path="res://ingredient.gd" id="1_a0to6"]
+
+[resource]
+script = ExtResource("1_a0to6")
+name = ""
+texture = ExtResource("1_7n6u0")
+color = ""

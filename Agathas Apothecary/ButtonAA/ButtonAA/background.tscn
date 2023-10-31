@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://ctrpmelpl5t53"]
+
+[ext_resource type="Texture2D" uid="uid://bp1pbx2nhnig7" path="res://Graphics/AABackground.png" id="1_564xy"]
+
+[node name="Background" type="CanvasLayer"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1596.0
+offset_bottom = 1002.0
+color = Color(0.717647, 0.764706, 0.796078, 1)
+
+[node name="AaBackground" type="Sprite2D" parent="."]
+position = Vector2(524, 491)
+texture = ExtResource("1_564xy")

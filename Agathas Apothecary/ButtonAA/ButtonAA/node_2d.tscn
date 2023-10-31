@@ -1,10 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://dl1xb3egl4iq2"]
+[gd_scene load_steps=4 format=3 uid="uid://dsghv1ng0wb6j"]
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_al2nh"]
-load_path = "res://.godot/imported/Background 2.0.png-bed170ca08f58e9d8105b5d1d2437b80.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_0adxn"]
-load_path = "res://.godot/imported/Cauldron.png-478b5d6d6fba2c5b9c4ad17f228095c2.ctex"
+[ext_resource type="Texture2D" uid="uid://cq4bq8kt7i7iw" path="res://Graphics/Background 2.0.png" id="1_6cbe8"]
+[ext_resource type="Texture2D" uid="uid://p70o8c44mf1v" path="res://Graphics/Cauldron.png" id="2_11sdc"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_qig85"]
 radius = 97.0
@@ -22,12 +19,12 @@ metadata/_edit_use_anchors_ = true
 [node name="background" type="Sprite2D" parent="."]
 position = Vector2(921.5, 370.5)
 scale = Vector2(1.305, 1.46)
-texture = SubResource("CompressedTexture2D_al2nh")
+texture = ExtResource("1_6cbe8")
 
 [node name="cauldron" type="Sprite2D" parent="."]
 position = Vector2(699, 800)
 scale = Vector2(0.1, 0.1)
-texture = SubResource("CompressedTexture2D_0adxn")
+texture = ExtResource("2_11sdc")
 
 [node name="Area2D" type="Area2D" parent="cauldron"]
 position = Vector2(-4631.17, -6650.89)
