@@ -1,5 +1,7 @@
 extends Node2D
 
+signal Ingredient
+
 # Input function from: https://docs.godotengine.org/en/stable/tutorials/inputs/mouse_and_input_coordinates.html
 # Get Position: https://ask.godotengine.org/11729/how-do-i-get-the-objects-coordinates-needed-for-movement
 # Code for visibility from: https://godotforums.org/d/22061-show-hide-visibility/2

@@ -1,6 +1,9 @@
 extends Node2D
-# Imput function from: https://docs.godotengine.org/en/stable/tutorials/inputs/mouse_and_input_coordinates.html
 
+# signal import code: https://kidscancode.org/godot_recipes/3.x/basics/custom_resources/index.html
+signal Ingredient
+
+# Imput function from: https://docs.godotengine.org/en/stable/tutorials/inputs/mouse_and_input_coordinates.html
 #@export var clickableObject: CollisionObject2D
 
 #func _input(event): # Mouse in viewport coordinates.
