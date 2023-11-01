@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=3 uid="uid://saa8d5nb64bu"]
+
+[ext_resource type="Script" path="res://bowl.gd" id="1_h06tn"]
+[ext_resource type="Texture2D" uid="uid://dj5rerlnfvb37" path="res://Graphics/bowl.png" id="1_ts5kk"]
+[ext_resource type="Script" path="res://Image.gd" id="2_r1726"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_a024b"]
+radius = 712.0
+height = 2192.0
+
+[node name="Bowl" type="Node2D"]
+script = ExtResource("1_h06tn")
+
+[node name="Image" type="Sprite2D" parent="."]
+texture = ExtResource("1_ts5kk")
+script = ExtResource("2_r1726")
+
+[node name="Area2D" type="Area2D" parent="Image"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Image/Area2D"]
+position = Vector2(-16, -24)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_a024b")
+
+[node name="Button" type="Button" parent="."]
+offset_left = -605.0
+offset_top = 826.0
+offset_right = 551.0
+offset_bottom = 1902.0
+
+[connection signal="input_event" from="Image/Area2D" to="." method="_on_area_2d_input_event"]
+[connection signal="mouse_entered" from="Image/Area2D" to="Image" method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="Image/Area2D" to="Image" method="_on_area_2d_mouse_exited"]
+[connection signal="button_up" from="Button" to="." method="_on_button_button_up"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://btern4nq73c1r"]
+
+[ext_resource type="Texture2D" uid="uid://bp1pbx2nhnig7" path="res://Graphics/AABackground.png" id="1_564xy"]
+
+[node name="Background" type="CanvasLayer"]
+
+[node name="AaBackground" type="Sprite2D" parent="."]
+position = Vector2(524, 491)
+texture = ExtResource("1_564xy")
