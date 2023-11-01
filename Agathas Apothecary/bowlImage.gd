@@ -15,3 +15,4 @@ func _on_area_2d_mouse_exited():
 	var size=texture.get_size()
 	var scale_factor=sizeto/size
 	scale=scale_factor
+ 

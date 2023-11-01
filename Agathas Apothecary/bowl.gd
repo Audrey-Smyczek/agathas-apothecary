@@ -15,12 +15,13 @@ extends Node2D
 
 #This allows us to see the independent bowls when hovered over.
 func _on_area_2d_input_event(viewport, event, shape_idx):
-	print("This is from _on_area_2d_input_event", self, event)
+	#print("This is from _on_area_2d_input_event", self, event)
 	if event is InputEventMouseButton: #This isn't running, ask lucy for help.
-		print("It was a button", event.button_index, event.pressed, event.is_pressed())
+		print("It was a button at:", event.button_index, event.pressed, event.is_pressed())
 		if event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
 			print("A Click!")
-	
+
+
 #func _input_event(viewport, event, shape_idx):
 #	if event is InputEventMouseButton: 
 #		if event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
@@ -29,13 +30,8 @@ func _on_area_2d_input_event(viewport, event, shape_idx):
 #	elif event is InputEventMouseMotion:
 #		print("Mouse Motion at: ", event.position)
 
-   # Print the size of the viewport.
+# Print the size of the viewport.
 	#print("Viewport Resolution is: ", get_viewport().get_visible_rect().size)
 
-#perhaps start adding buttons to allow for clicks
-func _on_button_pressed():
-	print("clcik")
+	
 
-
-func _on_button_button_up():
-	pass # Replace with function body.

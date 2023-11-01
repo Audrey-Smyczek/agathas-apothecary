@@ -1,10 +1,13 @@
-[gd_scene load_steps=11 format=3 uid="uid://dwd0is40eq5wj"]
+[gd_scene load_steps=12 format=3 uid="uid://dwd0is40eq5wj"]
 
 [ext_resource type="Script" path="res://Main.gd" id="1_rwysu"]
 [ext_resource type="Texture2D" uid="uid://bp1pbx2nhnig7" path="res://Graphics/AABackground.png" id="2_ukhki"]
 [ext_resource type="PackedScene" uid="uid://caciatigfr468" path="res://cauldron.tscn" id="3_l70ch"]
 [ext_resource type="PackedScene" uid="uid://saa8d5nb64bu" path="res://bowl.tscn" id="4_b7mlc"]
 [ext_resource type="Script" path="res://CaulderonFiller.gd" id="5_yove0"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_hs280"]
+specular_color = Color(0.717647, 0.764706, 0.796078, 1)
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_no418"]
 load_path = "res://.godot/imported/Lavender.png-3bf74167f100e7b54898126e849c7ae9.ctex"
@@ -23,10 +26,10 @@ load_path = "res://.godot/imported/St.JohnsWort.png-82922f75d476a756db79e1dd148c
 [node name="Main" type="Node2D" groups=["Bowls", "Ingreds"]]
 script = ExtResource("1_rwysu")
 
-[node name="ColorRect" type="ColorRect" parent="."]
-offset_right = 1600.0
-offset_bottom = 1000.0
-color = Color(0.717647, 0.764706, 0.796078, 1)
+[node name="BackgroundCol" type="Sprite2D" parent="."]
+position = Vector2(803.75, 512.75)
+scale = Vector2(1604.5, 1026.5)
+texture = SubResource("CanvasTexture_hs280")
 
 [node name="AaBackground" type="Sprite2D" parent="."]
 light_mask = 0
@@ -51,7 +54,7 @@ position = Vector2(712, 952)
 scale = Vector2(0.05, 0.05)
 
 [node name="Bowl4" parent="." groups=["Bowls"] instance=ExtResource("4_b7mlc")]
-position = Vector2(880, 928)
+position = Vector2(867, 933)
 scale = Vector2(0.05, 0.05)
 
 [node name="Lavender" type="Sprite2D" parent="." groups=["Ingreds"]]
