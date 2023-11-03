@@ -1,6 +1,6 @@
 extends Node2D
 
-signal Ingredient
+#signal Ingredient
 
 # Input function from: https://docs.godotengine.org/en/stable/tutorials/inputs/mouse_and_input_coordinates.html
 # Get Position: https://ask.godotengine.org/11729/how-do-i-get-the-objects-coordinates-needed-for-movement
@@ -11,6 +11,7 @@ signal Ingredient
 @onready var bowl2 = get_node("Daisy")
 @onready var bowl3 = get_node("Rose")
 @onready var bowl4 = get_node("StJohnWorts")
+#@onready var ingredSprite = get_node("IngredientSprite")
 
 # _ready sets the ingredients to be not visible on the canvas.
 func _ready():
@@ -25,6 +26,7 @@ func _ready():
 func _pressed(item):
 	if (item == bowl1):
 		bowl1.visible = !bowl1.visible
+#		ingredSprite.changeTexture()
 	if (item == bowl2):
 		bowl2.visible = !bowl2.visible
 	if (item == bowl3):
@@ -34,6 +36,11 @@ func _pressed(item):
 
 func mixInBowl():
 	pass
+	
+
+func spriteTexture():
+	print("im in main changing sprite")
+
 #
 # _input takes the current input event.
 # If the event was a mouse button event, execute
@@ -73,6 +80,5 @@ func mixInBowl():
 #
 #   # Print the size of the viewport.
 #	#print("Viewport Resolution is: ", get_viewport().get_visible_rect().size)
-
 
 

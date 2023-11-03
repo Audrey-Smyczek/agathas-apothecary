@@ -1,13 +1,43 @@
-[gd_scene load_steps=12 format=3 uid="uid://dwd0is40eq5wj"]
+[gd_scene load_steps=22 format=3 uid="uid://dwd0is40eq5wj"]
 
 [ext_resource type="Script" path="res://Main.gd" id="1_rwysu"]
 [ext_resource type="Texture2D" uid="uid://bp1pbx2nhnig7" path="res://Graphics/AABackground.png" id="2_ukhki"]
 [ext_resource type="PackedScene" uid="uid://caciatigfr468" path="res://cauldron.tscn" id="3_l70ch"]
 [ext_resource type="PackedScene" uid="uid://saa8d5nb64bu" path="res://bowl.tscn" id="4_b7mlc"]
+[ext_resource type="Script" path="res://ingredientResource.gd" id="5_2ar7y"]
 [ext_resource type="Script" path="res://CaulderonFiller.gd" id="5_yove0"]
+[ext_resource type="Texture2D" uid="uid://cmq0c8ug0pqur" path="res://Graphics/Florals/Lavender.png" id="6_1he3e"]
+[ext_resource type="Texture2D" uid="uid://cps8ox7yiud4l" path="res://Graphics/Florals/Daisy.png" id="7_nyxbv"]
+[ext_resource type="Texture2D" uid="uid://dknt5r58tpvhs" path="res://Graphics/Florals/Rose.png" id="8_23vtx"]
+[ext_resource type="Texture2D" uid="uid://c7i5dbp4t66g7" path="res://Graphics/Florals/St.JohnsWort.png" id="9_ghbwh"]
+[ext_resource type="Script" path="res://IngredientSprite.gd" id="11_8x0eh"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_hs280"]
 specular_color = Color(0.717647, 0.764706, 0.796078, 1)
+
+[sub_resource type="Resource" id="Resource_6glc5"]
+script = ExtResource("5_2ar7y")
+name = "Lavender"
+texture = ExtResource("6_1he3e")
+color = Color(0.588235, 0.482353, 0.713726, 1)
+
+[sub_resource type="Resource" id="Resource_eha88"]
+script = ExtResource("5_2ar7y")
+name = "Daisy"
+texture = ExtResource("7_nyxbv")
+color = Color(0.737255, 0.933333, 0.227451, 1)
+
+[sub_resource type="Resource" id="Resource_deqvn"]
+script = ExtResource("5_2ar7y")
+name = "Rose"
+texture = ExtResource("8_23vtx")
+color = Color(1, 0, 0.247059, 1)
+
+[sub_resource type="Resource" id="Resource_pti66"]
+script = ExtResource("5_2ar7y")
+name = "StJohnWorts"
+texture = ExtResource("9_ghbwh")
+color = Color(1, 0.835294, 0, 1)
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_no418"]
 load_path = "res://.godot/imported/Lavender.png-3bf74167f100e7b54898126e849c7ae9.ctex"
@@ -25,6 +55,11 @@ load_path = "res://.godot/imported/St.JohnsWort.png-82922f75d476a756db79e1dd148c
 
 [node name="Main" type="Node2D" groups=["Bowls", "Ingreds"]]
 script = ExtResource("1_rwysu")
+
+[node name="ColorBlock" type="Polygon2D" parent="."]
+position = Vector2(1066, 651)
+scale = Vector2(0.0568306, 0.0621257)
+polygon = PackedVector2Array(-431.155, 144.866, -220.001, -3560, 5498.75, -3621.69, 5745.09, -16.0977)
 
 [node name="BackgroundCol" type="Sprite2D" parent="."]
 position = Vector2(803.75, 512.75)
@@ -44,18 +79,22 @@ scale = Vector2(0.14, 0.14)
 [node name="Bowl1" parent="." groups=["Bowls"] instance=ExtResource("4_b7mlc")]
 position = Vector2(416, 912)
 scale = Vector2(0.05, 0.05)
+ingredInfo = SubResource("Resource_6glc5")
 
 [node name="Bowl2" parent="." groups=["Bowls"] instance=ExtResource("4_b7mlc")]
 position = Vector2(552, 952)
 scale = Vector2(0.05, 0.05)
+ingredInfo = SubResource("Resource_eha88")
 
 [node name="Bowl3" parent="." groups=["Bowls"] instance=ExtResource("4_b7mlc")]
 position = Vector2(712, 952)
 scale = Vector2(0.05, 0.05)
+ingredInfo = SubResource("Resource_deqvn")
 
 [node name="Bowl4" parent="." groups=["Bowls"] instance=ExtResource("4_b7mlc")]
 position = Vector2(867, 933)
 scale = Vector2(0.05, 0.05)
+ingredInfo = SubResource("Resource_pti66")
 
 [node name="Lavender" type="Sprite2D" parent="." groups=["Ingreds"]]
 position = Vector2(685, 617)
@@ -88,3 +127,8 @@ script = ExtResource("5_yove0")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CaulderonFiller"]
 shape = SubResource("CircleShape2D_hc2y6")
+
+[node name="IngredientSprite" type="Sprite2D" parent="."]
+position = Vector2(161, 649)
+scale = Vector2(0.0568306, 0.0621257)
+script = ExtResource("11_8x0eh")
