@@ -25,7 +25,7 @@ We were fearlessly lead by Lauren Milne.
 ## Why Agatha's Apothecary?
 Agatha's Apothecary was created for burnt out college students who need a relaxing, yet productive, video game to bring a small dose of joy into their lives. Agatha's Apothecary was made to motivate people to create and mix and try again and just have fun. Since this was the goal, there is no need for the user to collect resources or complete levels, they just need to mix the ingredients that are available.
 
-# Code Information and Explanation
+## Code Information and Explanation
 Since the code is structured through Godot, it is formatted in a tree structure which means that the children nodes (also known as Scenes) can be accessed through the parent nodes. This allows the parent nodes, such as the main screen, to hold children nodes, such as bowls or ingredients. Scripts can be attached to any number of nodes in Godot and the overlap of code can often be confusing. Code that was written in a child's script can be pulled by the parent, for example, the code for the bowls to expand when the mouse hovers over it is linked to the image sprite. The image sprite is a child of the larger bowl node. When the bowl node is loaded into the main scene, it automatically includes the image sprite and the script that accomanies it. This means that the main node cannot directly access the image's script however it does inherit the code that is included in it. 
 
 ## How to Download the Game
