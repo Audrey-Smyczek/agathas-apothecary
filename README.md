@@ -14,6 +14,7 @@ IMAGE HERE
 
 ## Framework Used
 Agatha's Apothecary was created using the Godot Game Engine (version 4.1.1) with gdscript.
+
 All of the images used in Agatha's Apothecary were designed and created by Daniela Martinez using [ART SOFTWARE NAME HERE].
 
 ## Reason for Creation
@@ -36,8 +37,11 @@ Add ons in the future. Recipe Book. More Animations. NPCs who are customers and 
 
 ## Credits
 Lauren Milne for her dedication to accessibility and support throughout the process.
+
 Paul Cantrell for his willingness to assist us during Dev Garden Hours.
+
 README structure: https://www.mygreatlearning.com/blog/readme-file/#:~:text=readme%20file%20is.-,What%20is%20a%20README%20File%3F,about%20the%20patches%20or%20updates.
+
 Signal import code: https://kidscancode.org/godot_recipes/3.x/basics/custom_resources/index.html
 
 ## Game License
