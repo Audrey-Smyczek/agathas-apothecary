@@ -13,12 +13,14 @@ Agatha's Apothecary is a potion mixing game where the user is able to select the
 IMAGE HERE
 
 ## Framework Used
-Agatha's Apothecary was created using the Godot Game Engine (version 4.1.1) with gdscript.
+Agatha's Apothecary was created using the [Godot Game Engine](https://godotengine.org/) (version 4.1.1) with gdscript.
 
-All of the images used in Agatha's Apothecary were designed and created by Daniela Martinez using [ART SOFTWARE NAME HERE].
+All of the images used in Agatha's Apothecary were designed and created by Daniela Martinez using [Krita](https://krita.org/en/).
 
 ## Reason for Creation
-Agatha's Apothecary was created specifically for Software Design and Development (Comp 225) at Macalester College. We were lead by Lauren Milne.
+Agatha's Apothecary was created specifically for Software Design and Development (Comp 225) at Macalester College. 
+
+We were fearlessly lead by Lauren Milne.
 
 ## Why Agatha's Apothecary?
 Agatha's Apothecary was created for burnt out college students who need a relaxing, yet productive, video game to bring a small dose of joy into their lives. Agatha's Apothecary was made to motivate people to create and mix and try again and just have fun. Since this was the goal, there is no need for the user to collect resources or complete levels, they just need to mix the ingredients that are available.
@@ -38,11 +40,11 @@ Add ons in the future. Recipe Book. More Animations. NPCs who are customers and 
 ## Credits
 Lauren Milne for her dedication to accessibility and support throughout the process.
 
-Paul Cantrell for his willingness to assist us during Dev Garden Hours.
+Paul Cantrell for his willingness to assist us during [Dev Garden](https://devgarden.macalester.edu/) Hours.
 
-README structure: https://www.mygreatlearning.com/blog/readme-file/#:~:text=readme%20file%20is.-,What%20is%20a%20README%20File%3F,about%20the%20patches%20or%20updates.
+[README structure](https://www.mygreatlearning.com/blog/readme-file/#:~:text=readme%20file%20is.-,What%20is%20a%20README%20File%3F,about%20the%20patches%20or%20updates.)
 
-Signal import code: https://kidscancode.org/godot_recipes/3.x/basics/custom_resources/index.html
+[Signal import code](https://kidscancode.org/godot_recipes/3.x/basics/custom_resources/index.html)
 
 ## Game License
 LICENSE
