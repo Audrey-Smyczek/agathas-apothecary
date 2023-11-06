@@ -35,10 +35,10 @@ ADD HERE
 Add ons in the future. Recipe Book. More Animations. NPCs who are customers and request potions. A Bird. A Cat? More Ingredients. Putting a Potion in a potion bottle.
 
 ## Credits
-Lauren Milne for her dedication to accessibility and support throughout the process.
-Paul Cantrell for his willingness to assist us during Dev Garden Hours.
-README structure: https://www.mygreatlearning.com/blog/readme-file/#:~:text=readme%20file%20is.-,What%20is%20a%20README%20File%3F,about%20the%20patches%20or%20updates.
-Signal import code: https://kidscancode.org/godot_recipes/3.x/basics/custom_resources/index.html
+Lauren Milne for her dedication to accessibility and support throughout the process./n
+Paul Cantrell for his willingness to assist us during Dev Garden Hours./n
+README structure: https://www.mygreatlearning.com/blog/readme-file/#:~:text=readme%20file%20is.-,What%20is%20a%20README%20File%3F,about%20the%20patches%20or%20updates./n
+Signal import code: https://kidscancode.org/godot_recipes/3.x/basics/custom_resources/index.html/n
 
 ## Game License
 LICENSE
