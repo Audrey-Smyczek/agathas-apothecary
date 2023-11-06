@@ -20,4 +20,5 @@ var lavenderTex = preload("res://Graphics/Florals/Lavender.png")
 	
 
 func changeTexture():
+	print(Global.testName)
 	print("changing texture")
