@@ -42,11 +42,13 @@ Lauren Milne for her dedication to accessibility and support throughout the proc
 
 Paul Cantrell for his willingness to assist us during [Dev Garden](https://devgarden.macalester.edu/) Hours.
 
-[README structure](https://www.mygreatlearning.com/blog/readme-file/#:~:text=readme%20file%20is.-,What%20is%20a%20README%20File%3F,about%20the%20patches%20or%20updates.)
+[README Structure](https://www.mygreatlearning.com/blog/readme-file/#:~:text=readme%20file%20is.-,What%20is%20a%20README%20File%3F,about%20the%20patches%20or%20updates.)
 
-[Signal import code](https://kidscancode.org/godot_recipes/3.x/basics/custom_resources/index.html)
+[Signal Import Code](https://kidscancode.org/godot_recipes/3.x/basics/custom_resources/index.html)
 
 [Global Variables](https://youtu.be/sc-tEPdLZhk?si=rPEOMSKtXi5BGy9X)
+
+[Custom Resources](https://www.youtube.com/watch?v=vzRZjM9MTGw)
 
 ## Game License
 LICENSE
