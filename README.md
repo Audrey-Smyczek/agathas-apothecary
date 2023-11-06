@@ -1,6 +1,6 @@
 # Agatha's Apothecary
 
-## Created by [Audrey Smyczek](https://github.com/Audrey-Smyczek), [Cat Martins](https://github.com/catmartz), and [Daniela Martinez](https://github.com/martinezdaniela17)
+Created by [Audrey Smyczek](https://github.com/Audrey-Smyczek), [Cat Martins](https://github.com/catmartz), and [Daniela Martinez](https://github.com/martinezdaniela17)
 
 Welcome to Agatha's Apothecary! Let's get started!
 
