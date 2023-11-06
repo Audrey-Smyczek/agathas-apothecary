@@ -46,5 +46,7 @@ Paul Cantrell for his willingness to assist us during [Dev Garden](https://devga
 
 [Signal import code](https://kidscancode.org/godot_recipes/3.x/basics/custom_resources/index.html)
 
+[Global Variables](https://youtu.be/sc-tEPdLZhk?si=rPEOMSKtXi5BGy9X)
+
 ## Game License
 LICENSE
