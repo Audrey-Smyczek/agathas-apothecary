@@ -1,8 +1,5 @@
 extends Node2D
 
-#signal Ingredient
-
-# Input function from: https://docs.godotengine.org/en/stable/tutorials/inputs/mouse_and_input_coordinates.html
 
 # Sets the variables bowl1-4 to be the flower ingredient nodes.
 @onready var bowl1 = get_node("Lavender")
