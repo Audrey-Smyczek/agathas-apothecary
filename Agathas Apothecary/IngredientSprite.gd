@@ -10,7 +10,7 @@ extends Sprite2D
 #@onready var bowl4 = get_node("Bowl4")
 
 
-var lavenderTex = preload("res://Graphics/Florals/Lavender.png")
+#var lavenderTex = preload("res://Graphics/Florals/Lavender.png")
 
 #func _on_bowl_1_visibility_changed():
 ##	bullet_sprite.set_texture(bullet_tex1)
@@ -20,4 +20,7 @@ var lavenderTex = preload("res://Graphics/Florals/Lavender.png")
 	
 
 func changeTexture():
+	print(Global.ingredName)
 	print("changing texture")
+	
+
