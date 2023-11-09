@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://dwd0is40eq5wj"]
+[gd_scene load_steps=19 format=3 uid="uid://dwd0is40eq5wj"]
 
 [ext_resource type="Script" path="res://Main.gd" id="1_rwysu"]
 [ext_resource type="Texture2D" uid="uid://bp1pbx2nhnig7" path="res://Graphics/AABackground.png" id="2_ukhki"]
@@ -11,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://dknt5r58tpvhs" path="res://Graphics/Florals/Rose.png" id="8_23vtx"]
 [ext_resource type="Texture2D" uid="uid://c7i5dbp4t66g7" path="res://Graphics/Florals/St.JohnsWort.png" id="9_ghbwh"]
 [ext_resource type="Script" path="res://Welcome.gd" id="11_7jr4j"]
+[ext_resource type="Script" path="res://ingredSprite.gd" id="12_ufiu8"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_hs280"]
 specular_color = Color(0.717647, 0.764706, 0.796078, 1)
@@ -103,3 +104,4 @@ script = ExtResource("11_7jr4j")
 [node name="IngredSprite" type="Sprite2D" parent="."]
 position = Vector2(680, 680)
 scale = Vector2(0.1, 0.1)
+script = ExtResource("12_ufiu8")
