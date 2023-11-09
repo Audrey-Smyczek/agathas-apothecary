@@ -116,5 +116,6 @@ script = ExtResource("12_ufiu8")
 shape = SubResource("CapsuleShape2D_hemfe")
 
 [connection signal="texture_changed" from="IngredSprite" to="." method="_on_ingred_sprite_texture_changed"]
+[connection signal="input_event" from="IngredSprite/Area2D" to="IngredSprite" method="_on_area_2d_input_event"]
 [connection signal="mouse_entered" from="IngredSprite/Area2D" to="IngredSprite" method="_on_area_2d_mouse_entered"]
 [connection signal="mouse_exited" from="IngredSprite/Area2D" to="IngredSprite" method="_on_area_2d_mouse_exited"]

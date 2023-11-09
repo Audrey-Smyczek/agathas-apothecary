@@ -10,6 +10,12 @@ func _ready():
 func _process(delta):
 	pass
 
+
+func _on_area_2d_input_event(_viewport, event, _shape_idx):
+	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
+		print("ingredient sprite clicked!")
+
+
 # Lavender (389, 1200)
 # Daisy (990, 1000)
 # Rose (1000, 894)
