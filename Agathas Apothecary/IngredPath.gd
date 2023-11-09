@@ -13,6 +13,7 @@ func _process(delta):
 	if pathProgress >= 249:
 #		print("Path done")
 		Global.ingredClicked = false
+#		Global.bowlClicked = false
 		PathFollow.progress = 0
 		ingredSprite.texture = null
 

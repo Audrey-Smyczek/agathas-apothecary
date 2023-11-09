@@ -20,4 +20,4 @@ func spriteTexture():
 
 func _on_ingred_sprite_texture_changed():
 	Global.bowlClicked = false
-
+#	pass
