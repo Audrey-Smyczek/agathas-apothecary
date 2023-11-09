@@ -133,5 +133,5 @@ Select the parchement to begin!"
 script = ExtResource("11_7jr4j")
 
 [node name="IngredSprite" type="Sprite2D" parent="."]
-position = Vector2(650, 650)
-scale = Vector2(0.25, 0.25)
+position = Vector2(680, 680)
+scale = Vector2(0.1, 0.1)
