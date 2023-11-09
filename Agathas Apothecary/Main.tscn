@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://dwd0is40eq5wj"]
+[gd_scene load_steps=18 format=3 uid="uid://dwd0is40eq5wj"]
 
 [ext_resource type="Script" path="res://Main.gd" id="1_rwysu"]
 [ext_resource type="Texture2D" uid="uid://bp1pbx2nhnig7" path="res://Graphics/AABackground.png" id="2_ukhki"]
@@ -41,18 +41,6 @@ script = ExtResource("5_2ar7y")
 name = "StJohnWorts"
 texture = ExtResource("9_ghbwh")
 color = Color(1, 0.835294, 0, 1)
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_no418"]
-load_path = "res://.godot/imported/Lavender.png-3bf74167f100e7b54898126e849c7ae9.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_elbqk"]
-load_path = "res://.godot/imported/Daisy.png-f4835600bf5d9d3e1a8b2e482edd1ea0.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_m06g2"]
-load_path = "res://.godot/imported/Rose.png-1f4c6dc58133e93cbe5b188260c2e3eb.ctex"
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_y1ehh"]
-load_path = "res://.godot/imported/St.JohnsWort.png-82922f75d476a756db79e1dd148c2ba0.ctex"
 
 [node name="Main" type="Node2D" groups=["Bowls", "Ingreds"]]
 script = ExtResource("1_rwysu")
@@ -99,26 +87,6 @@ ingredInfo = SubResource("Resource_deqvn")
 position = Vector2(867, 933)
 scale = Vector2(0.05, 0.05)
 ingredInfo = SubResource("Resource_pti66")
-
-[node name="Lavender" type="Sprite2D" parent="." groups=["Ingreds"]]
-position = Vector2(1410, 377)
-scale = Vector2(0.08, 0.096)
-texture = SubResource("CompressedTexture2D_no418")
-
-[node name="Daisy" type="Sprite2D" parent="."]
-position = Vector2(1249, 588)
-scale = Vector2(0.08, 0.08)
-texture = SubResource("CompressedTexture2D_elbqk")
-
-[node name="Rose" type="Sprite2D" parent="."]
-position = Vector2(1459, 564)
-scale = Vector2(0.1, 0.104)
-texture = SubResource("CompressedTexture2D_m06g2")
-
-[node name="StJohnWorts" type="Sprite2D" parent="."]
-position = Vector2(1199, 354)
-scale = Vector2(0.06, 0.06)
-texture = SubResource("CompressedTexture2D_y1ehh")
 
 [node name="Welcome" type="Button" parent="."]
 offset_left = 260.0
