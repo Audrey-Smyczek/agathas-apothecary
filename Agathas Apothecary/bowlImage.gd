@@ -1,16 +1,14 @@
 extends Sprite2D
 
+# Increases the bowl's size when mouse hovers
 func _on_area_2d_mouse_entered():
-#	print("mouse entered")
-#	print(texture.get_width())
-#	print(texture.get_height())
 	var sizeto = Vector2(2410,1540)
 	var size=texture.get_size()
 	var scale_factor=sizeto/size
 	scale=scale_factor
 
+# Set's bowl's size back to original when mouse leaves
 func _on_area_2d_mouse_exited():
-#	print("mouse exited")
 	var sizeto = Vector2(2310,1440)
 	var size=texture.get_size()
 	var scale_factor=sizeto/size
