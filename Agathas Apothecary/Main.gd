@@ -16,3 +16,8 @@ func _process(_delta):
 # Set's the sprite's texture to be whatever the current ingredient is
 func spriteTexture():
 	ingredSprite.texture = Global.curIngredTexture
+
+
+func _on_ingred_sprite_texture_changed():
+	Global.bowlClicked = false
+
