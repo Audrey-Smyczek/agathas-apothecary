@@ -1,8 +1,22 @@
 extends Path2D
 
+@onready var PathFollow = get_node("IngredPathFollow")
+@onready var ingredSprite = get_node("IngredPathFollow/IngredSprite")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	const movespeed := 2.0
-	$IngredPathFollow.progress += movespeed * delta
+	var pathProgress = PathFollow.progress
+
+	
+#	print(pathProgress)
+#	print("pathprogress ", pathProgress)
+	if pathProgress >= 249:
+#		print("Path done")
+		Global.ingredClicked = false
+		PathFollow.progress = 0
+		ingredSprite.texture = null
+
+	if Global.ingredClicked:
+		const movespeed := 130.0
+		$IngredPathFollow.progress += movespeed * delta
 
