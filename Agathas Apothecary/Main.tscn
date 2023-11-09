@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://dwd0is40eq5wj"]
+[gd_scene load_steps=22 format=3 uid="uid://dwd0is40eq5wj"]
 
 [ext_resource type="Script" path="res://Main.gd" id="1_rwysu"]
 [ext_resource type="Texture2D" uid="uid://bp1pbx2nhnig7" path="res://Graphics/AABackground.png" id="2_ukhki"]
@@ -11,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://dknt5r58tpvhs" path="res://Graphics/Florals/Rose.png" id="8_23vtx"]
 [ext_resource type="Texture2D" uid="uid://c7i5dbp4t66g7" path="res://Graphics/Florals/St.JohnsWort.png" id="9_ghbwh"]
 [ext_resource type="Script" path="res://Welcome.gd" id="11_7jr4j"]
+[ext_resource type="Script" path="res://IngredPath.gd" id="12_qu2cn"]
 [ext_resource type="Script" path="res://ingredSprite.gd" id="12_ufiu8"]
 
 [sub_resource type="CanvasTexture" id="CanvasTexture_hs280"]
@@ -111,26 +112,26 @@ To play, select a bowl and then select the cauldron to add the ingredient to the
 Select the parchement to begin!"
 script = ExtResource("11_7jr4j")
 
-[node name="Path2D" type="Path2D" parent="."]
+[node name="IngredPath" type="Path2D" parent="."]
 position = Vector2(0, -2)
 curve = SubResource("Curve2D_7seai")
+script = ExtResource("12_qu2cn")
 
-[node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
+[node name="IngredPathFollow" type="PathFollow2D" parent="IngredPath"]
 position = Vector2(680, 550)
 rotation = 1.5708
 
-[node name="IngredSprite" type="Sprite2D" parent="Path2D/PathFollow2D"]
-position = Vector2(2, 0)
+[node name="IngredSprite" type="Sprite2D" parent="IngredPath/IngredPathFollow"]
 rotation = -1.5708
 scale = Vector2(0.1, 0.1)
 script = ExtResource("12_ufiu8")
 
-[node name="Area2D" type="Area2D" parent="Path2D/PathFollow2D/IngredSprite"]
+[node name="Area2D" type="Area2D" parent="IngredPath/IngredPathFollow/IngredSprite"]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Path2D/PathFollow2D/IngredSprite/Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="IngredPath/IngredPathFollow/IngredSprite/Area2D"]
 shape = SubResource("CapsuleShape2D_hemfe")
 
-[connection signal="texture_changed" from="Path2D/PathFollow2D/IngredSprite" to="." method="_on_ingred_sprite_texture_changed"]
-[connection signal="input_event" from="Path2D/PathFollow2D/IngredSprite/Area2D" to="Path2D/PathFollow2D/IngredSprite" method="_on_area_2d_input_event"]
-[connection signal="mouse_entered" from="Path2D/PathFollow2D/IngredSprite/Area2D" to="Path2D/PathFollow2D/IngredSprite" method="_on_area_2d_mouse_entered"]
-[connection signal="mouse_exited" from="Path2D/PathFollow2D/IngredSprite/Area2D" to="Path2D/PathFollow2D/IngredSprite" method="_on_area_2d_mouse_exited"]
+[connection signal="texture_changed" from="IngredPath/IngredPathFollow/IngredSprite" to="." method="_on_ingred_sprite_texture_changed"]
+[connection signal="input_event" from="IngredPath/IngredPathFollow/IngredSprite/Area2D" to="IngredPath/IngredPathFollow/IngredSprite" method="_on_area_2d_input_event"]
+[connection signal="mouse_entered" from="IngredPath/IngredPathFollow/IngredSprite/Area2D" to="IngredPath/IngredPathFollow/IngredSprite" method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="IngredPath/IngredPathFollow/IngredSprite/Area2D" to="IngredPath/IngredPathFollow/IngredSprite" method="_on_area_2d_mouse_exited"]

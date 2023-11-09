@@ -1,7 +1,7 @@
 extends Node2D
 
 # get's the ingredient sprite node to be accessible
-@onready var ingredSprite = get_node("Path2D/PathFollow2D/IngredSprite")
+@onready var ingredSprite = get_node("IngredPath/IngredPathFollow/IngredSprite")
 
 
 func _ready():
