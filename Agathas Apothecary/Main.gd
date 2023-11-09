@@ -6,6 +6,7 @@ extends Node2D
 @onready var daisy = get_node("Daisy")
 @onready var rose = get_node("Rose")
 @onready var stJohnWorts = get_node("StJohnWorts")
+@onready var ingredSprite = get_node("IngredSprite")
 
 #get the bowl nodes to access clicks
 @onready var bowl1 = get_node("Bowl1")
@@ -25,6 +26,14 @@ func _ready():
 #	rose.visible = !rose.visible
 #	stJohnWorts.visible = !stJohnWorts.visible
 	pass
+
+
+func _process(delta):
+	if Global.bowlClicked:
+		print(Global.bowlClicked)
+		spriteTexture()
+
+
 
 # _pressed takes the bowl that was selected.
 # It will make the ingredients either visible or not visible depending on
@@ -49,6 +58,8 @@ func mixInBowl():
 	
 
 func spriteTexture():
+	print(Global.curIngredTexture)
+	ingredSprite.texture = Global.curIngredTexture
 	print("im in main changing sprite")
 
 

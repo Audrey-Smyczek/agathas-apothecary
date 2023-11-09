@@ -16,6 +16,7 @@
 specular_color = Color(0.717647, 0.764706, 0.796078, 1)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_hc2y6"]
+radius = 150.446
 
 [sub_resource type="Resource" id="Resource_6glc5"]
 script = ExtResource("5_2ar7y")
@@ -68,9 +69,11 @@ scale = Vector2(1.598, 0.996)
 texture = ExtResource("2_ukhki")
 
 [node name="CaulderonFiller" type="StaticBody2D" parent="."]
+position = Vector2(168, 166)
 script = ExtResource("5_yove0")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CaulderonFiller"]
+position = Vector2(0, 5)
 shape = SubResource("CircleShape2D_hc2y6")
 
 [node name="Cauldron" parent="." instance=ExtResource("3_l70ch")]
@@ -98,22 +101,22 @@ scale = Vector2(0.05, 0.05)
 ingredInfo = SubResource("Resource_pti66")
 
 [node name="Lavender" type="Sprite2D" parent="." groups=["Ingreds"]]
-position = Vector2(685, 617)
+position = Vector2(1410, 377)
 scale = Vector2(0.08, 0.096)
 texture = SubResource("CompressedTexture2D_no418")
 
 [node name="Daisy" type="Sprite2D" parent="."]
-position = Vector2(683, 623)
+position = Vector2(1249, 588)
 scale = Vector2(0.08, 0.08)
 texture = SubResource("CompressedTexture2D_elbqk")
 
 [node name="Rose" type="Sprite2D" parent="."]
-position = Vector2(684, 626)
+position = Vector2(1459, 564)
 scale = Vector2(0.1, 0.104)
 texture = SubResource("CompressedTexture2D_m06g2")
 
 [node name="StJohnWorts" type="Sprite2D" parent="."]
-position = Vector2(685, 618)
+position = Vector2(1199, 354)
 scale = Vector2(0.06, 0.06)
 texture = SubResource("CompressedTexture2D_y1ehh")
 
@@ -128,3 +131,7 @@ To play, select a bowl and then select the cauldron to add the ingredient to the
 
 Select the parchement to begin!"
 script = ExtResource("11_7jr4j")
+
+[node name="IngredSprite" type="Sprite2D" parent="."]
+position = Vector2(650, 650)
+scale = Vector2(0.25, 0.25)

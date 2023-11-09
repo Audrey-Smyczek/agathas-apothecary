@@ -40,6 +40,8 @@ func _on_area_2d_input_event(_viewport, event, _shape_idx):
 		var getCurCol = ingredInfo.get_Color()
 		Global.curIngredColor = getCurCol
 		print(Global.curIngredColor)
+		
+		Global.bowlClicked = true
 
 		print()
 		
