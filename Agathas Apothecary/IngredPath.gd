@@ -10,7 +10,7 @@ func _process(delta):
 	
 #	print(pathProgress)
 #	print("pathprogress ", pathProgress)
-	if pathProgress >= 249:
+	if pathProgress >= 199:
 #		print("Path done")
 		Global.ingredClicked = false
 #		Global.bowlClicked = false
@@ -20,4 +20,5 @@ func _process(delta):
 	if Global.ingredClicked:
 		const movespeed := 130.0
 		$IngredPathFollow.progress += movespeed * delta
+#		print(get_curve( ).get_point_position()
 
