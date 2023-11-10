@@ -27,6 +27,7 @@ offset_left = 678.0
 offset_top = -1046.0
 offset_right = 718.0
 offset_bottom = -1006.0
+bbcode_enabled = true
 
 [connection signal="input_event" from="Image/Area2D" to="." method="_on_area_2d_input_event"]
 [connection signal="mouse_entered" from="Image/Area2D" to="Image" method="_on_area_2d_mouse_entered"]
