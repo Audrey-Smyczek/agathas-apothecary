@@ -13,32 +13,32 @@
 [ext_resource type="Script" path="res://IngredPath.gd" id="12_qu2cn"]
 [ext_resource type="Script" path="res://ingredSprite.gd" id="12_ufiu8"]
 
-[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_1eu8p"]
-size = Vector2(50, 50)
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_7mg8t"]
+size = Vector2(100, 100)
 
 [sub_resource type="Resource" id="Resource_6glc5"]
 script = ExtResource("5_2ar7y")
 name = "Lavender"
 texture = ExtResource("6_1he3e")
-color = Color(0.588235, 0.482353, 0.713726, 1)
+color = Color(0.580392, 0, 0.827451, 1)
 
 [sub_resource type="Resource" id="Resource_eha88"]
 script = ExtResource("5_2ar7y")
 name = "Daisy"
 texture = ExtResource("7_nyxbv")
-color = Color(0.737255, 0.933333, 0.227451, 1)
+color = Color(0, 1, 0, 1)
 
 [sub_resource type="Resource" id="Resource_deqvn"]
 script = ExtResource("5_2ar7y")
 name = "Rose"
 texture = ExtResource("8_23vtx")
-color = Color(1, 0, 0.247059, 1)
+color = Color(1, 0, 0, 1)
 
 [sub_resource type="Resource" id="Resource_pti66"]
 script = ExtResource("5_2ar7y")
 name = "StJohnWorts"
 texture = ExtResource("9_ghbwh")
-color = Color(1, 0.835294, 0, 1)
+color = Color(1, 1, 0, 1)
 
 [sub_resource type="Curve2D" id="Curve2D_7seai"]
 _data = {
@@ -62,8 +62,7 @@ centered = false
 
 [node name="CauldColor" type="Sprite2D" parent="."]
 position = Vector2(680, 750)
-scale = Vector2(2.98, 1.78)
-texture = SubResource("PlaceholderTexture2D_1eu8p")
+texture = SubResource("PlaceholderTexture2D_7mg8t")
 
 [node name="Cauldron" parent="." instance=ExtResource("3_l70ch")]
 position = Vector2(680, 750)

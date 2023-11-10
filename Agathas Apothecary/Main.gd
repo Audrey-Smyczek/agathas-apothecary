@@ -5,7 +5,9 @@ extends Node2D
 
 
 func _ready():
-	pass
+	var cauldron = get_node("CauldColor")
+	cauldron.modulate = Color(0,0,0,0)
+
 
 func _process(_delta):
 	# if a bowl is clicked, change the sprite texture
@@ -13,17 +15,17 @@ func _process(_delta):
 		spriteTexture()
 	if Global.ingredClicked:
 		mixing()
-		$CauldColor.modulate = Global.mixedColor #This actually made our MVP, just need to fix the bugs.
+		$CauldColor.modulate = Global.mixedColor
 
 
 # Sets the sprite's texture to be whatever the current ingredient is
 func spriteTexture():
 	ingredSprite.texture = Global.curIngredTexture
 
-# Sets the mixed color of the Mixing Spot to be the average of the new 
+# Sets the mixed color global variable to be the average of the current 
 # ingredient color and the previous mixed color
 func mixing():
-	Global.mixedColor = (Global.curIngredColor + Global.mixedColor)/2 #Doesn;t actually average yet, move this function to mixingSprite script
+	Global.mixedColor = (Global.curIngredColor + Global.mixedColor)/2
 	
 	
 func _on_ingred_sprite_texture_changed():

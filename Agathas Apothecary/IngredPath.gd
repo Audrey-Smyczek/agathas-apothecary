@@ -6,9 +6,7 @@ extends Path2D
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	var pathProgress = PathFollow.progress
-
 	
-#	print(pathProgress)
 #	print("pathprogress ", pathProgress)
 	if pathProgress >= 199:
 #		print("Path done")
@@ -16,6 +14,8 @@ func _process(delta):
 #		Global.bowlClicked = false
 		PathFollow.progress = 0
 		ingredSprite.texture = null
+		Global.pathDone = true
+
 
 	if Global.ingredClicked:
 		const movespeed := 130.0
