@@ -1,11 +1,10 @@
-[gd_scene load_steps=23 format=3 uid="uid://dwd0is40eq5wj"]
+[gd_scene load_steps=20 format=3 uid="uid://dwd0is40eq5wj"]
 
 [ext_resource type="Script" path="res://Main.gd" id="1_rwysu"]
-[ext_resource type="Texture2D" uid="uid://bp1pbx2nhnig7" path="res://Graphics/AABackground.png" id="2_ukhki"]
+[ext_resource type="Texture2D" uid="uid://dx3ccc7yij7di" path="res://Graphics/Background.png" id="2_tn3tc"]
 [ext_resource type="PackedScene" uid="uid://caciatigfr468" path="res://cauldron.tscn" id="3_l70ch"]
 [ext_resource type="PackedScene" uid="uid://saa8d5nb64bu" path="res://bowl.tscn" id="4_b7mlc"]
 [ext_resource type="Script" path="res://ingredientResource.gd" id="5_2ar7y"]
-[ext_resource type="Script" path="res://CaulderonFiller.gd" id="5_yove0"]
 [ext_resource type="Texture2D" uid="uid://cmq0c8ug0pqur" path="res://Graphics/Florals/Lavender.png" id="6_1he3e"]
 [ext_resource type="Texture2D" uid="uid://cps8ox7yiud4l" path="res://Graphics/Florals/Daisy.png" id="7_nyxbv"]
 [ext_resource type="Texture2D" uid="uid://dknt5r58tpvhs" path="res://Graphics/Florals/Rose.png" id="8_23vtx"]
@@ -14,11 +13,8 @@
 [ext_resource type="Script" path="res://IngredPath.gd" id="12_qu2cn"]
 [ext_resource type="Script" path="res://ingredSprite.gd" id="12_ufiu8"]
 
-[sub_resource type="CanvasTexture" id="CanvasTexture_hs280"]
-specular_color = Color(0.717647, 0.764706, 0.796078, 1)
-
-[sub_resource type="CircleShape2D" id="CircleShape2D_hc2y6"]
-radius = 150.446
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_1eu8p"]
+size = Vector2(50, 50)
 
 [sub_resource type="Resource" id="Resource_6glc5"]
 script = ExtResource("5_2ar7y")
@@ -54,30 +50,19 @@ point_count = 2
 radius = 1150.0
 height = 2300.0
 
-[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_1eu8p"]
-size = Vector2(50, 50)
-
 [node name="Main" type="Node2D" groups=["Bowls", "Ingreds"]]
 script = ExtResource("1_rwysu")
 
-[node name="BackgroundCol" type="Sprite2D" parent="."]
-position = Vector2(803.75, 512.75)
-scale = Vector2(1604.5, 1026.5)
-texture = SubResource("CanvasTexture_hs280")
-
 [node name="AaBackground" type="Sprite2D" parent="."]
 light_mask = 0
-position = Vector2(801, 502)
-scale = Vector2(1.598, 0.996)
-texture = ExtResource("2_ukhki")
+position = Vector2(2.08165e-12, 2.08165e-12)
+scale = Vector2(0.37, 0.301)
+texture = ExtResource("2_tn3tc")
+centered = false
 
-[node name="CaulderonFiller" type="StaticBody2D" parent="."]
-position = Vector2(168, 166)
-script = ExtResource("5_yove0")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CaulderonFiller"]
-position = Vector2(0, 5)
-shape = SubResource("CircleShape2D_hc2y6")
+[node name="CauldColor" type="Sprite2D" parent="."]
+position = Vector2(700, 100)
+texture = SubResource("PlaceholderTexture2D_1eu8p")
 
 [node name="Cauldron" parent="." instance=ExtResource("3_l70ch")]
 position = Vector2(680, 800)
@@ -114,6 +99,7 @@ To play, select a bowl and then select the cauldron to add the ingredient to the
 
 Select the parchement to begin!"
 script = ExtResource("11_7jr4j")
+metadata/_edit_use_anchors_ = true
 
 [node name="IngredPath" type="Path2D" parent="."]
 position = Vector2(0, -2)
@@ -133,10 +119,6 @@ script = ExtResource("12_ufiu8")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="IngredPath/IngredPathFollow/IngredSprite/Area2D"]
 shape = SubResource("CapsuleShape2D_hemfe")
-
-[node name="CauldColor" type="Sprite2D" parent="."]
-position = Vector2(700, 100)
-texture = SubResource("PlaceholderTexture2D_1eu8p")
 
 [connection signal="texture_changed" from="IngredPath/IngredPathFollow/IngredSprite" to="." method="_on_ingred_sprite_texture_changed"]
 [connection signal="input_event" from="IngredPath/IngredPathFollow/IngredSprite/Area2D" to="IngredPath/IngredPathFollow/IngredSprite" method="_on_area_2d_input_event"]
