@@ -7,6 +7,7 @@ extends Node2D
 func _ready():
 	var cauldron = get_node("CauldColor")
 	cauldron.modulate = Color(0,0,0,0)
+	Global.welcomeButton = get_node("Welcome")
 
 
 func _process(_delta):

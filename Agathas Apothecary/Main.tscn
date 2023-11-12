@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://dwd0is40eq5wj"]
+[gd_scene load_steps=21 format=3 uid="uid://dwd0is40eq5wj"]
 
 [ext_resource type="Script" path="res://Main.gd" id="1_rwysu"]
 [ext_resource type="Texture2D" uid="uid://dx3ccc7yij7di" path="res://Graphics/Background.png" id="2_tn3tc"]
@@ -12,9 +12,10 @@
 [ext_resource type="Script" path="res://Welcome.gd" id="11_7jr4j"]
 [ext_resource type="Script" path="res://IngredPath.gd" id="12_qu2cn"]
 [ext_resource type="Script" path="res://ingredSprite.gd" id="12_ufiu8"]
+[ext_resource type="Texture2D" uid="uid://ro30b2fub005" path="res://Graphics/Parchment.png" id="12_yle01"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_7mg8t"]
-size = Vector2(100, 100)
+size = Vector2(115, 115)
 
 [sub_resource type="Resource" id="Resource_6glc5"]
 script = ExtResource("5_2ar7y")
@@ -61,7 +62,7 @@ texture = ExtResource("2_tn3tc")
 centered = false
 
 [node name="CauldColor" type="Sprite2D" parent="."]
-position = Vector2(680, 750)
+position = Vector2(680, 743)
 texture = SubResource("PlaceholderTexture2D_7mg8t")
 
 [node name="Cauldron" parent="." instance=ExtResource("3_l70ch")]
@@ -88,19 +89,6 @@ position = Vector2(1000, 850)
 scale = Vector2(0.07, 0.07)
 ingredInfo = SubResource("Resource_pti66")
 
-[node name="Welcome" type="Button" parent="."]
-offset_left = 260.0
-offset_top = 115.0
-offset_right = 1207.0
-offset_bottom = 290.0
-text = "Welcome to Agatha's Apothecary!
-
-To play, select a bowl and then select the cauldron to add the ingredient to the potion.
-
-Select the parchement to begin!"
-script = ExtResource("11_7jr4j")
-metadata/_edit_use_anchors_ = true
-
 [node name="IngredPath" type="Path2D" parent="."]
 position = Vector2(0, -2)
 curve = SubResource("Curve2D_7seai")
@@ -119,6 +107,15 @@ script = ExtResource("12_ufiu8")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="IngredPath/IngredPathFollow/IngredSprite/Area2D"]
 shape = SubResource("CapsuleShape2D_hemfe")
+
+[node name="Welcome" type="TextureButton" parent="."]
+offset_left = 803.0
+offset_top = 38.0
+offset_right = 1601.0
+offset_bottom = 727.0
+action_mode = 0
+texture_normal = ExtResource("12_yle01")
+script = ExtResource("11_7jr4j")
 
 [connection signal="texture_changed" from="IngredPath/IngredPathFollow/IngredSprite" to="." method="_on_ingred_sprite_texture_changed"]
 [connection signal="input_event" from="IngredPath/IngredPathFollow/IngredSprite/Area2D" to="IngredPath/IngredPathFollow/IngredSprite" method="_on_area_2d_input_event"]

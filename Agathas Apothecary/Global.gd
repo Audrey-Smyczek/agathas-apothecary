@@ -1,5 +1,7 @@
 extends Node
 
+var welcomeButton : TextureButton
+
 var curIngredName : String
 var curIngredTexture : Texture
 var curIngredColor : Color
