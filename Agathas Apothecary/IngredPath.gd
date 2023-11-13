@@ -6,9 +6,10 @@ extends Path2D
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	var pathProgress = PathFollow.progress
+	var startCurve = get_curve( ).get_point_position(0).y
+	var endCurve = get_curve( ).get_point_position(1).y
 	
-#	print("pathprogress ", pathProgress)
-	if pathProgress >= 199:
+	if pathProgress >= endCurve-startCurve-2:
 #		print("Path done")
 		Global.ingredClicked = false
 #		Global.bowlClicked = false
@@ -20,5 +21,3 @@ func _process(delta):
 	if Global.ingredClicked:
 		const movespeed := 130.0
 		$IngredPathFollow.progress += movespeed * delta
-#		print(get_curve( ).get_point_position()
-
