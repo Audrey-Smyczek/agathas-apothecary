@@ -109,10 +109,10 @@ script = ExtResource("12_ufiu8")
 shape = SubResource("CapsuleShape2D_hemfe")
 
 [node name="Welcome" type="TextureButton" parent="."]
-offset_left = 364.0
-offset_top = 174.0
-offset_right = 1162.0
-offset_bottom = 863.0
+offset_left = 815.0
+offset_top = 19.0
+offset_right = 1613.0
+offset_bottom = 708.0
 action_mode = 0
 texture_normal = ExtResource("12_yle01")
 script = ExtResource("11_7jr4j")
