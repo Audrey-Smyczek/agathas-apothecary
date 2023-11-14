@@ -95,9 +95,8 @@ curve = SubResource("Curve2D_7seai")
 script = ExtResource("12_qu2cn")
 
 [node name="IngredPathFollow" type="PathFollow2D" parent="IngredPath"]
-position = Vector2(680, 582.414)
+position = Vector2(680, 550)
 rotation = 1.5708
-progress = 32.4299
 
 [node name="IngredSprite" type="Sprite2D" parent="IngredPath/IngredPathFollow"]
 rotation = -1.5708
