@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://dx3ccc7yij7di" path="res://Main/backgroundNew.png" id="2_v5620"]
 [ext_resource type="PackedScene" uid="uid://caciatigfr468" path="res://Cauldron/cauldron.tscn" id="3_c5n6v"]
 [ext_resource type="PackedScene" uid="uid://saa8d5nb64bu" path="res://Bowl/bowl.tscn" id="4_oqy5q"]
-[ext_resource type="Script" path="res://Bowl/ingredientResource.gd" id="5_vs2sq"]
+[ext_resource type="Script" path="res://Bowl/IngredResource.gd" id="5_y2ain"]
 [ext_resource type="Texture2D" uid="uid://cmq0c8ug0pqur" path="res://Main/lavenderIng.png" id="6_vwjex"]
 [ext_resource type="Texture2D" uid="uid://cps8ox7yiud4l" path="res://Main/daisyIng.png" id="7_rj6up"]
 [ext_resource type="Texture2D" uid="uid://dknt5r58tpvhs" path="res://Main/roseIng.png" id="8_3nfv3"]
@@ -18,25 +18,25 @@
 size = Vector2(115, 115)
 
 [sub_resource type="Resource" id="Resource_6glc5"]
-script = ExtResource("5_vs2sq")
+script = ExtResource("5_y2ain")
 name = "Lavender"
 texture = ExtResource("6_vwjex")
 color = Color(0, 0, 1, 1)
 
 [sub_resource type="Resource" id="Resource_eha88"]
-script = ExtResource("5_vs2sq")
+script = ExtResource("5_y2ain")
 name = "Daisy"
 texture = ExtResource("7_rj6up")
 color = Color(0, 1, 0, 1)
 
 [sub_resource type="Resource" id="Resource_deqvn"]
-script = ExtResource("5_vs2sq")
+script = ExtResource("5_y2ain")
 name = "Rose"
 texture = ExtResource("8_3nfv3")
 color = Color(1, 0, 0, 1)
 
 [sub_resource type="Resource" id="Resource_pti66"]
-script = ExtResource("5_vs2sq")
+script = ExtResource("5_y2ain")
 name = "StJohnWorts"
 texture = ExtResource("9_aqtup")
 color = Color(1, 1, 0, 1)
