@@ -1,10 +1,10 @@
 # Agatha's Apothecary
 
-Created by [Audrey Smyczek](https://github.com/Audrey-Smyczek), [Cat Martins](https://github.com/catmartz), and [Daniela Martinez](https://github.com/martinezdaniela17)
-
-Welcome to Agatha's Apothecary! Let's get started!
+Welcome to _Agatha's Apothecary_! Let's get started!
 
 Agatha's Apothecary is a potion mixing game where the user is able to select the ingredients that they want to mix together and make a potion.
+
+Created by [Cat Martins](https://github.com/catmartz), [Audrey Smyczek](https://github.com/Audrey-Smyczek), and [Daniela Martinez](https://github.com/martinezdaniela17).
 
 ## Code Structure
 The code is split into 4 main folders, _**Bowl, Cauldron, Fonts, and Main.**_
@@ -38,7 +38,7 @@ Functions that are marked with a green arrow to the left of the line numbers ind
 
 Comments are marked with '#' at the start of the line, they are bypassed when the code is run.
 
-## Image of the Main Gameplay Screen
+## Main Gameplay Screen
 <img width="991" alt="Agatha's-Apothecary-Main-Screen" src="https://github.com/Audrey-Smyczek/agathas-apothecary/assets/98111335/8a4a1c9b-bc45-4aaa-b3f1-b4a73c4cf8c3">
 
 ## Framework Used
@@ -61,10 +61,12 @@ Since the code is structured through Godot, it is formatted in a tree structure 
 In order to play, you need to first download the [Godot Game Engine](https://godotengine.org/). Then, clone the GitHub repository to your computer. Once that is done, open Godot and click the "Scan" button in the Project Manager window. Select the location of your cloned repository and let the project open. Once open, you can run by clicking the "add scene" button in the top right corner. Another window will pop up with Agatha's Apothecary. 
 
 ## Current Errors
-ADD HERE
+The color mixing is not fully working, there are a series of bugs which cause the mixed color to be an incorrect mixture.
 
 ## Future Work
-Add ons in the future. Recipe Book. More Animations. NPCs who are customers and request potions. A Bird. A Cat? More Ingredients. Putting a Potion in a potion bottle.
+Changing Agatha's hair once a potion color has been created by the user. Allowing the user to clear the potion from the cauldron or allowing them to place the cauldron in a potion bottle.
+
+Recipe Book. More Animations. NPCs who are customers and request potions. A Bird. A Cat? More Ingredients.
 
 ## Credits
 Lauren Milne for her dedication to accessibility and support throughout the process.
