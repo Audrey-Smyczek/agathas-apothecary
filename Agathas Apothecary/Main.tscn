@@ -10,9 +10,9 @@
 [ext_resource type="Texture2D" uid="uid://dknt5r58tpvhs" path="res://Graphics/Florals/Rose.png" id="8_23vtx"]
 [ext_resource type="Texture2D" uid="uid://c7i5dbp4t66g7" path="res://Graphics/Florals/St.JohnsWort.png" id="9_ghbwh"]
 [ext_resource type="Script" path="res://Welcome.gd" id="11_7jr4j"]
+[ext_resource type="Texture2D" uid="uid://dj5rerlnfvb37" path="res://Graphics/bowl.png" id="12_dh5v6"]
 [ext_resource type="Script" path="res://IngredPath.gd" id="12_qu2cn"]
 [ext_resource type="Script" path="res://ingredSprite.gd" id="12_ufiu8"]
-[ext_resource type="Texture2D" uid="uid://ro30b2fub005" path="res://Graphics/Parchment.png" id="12_yle01"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_7mg8t"]
 size = Vector2(115, 115)
@@ -115,7 +115,7 @@ offset_top = 19.0
 offset_right = 1613.0
 offset_bottom = 708.0
 action_mode = 0
-texture_normal = ExtResource("12_yle01")
+texture_normal = ExtResource("12_dh5v6")
 script = ExtResource("11_7jr4j")
 
 [connection signal="texture_changed" from="IngredPath/IngredPathFollow/IngredSprite" to="." method="_on_ingred_sprite_texture_changed"]
