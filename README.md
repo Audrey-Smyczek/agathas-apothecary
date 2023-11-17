@@ -15,7 +15,7 @@ _Bowl, Cauldron, and Main contain the following:_
 
 **Images** that are lowercase and end in '.png'.
 
-**Scenes**, that are the containers which combine the scripts and images, which are a combination of uppercase and lowercase and end in '.tscn'.
+**Scenes**, that are the containers which combine the scripts and images, which are a combination of uppercase and lowercase and end in '.tscn'. There is no standard since they are automatically created and there is a concern that updating the names will create issues.
 
 _Bowl also contains:_
 
@@ -37,6 +37,8 @@ Following the ready statements, which are not neccesary, functions are defined u
 Functions that are marked with a green arrow to the left of the line numbers indicates that the function has a connection to an outside signal that will indicate for the function when to run.
 
 Comments are marked with '#' at the start of the line, they are bypassed when the code is run.
+
+There are multiple branches of the Agatha's Apothecary repository. The one to use is 'current-main', there were many issues with GitHub over the course of the project which pushed the creation of different branches forward.
 
 ## Main Gameplay Screen
 <img width="991" alt="Agatha's-Apothecary-Main-Screen" src="https://github.com/Audrey-Smyczek/agathas-apothecary/assets/98111335/8a4a1c9b-bc45-4aaa-b3f1-b4a73c4cf8c3">
@@ -60,8 +62,10 @@ Since the code is structured through Godot, it is formatted in a tree structure 
 ## How to Download the Game
 In order to play, you need to first download the [Godot Game Engine](https://godotengine.org/). Then, clone the GitHub repository to your computer. Once that is done, open Godot and click the "Scan" button in the Project Manager window. Select the location of your cloned repository and let the project open. Once open, you can run by clicking the "add scene" button in the top right corner. Another window will pop up with Agatha's Apothecary. 
 
-## Current Errors
+## Current Concerns
 The color mixing is not fully working, there are a series of bugs which cause the mixed color to be an incorrect mixture.
+
+No Alt Text for the images!
 
 ## Future Work
 Changing Agatha's hair once a potion color has been created by the user. Allowing the user to clear the potion from the cauldron or allowing them to place the cauldron in a potion bottle.
