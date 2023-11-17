@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cq4bq8kt7i7iw"
-path="res://.godot/imported/Background 2.0.png-bed170ca08f58e9d8105b5d1d2437b80.ctex"
+uid="uid://c0anjy0cj0cjl"
+path="res://.godot/imported/parchmentScroll.png-7383040c4be49c916153e72e285057cd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Graphics/Background 2.0.png"
-dest_files=["res://.godot/imported/Background 2.0.png-bed170ca08f58e9d8105b5d1d2437b80.ctex"]
+source_file="res://Main/parchmentScroll.png"
+dest_files=["res://.godot/imported/parchmentScroll.png-7383040c4be49c916153e72e285057cd.ctex"]
 
 [params]
 

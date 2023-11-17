@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://p70o8c44mf1v"
-path="res://.godot/imported/Cauldron.png-478b5d6d6fba2c5b9c4ad17f228095c2.ctex"
+uid="uid://cmq0c8ug0pqur"
+path="res://.godot/imported/lavenderIng.png-8e9e41f24331c6dbb4afdaaca228177f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Graphics/Cauldron.png"
-dest_files=["res://.godot/imported/Cauldron.png-478b5d6d6fba2c5b9c4ad17f228095c2.ctex"]
+source_file="res://Main/lavenderIng.png"
+dest_files=["res://.godot/imported/lavenderIng.png-8e9e41f24331c6dbb4afdaaca228177f.ctex"]
 
 [params]
 
@@ -30,5 +30,5 @@ process/premult_alpha=false
 process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
-process/size_limit=0
+process/size_limit=1200
 detect_3d/compress_to=1

@@ -1,17 +1,17 @@
 [gd_scene load_steps=21 format=3 uid="uid://dwd0is40eq5wj"]
 
 [ext_resource type="Script" path="res://Main/Main.gd" id="1_1j77y"]
-[ext_resource type="Texture2D" uid="uid://dx3ccc7yij7di" path="res://Main/Background.png" id="2_vk585"]
+[ext_resource type="Texture2D" uid="uid://dx3ccc7yij7di" path="res://Main/backgroundNew.png" id="2_v5620"]
 [ext_resource type="PackedScene" uid="uid://caciatigfr468" path="res://Cauldron/cauldron.tscn" id="3_c5n6v"]
 [ext_resource type="PackedScene" uid="uid://saa8d5nb64bu" path="res://Bowl/bowl.tscn" id="4_oqy5q"]
 [ext_resource type="Script" path="res://Bowl/ingredientResource.gd" id="5_vs2sq"]
-[ext_resource type="Texture2D" uid="uid://cmq0c8ug0pqur" path="res://Main/Lavender.png" id="6_rcmnt"]
-[ext_resource type="Texture2D" uid="uid://cps8ox7yiud4l" path="res://Main/Daisy.png" id="7_o4uno"]
-[ext_resource type="Texture2D" uid="uid://dknt5r58tpvhs" path="res://Main/Rose.png" id="8_u2fed"]
-[ext_resource type="Texture2D" uid="uid://c7i5dbp4t66g7" path="res://Main/St.JohnsWort.png" id="9_q0hru"]
+[ext_resource type="Texture2D" uid="uid://cmq0c8ug0pqur" path="res://Main/lavenderIng.png" id="6_vwjex"]
+[ext_resource type="Texture2D" uid="uid://cps8ox7yiud4l" path="res://Main/daisyIng.png" id="7_rj6up"]
+[ext_resource type="Texture2D" uid="uid://dknt5r58tpvhs" path="res://Main/roseIng.png" id="8_3nfv3"]
+[ext_resource type="Texture2D" uid="uid://c7i5dbp4t66g7" path="res://Main/stJohnsWortIng.png" id="9_aqtup"]
 [ext_resource type="Script" path="res://Main/IngredPath.gd" id="10_c6hfc"]
-[ext_resource type="Script" path="res://Main/ingredSprite.gd" id="11_es8hh"]
-[ext_resource type="Texture2D" uid="uid://c0anjy0cj0cjl" path="res://Main/Parchment.png" id="12_yh0ld"]
+[ext_resource type="Script" path="res://Main/IngredientSprite.gd" id="11_o5g3n"]
+[ext_resource type="Texture2D" uid="uid://c0anjy0cj0cjl" path="res://Main/parchmentScroll.png" id="12_gs6ng"]
 [ext_resource type="Script" path="res://Main/Welcome.gd" id="13_nsqdl"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_7mg8t"]
@@ -20,25 +20,25 @@ size = Vector2(115, 115)
 [sub_resource type="Resource" id="Resource_6glc5"]
 script = ExtResource("5_vs2sq")
 name = "Lavender"
-texture = ExtResource("6_rcmnt")
+texture = ExtResource("6_vwjex")
 color = Color(0, 0, 1, 1)
 
 [sub_resource type="Resource" id="Resource_eha88"]
 script = ExtResource("5_vs2sq")
 name = "Daisy"
-texture = ExtResource("7_o4uno")
+texture = ExtResource("7_rj6up")
 color = Color(0, 1, 0, 1)
 
 [sub_resource type="Resource" id="Resource_deqvn"]
 script = ExtResource("5_vs2sq")
 name = "Rose"
-texture = ExtResource("8_u2fed")
+texture = ExtResource("8_3nfv3")
 color = Color(1, 0, 0, 1)
 
 [sub_resource type="Resource" id="Resource_pti66"]
 script = ExtResource("5_vs2sq")
 name = "StJohnWorts"
-texture = ExtResource("9_q0hru")
+texture = ExtResource("9_aqtup")
 color = Color(1, 1, 0, 1)
 
 [sub_resource type="Curve2D" id="Curve2D_7seai"]
@@ -58,7 +58,7 @@ script = ExtResource("1_1j77y")
 light_mask = 0
 position = Vector2(2.08165e-12, 2.08165e-12)
 scale = Vector2(0.371, 0.3)
-texture = ExtResource("2_vk585")
+texture = ExtResource("2_v5620")
 centered = false
 
 [node name="CauldColor" type="Sprite2D" parent="."]
@@ -102,7 +102,7 @@ progress = 32.4299
 [node name="IngredSprite" type="Sprite2D" parent="IngredPath/IngredPathFollow"]
 rotation = -1.5708
 scale = Vector2(0.1, 0.1)
-script = ExtResource("11_es8hh")
+script = ExtResource("11_o5g3n")
 
 [node name="Area2D" type="Area2D" parent="IngredPath/IngredPathFollow/IngredSprite"]
 
@@ -115,7 +115,7 @@ offset_top = 19.0
 offset_right = 1613.0
 offset_bottom = 708.0
 action_mode = 0
-texture_normal = ExtResource("12_yh0ld")
+texture_normal = ExtResource("12_gs6ng")
 script = ExtResource("13_nsqdl")
 
 [connection signal="texture_changed" from="IngredPath/IngredPathFollow/IngredSprite" to="." method="_on_ingred_sprite_texture_changed"]

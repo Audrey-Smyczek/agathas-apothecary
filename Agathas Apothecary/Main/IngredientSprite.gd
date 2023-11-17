@@ -1,26 +1,31 @@
 extends Sprite2D
 
-#var bullet_tex1 = preload("res://bullet1.tex")
-#@onready var bullet_sprite = get_node("bullet_sprite_node")
 
-#func _ready():
-#@onready var bowl1 = get_node("Bowl1")
-#@onready var bowl2 = get_node("Bowl2")
-#@onready var bowl3 = get_node("Bowl3")
-#@onready var bowl4 = get_node("Bowl4")
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
 
 
-#var lavenderTex = preload("res://Graphics/Florals/Lavender.png")
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _physics_process(_delta):
+#	const movespeed := 4.0
+#	IngredPathFollow.progress += movespeed * delta
+	pass
 
-#func _on_bowl_1_visibility_changed():
-##	bullet_sprite.set_texture(bullet_tex1)
-#
-#	self.set_texture(lavenderTex)
-#	print("im in ingred sprite")
-	
 
-func changeTexture():
-	print(Global.ingredName)
-	print("changing texture")
-	
+func _on_area_2d_input_event(_viewport, event, _shape_idx):
+	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
+		print("ingredient sprite clicked!")
+		scale = Vector2(0.1, 0.1)
+		Global.ingredClicked = true
+		Global.pathDone = false
+		
 
+
+# Increases the ingredient's size when mouse hovers
+func _on_area_2d_mouse_entered():
+	scale = Vector2(0.12, 0.12)
+
+# Set's ingredient's size back to original when mouse leaves
+func _on_area_2d_mouse_exited():
+	scale = Vector2(0.1, 0.1)

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c0anjy0cj0cjl"
-path="res://.godot/imported/Parchment.png-0fd186ff439c379dd764078e5bdb21b2.ctex"
+uid="uid://dknt5r58tpvhs"
+path="res://.godot/imported/roseIng.png-20ff471a3c103451e52c074102eb5b85.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Main/Parchment.png"
-dest_files=["res://.godot/imported/Parchment.png-0fd186ff439c379dd764078e5bdb21b2.ctex"]
+source_file="res://Main/roseIng.png"
+dest_files=["res://.godot/imported/roseIng.png-20ff471a3c103451e52c074102eb5b85.ctex"]
 
 [params]
 
@@ -30,5 +30,5 @@ process/premult_alpha=false
 process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
-process/size_limit=0
+process/size_limit=1000
 detect_3d/compress_to=1
