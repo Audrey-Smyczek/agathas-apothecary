@@ -10,22 +10,34 @@ Agatha's Apothecary is a potion mixing game where the user is able to select the
 The code is split into 4 main folders, Bowl, Cauldron, Fonts, and Main.
 
 Bowl, Cauldron, and Main contain the following:
+
 Scripts, the written out code, that are uppercase and end in '.gd'.
+
 Images that are lowercase and end in '.png'.
+
 Scenes, that are the containers which combine the scripts and images, which are a combination of uppercase and lowercase and end in '.tscn'.
 
+
 Bowl also contains:
+
 Resources, custom item type that can be shared across files and hold custom fields, which are camelCase and end in '.tres'.
 
+
 Fonts contains:
+
 Files of downloadable fonts which are uppercase and end in '.ttf'.
 
 ## Code Styling
 The code is located in the '.gd' script files. 
+
 The files start with 'extends' which informs the code what type of node the script is created for.
+
 There are two ways to load information into the script immediatly, either '@onready' below the 'extends' statement and above any function statements or through the function '_ready()'.
+
 Following the ready statements, which are not neccesary, functions are defined using 'func' followed by the function name. The function can either take parameters, information that it needs to use within the function, or not.
+
 Functions that are marked with a green arrow to the left of the line numbers indicates that the function has a connection to an outside signal that will indicate for the function when to run.
+
 Comments are marked with '#' at the start of the line, they are bypassed when the code is run.
 
 ## Image of the Main Gameplay Screen
