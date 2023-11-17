@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c0anjy0cj0cjl"
-path="res://.godot/imported/Parchment.png-25d8523f5eb6b16109768f275ccb0a8e.ctex"
+uid="uid://d3pydcqdxpd5v"
+path="res://.godot/imported/FillerCauldron.png-4c9ad32ec0a48ec8523a1dc228fdb3bc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Graphics/Parchment.png"
-dest_files=["res://.godot/imported/Parchment.png-25d8523f5eb6b16109768f275ccb0a8e.ctex"]
+source_file="res://Cauldron/FillerCauldron.png"
+dest_files=["res://.godot/imported/FillerCauldron.png-4c9ad32ec0a48ec8523a1dc228fdb3bc.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dx3ccc7yij7di"
-path="res://.godot/imported/Background.png-0477ef635a2d805faefb75c35faa6ed3.ctex"
+uid="uid://c7i5dbp4t66g7"
+path="res://.godot/imported/St.JohnsWort.png-8c19201739ddf9280e8ab7d252beb193.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Graphics/Background.png"
-dest_files=["res://.godot/imported/Background.png-0477ef635a2d805faefb75c35faa6ed3.ctex"]
+source_file="res://Main/St.JohnsWort.png"
+dest_files=["res://.godot/imported/St.JohnsWort.png-8c19201739ddf9280e8ab7d252beb193.ctex"]
 
 [params]
 
@@ -30,5 +30,5 @@ process/premult_alpha=false
 process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
-process/size_limit=0
+process/size_limit=1000
 detect_3d/compress_to=1

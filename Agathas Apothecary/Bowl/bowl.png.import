@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cps8ox7yiud4l"
-path="res://.godot/imported/Daisy.png-f4835600bf5d9d3e1a8b2e482edd1ea0.ctex"
+uid="uid://dj5rerlnfvb37"
+path="res://.godot/imported/bowl.png-95aaddffdb45087b488f720fbb66f3ec.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Graphics/Florals/Daisy.png"
-dest_files=["res://.godot/imported/Daisy.png-f4835600bf5d9d3e1a8b2e482edd1ea0.ctex"]
+source_file="res://Bowl/bowl.png"
+dest_files=["res://.godot/imported/bowl.png-95aaddffdb45087b488f720fbb66f3ec.ctex"]
 
 [params]
 
@@ -30,5 +30,5 @@ process/premult_alpha=false
 process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
-process/size_limit=1000
+process/size_limit=0
 detect_3d/compress_to=1
