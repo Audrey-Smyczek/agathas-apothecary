@@ -7,7 +7,7 @@ Welcome to Agatha's Apothecary! Let's get started!
 Agatha's Apothecary is a potion mixing game where the user is able to select the ingredients that they want to mix together and make a potion.
 
 ## Code Structure
-_**The code is split into 4 main folders, Bowl, Cauldron, Fonts, and Main.**_
+The code is split into 4 main folders, _**Bowl, Cauldron, Fonts, and Main.**_
 
 _Bowl, Cauldron, and Main contain the following:_
 
