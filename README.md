@@ -7,21 +7,19 @@ Welcome to Agatha's Apothecary! Let's get started!
 Agatha's Apothecary is a potion mixing game where the user is able to select the ingredients that they want to mix together and make a potion.
 
 ## Code Structure
-The code is split into 4 main folders, Bowl, Cauldron, Fonts, and Main.
+_The code is split into 4 main folders, Bowl, Cauldron, Fonts, and Main._
 
 Bowl, Cauldron, and Main contain the following:
 
-Scripts, the written out code, that are uppercase and end in '.gd'.
+**Scripts**, the written out code, that are uppercase and end in '.gd'.
 
-Images that are lowercase and end in '.png'.
+**Images** that are lowercase and end in '.png'.
 
-Scenes, that are the containers which combine the scripts and images, which are a combination of uppercase and lowercase and end in '.tscn'.
-
+**Scenes**, that are the containers which combine the scripts and images, which are a combination of uppercase and lowercase and end in '.tscn'.
 
 Bowl also contains:
 
-Resources, custom item type that can be shared across files and hold custom fields, which are camelCase and end in '.tres'.
-
+**Resources**, custom item type that can be shared across files and hold custom fields, which are camelCase and end in '.tres'.
 
 Fonts contains:
 
