@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://caciatigfr468"]
 
-[ext_resource type="Texture2D" uid="uid://d3pydcqdxpd5v" path="res://Cauldron/FillerCauldron.png" id="1_brn7b"]
-[ext_resource type="Script" path="res://Cauldron/cauldronResize.gd" id="2_7j7bk"]
+[ext_resource type="Texture2D" uid="uid://d3pydcqdxpd5v" path="res://Cauldron/cauldronTemp.png" id="1_cl1e6"]
+[ext_resource type="Script" path="res://Cauldron/CauldronScale.gd" id="2_wh37t"]
 [ext_resource type="Script" path="res://Cauldron/Mixing Spot.gd" id="3_blu46"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_xwqf8"]
@@ -12,8 +12,8 @@ radius = 122.127
 [node name="Cauldron" type="Node2D"]
 
 [node name="Image" type="Sprite2D" parent="."]
-texture = ExtResource("1_brn7b")
-script = ExtResource("2_7j7bk")
+texture = ExtResource("1_cl1e6")
+script = ExtResource("2_wh37t")
 
 [node name="Area2D" type="Area2D" parent="Image"]
 position = Vector2(-4631.17, -6650.89)
