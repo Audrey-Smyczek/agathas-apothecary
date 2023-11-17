@@ -1,19 +1,19 @@
 [gd_scene load_steps=5 format=3 uid="uid://saa8d5nb64bu"]
 
-[ext_resource type="Script" path="res://bowl.gd" id="1_h06tn"]
-[ext_resource type="Texture2D" uid="uid://dj5rerlnfvb37" path="res://Graphics/bowl.png" id="1_ts5kk"]
-[ext_resource type="Script" path="res://bowlImage.gd" id="3_d48li"]
+[ext_resource type="Script" path="res://Bowl/bowl.gd" id="1_j3tty"]
+[ext_resource type="Texture2D" uid="uid://dj5rerlnfvb37" path="res://Bowl/bowl.png" id="2_18x1y"]
+[ext_resource type="Script" path="res://Bowl/bowlImage.gd" id="3_lhv0v"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_a024b"]
 radius = 712.0
 height = 2192.0
 
 [node name="Bowl" type="Node2D"]
-script = ExtResource("1_h06tn")
+script = ExtResource("1_j3tty")
 
 [node name="Image" type="Sprite2D" parent="."]
-texture = ExtResource("1_ts5kk")
-script = ExtResource("3_d48li")
+texture = ExtResource("2_18x1y")
+script = ExtResource("3_lhv0v")
 
 [node name="Area2D" type="Area2D" parent="Image"]
 

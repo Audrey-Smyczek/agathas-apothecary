@@ -1,44 +1,44 @@
 [gd_scene load_steps=21 format=3 uid="uid://dwd0is40eq5wj"]
 
-[ext_resource type="Script" path="res://Main.gd" id="1_rwysu"]
-[ext_resource type="Texture2D" uid="uid://dx3ccc7yij7di" path="res://Graphics/Background.png" id="2_tn3tc"]
-[ext_resource type="PackedScene" uid="uid://caciatigfr468" path="res://cauldron.tscn" id="3_l70ch"]
-[ext_resource type="PackedScene" uid="uid://saa8d5nb64bu" path="res://bowl.tscn" id="4_b7mlc"]
-[ext_resource type="Script" path="res://ingredientResource.gd" id="5_2ar7y"]
-[ext_resource type="Texture2D" uid="uid://cmq0c8ug0pqur" path="res://Graphics/Florals/Lavender.png" id="6_1he3e"]
-[ext_resource type="Texture2D" uid="uid://cps8ox7yiud4l" path="res://Graphics/Florals/Daisy.png" id="7_nyxbv"]
-[ext_resource type="Texture2D" uid="uid://dknt5r58tpvhs" path="res://Graphics/Florals/Rose.png" id="8_23vtx"]
-[ext_resource type="Texture2D" uid="uid://c7i5dbp4t66g7" path="res://Graphics/Florals/St.JohnsWort.png" id="9_ghbwh"]
-[ext_resource type="Script" path="res://Welcome.gd" id="11_7jr4j"]
-[ext_resource type="Script" path="res://IngredPath.gd" id="12_qu2cn"]
-[ext_resource type="Script" path="res://ingredSprite.gd" id="12_ufiu8"]
-[ext_resource type="Texture2D" uid="uid://c0anjy0cj0cjl" path="res://Graphics/Parchment.png" id="12_yle01"]
+[ext_resource type="Script" path="res://Main/Main.gd" id="1_1j77y"]
+[ext_resource type="Texture2D" uid="uid://dx3ccc7yij7di" path="res://Main/Background.png" id="2_vk585"]
+[ext_resource type="PackedScene" uid="uid://caciatigfr468" path="res://Cauldron/cauldron.tscn" id="3_c5n6v"]
+[ext_resource type="PackedScene" uid="uid://saa8d5nb64bu" path="res://Bowl/bowl.tscn" id="4_oqy5q"]
+[ext_resource type="Script" path="res://Bowl/ingredientResource.gd" id="5_vs2sq"]
+[ext_resource type="Texture2D" uid="uid://cmq0c8ug0pqur" path="res://Main/Lavender.png" id="6_rcmnt"]
+[ext_resource type="Texture2D" uid="uid://cps8ox7yiud4l" path="res://Main/Daisy.png" id="7_o4uno"]
+[ext_resource type="Texture2D" uid="uid://dknt5r58tpvhs" path="res://Main/Rose.png" id="8_u2fed"]
+[ext_resource type="Texture2D" uid="uid://c7i5dbp4t66g7" path="res://Main/St.JohnsWort.png" id="9_q0hru"]
+[ext_resource type="Script" path="res://Main/IngredPath.gd" id="10_c6hfc"]
+[ext_resource type="Script" path="res://Main/ingredSprite.gd" id="11_es8hh"]
+[ext_resource type="Texture2D" uid="uid://c0anjy0cj0cjl" path="res://Main/Parchment.png" id="12_yh0ld"]
+[ext_resource type="Script" path="res://Main/Welcome.gd" id="13_nsqdl"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_7mg8t"]
 size = Vector2(115, 115)
 
 [sub_resource type="Resource" id="Resource_6glc5"]
-script = ExtResource("5_2ar7y")
+script = ExtResource("5_vs2sq")
 name = "Lavender"
-texture = ExtResource("6_1he3e")
+texture = ExtResource("6_rcmnt")
 color = Color(0, 0, 1, 1)
 
 [sub_resource type="Resource" id="Resource_eha88"]
-script = ExtResource("5_2ar7y")
+script = ExtResource("5_vs2sq")
 name = "Daisy"
-texture = ExtResource("7_nyxbv")
+texture = ExtResource("7_o4uno")
 color = Color(0, 1, 0, 1)
 
 [sub_resource type="Resource" id="Resource_deqvn"]
-script = ExtResource("5_2ar7y")
+script = ExtResource("5_vs2sq")
 name = "Rose"
-texture = ExtResource("8_23vtx")
+texture = ExtResource("8_u2fed")
 color = Color(1, 0, 0, 1)
 
 [sub_resource type="Resource" id="Resource_pti66"]
-script = ExtResource("5_2ar7y")
+script = ExtResource("5_vs2sq")
 name = "StJohnWorts"
-texture = ExtResource("9_ghbwh")
+texture = ExtResource("9_q0hru")
 color = Color(1, 1, 0, 1)
 
 [sub_resource type="Curve2D" id="Curve2D_7seai"]
@@ -52,39 +52,39 @@ radius = 730.0
 height = 1460.0
 
 [node name="Main" type="Node2D" groups=["Bowls", "Ingreds"]]
-script = ExtResource("1_rwysu")
+script = ExtResource("1_1j77y")
 
 [node name="AaBackground" type="Sprite2D" parent="."]
 light_mask = 0
 position = Vector2(2.08165e-12, 2.08165e-12)
 scale = Vector2(0.371, 0.3)
-texture = ExtResource("2_tn3tc")
+texture = ExtResource("2_vk585")
 centered = false
 
 [node name="CauldColor" type="Sprite2D" parent="."]
 position = Vector2(680, 743)
 texture = SubResource("PlaceholderTexture2D_7mg8t")
 
-[node name="Cauldron" parent="." instance=ExtResource("3_l70ch")]
+[node name="Cauldron" parent="." instance=ExtResource("3_c5n6v")]
 position = Vector2(680, 750)
 scale = Vector2(0.3, 0.3)
 
-[node name="Bowl1" parent="." groups=["Bowls"] instance=ExtResource("4_b7mlc")]
+[node name="Bowl1" parent="." groups=["Bowls"] instance=ExtResource("4_oqy5q")]
 position = Vector2(350, 850)
 scale = Vector2(0.07, 0.07)
 ingredInfo = SubResource("Resource_6glc5")
 
-[node name="Bowl2" parent="." groups=["Bowls"] instance=ExtResource("4_b7mlc")]
+[node name="Bowl2" parent="." groups=["Bowls"] instance=ExtResource("4_oqy5q")]
 position = Vector2(550, 925)
 scale = Vector2(0.07, 0.07)
 ingredInfo = SubResource("Resource_eha88")
 
-[node name="Bowl3" parent="." groups=["Bowls"] instance=ExtResource("4_b7mlc")]
+[node name="Bowl3" parent="." groups=["Bowls"] instance=ExtResource("4_oqy5q")]
 position = Vector2(800, 925)
 scale = Vector2(0.07, 0.07)
 ingredInfo = SubResource("Resource_deqvn")
 
-[node name="Bowl4" parent="." groups=["Bowls"] instance=ExtResource("4_b7mlc")]
+[node name="Bowl4" parent="." groups=["Bowls"] instance=ExtResource("4_oqy5q")]
 position = Vector2(1000, 850)
 scale = Vector2(0.07, 0.07)
 ingredInfo = SubResource("Resource_pti66")
@@ -92,7 +92,7 @@ ingredInfo = SubResource("Resource_pti66")
 [node name="IngredPath" type="Path2D" parent="."]
 position = Vector2(0, -2)
 curve = SubResource("Curve2D_7seai")
-script = ExtResource("12_qu2cn")
+script = ExtResource("10_c6hfc")
 
 [node name="IngredPathFollow" type="PathFollow2D" parent="IngredPath"]
 position = Vector2(680, 582.414)
@@ -102,7 +102,7 @@ progress = 32.4299
 [node name="IngredSprite" type="Sprite2D" parent="IngredPath/IngredPathFollow"]
 rotation = -1.5708
 scale = Vector2(0.1, 0.1)
-script = ExtResource("12_ufiu8")
+script = ExtResource("11_es8hh")
 
 [node name="Area2D" type="Area2D" parent="IngredPath/IngredPathFollow/IngredSprite"]
 
@@ -115,8 +115,8 @@ offset_top = 19.0
 offset_right = 1613.0
 offset_bottom = 708.0
 action_mode = 0
-texture_normal = ExtResource("12_yle01")
-script = ExtResource("11_7jr4j")
+texture_normal = ExtResource("12_yh0ld")
+script = ExtResource("13_nsqdl")
 
 [connection signal="texture_changed" from="IngredPath/IngredPathFollow/IngredSprite" to="." method="_on_ingred_sprite_texture_changed"]
 [connection signal="input_event" from="IngredPath/IngredPathFollow/IngredSprite/Area2D" to="IngredPath/IngredPathFollow/IngredSprite" method="_on_area_2d_input_event"]

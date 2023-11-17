@@ -1,8 +1,8 @@
 [gd_scene load_steps=6 format=3 uid="uid://caciatigfr468"]
 
-[ext_resource type="Texture2D" uid="uid://d3pydcqdxpd5v" path="res://Graphics/FillerCauldron.png" id="1_sfuny"]
-[ext_resource type="Script" path="res://cauldronResize.gd" id="3_diss8"]
-[ext_resource type="Script" path="res://Mixing Spot.gd" id="3_ym0gf"]
+[ext_resource type="Texture2D" uid="uid://d3pydcqdxpd5v" path="res://Cauldron/FillerCauldron.png" id="1_brn7b"]
+[ext_resource type="Script" path="res://Cauldron/cauldronResize.gd" id="2_7j7bk"]
+[ext_resource type="Script" path="res://Cauldron/Mixing Spot.gd" id="3_blu46"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_xwqf8"]
 radius = 122.127
@@ -12,8 +12,8 @@ radius = 122.127
 [node name="Cauldron" type="Node2D"]
 
 [node name="Image" type="Sprite2D" parent="."]
-texture = ExtResource("1_sfuny")
-script = ExtResource("3_diss8")
+texture = ExtResource("1_brn7b")
+script = ExtResource("2_7j7bk")
 
 [node name="Area2D" type="Area2D" parent="Image"]
 position = Vector2(-4631.17, -6650.89)
@@ -26,7 +26,7 @@ scale = Vector2(0.452801, 0.360854)
 shape = SubResource("CircleShape2D_xwqf8")
 
 [node name="Mixing Spot" type="Area2D" parent="Image"]
-script = ExtResource("3_ym0gf")
+script = ExtResource("3_blu46")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Image/Mixing Spot"]
 shape = SubResource("CircleShape2D_xo4e6")
