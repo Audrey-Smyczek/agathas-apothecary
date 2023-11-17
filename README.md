@@ -86,4 +86,4 @@ Paul Cantrell for his willingness to assist us during [Dev Garden](https://devga
 [Custom Resources](https://www.youtube.com/watch?v=vzRZjM9MTGw)
 
 ## Game License
-[MIT License]([LICENSE](https://github.com/Audrey-Smyczek/agathas-apothecary/blob/current-main/LICENSE)https://github.com/Audrey-Smyczek/agathas-apothecary/blob/current-main/LICENSE)
+[MIT License](https://github.com/Audrey-Smyczek/agathas-apothecary/blob/current-main/LICENSE)
