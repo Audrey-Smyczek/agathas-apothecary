@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://d34d62osrfh8v"]
+
+[ext_resource type="Script" path="res://Hair/Hair.gd" id="1_08auo"]
+[ext_resource type="Texture2D" uid="uid://dj5rerlnfvb37" path="res://Bowl/bowl.png" id="1_388bc"]
+[ext_resource type="Script" path="res://Hair/hairScale.gd" id="3_6kkkd"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_srrq7"]
+radius = 818.182
+
+[node name="Hair" type="Node2D"]
+script = ExtResource("1_08auo")
+
+[node name="hairImage" type="Sprite2D" parent="."]
+position = Vector2(-9.53674e-07, -5)
+rotation = -3.14159
+scale = Vector2(0.484, 0.5)
+texture = ExtResource("1_388bc")
+script = ExtResource("3_6kkkd")
+
+[node name="hairArea" type="Area2D" parent="hairImage"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="hairImage/hairArea"]
+position = Vector2(-2.06641, -10.0001)
+shape = SubResource("CircleShape2D_srrq7")
+
+[connection signal="input_event" from="hairImage/hairArea" to="." method="_on_area_2d_input_event"]

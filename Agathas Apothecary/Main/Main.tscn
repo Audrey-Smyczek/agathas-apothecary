@@ -1,8 +1,9 @@
-[gd_scene load_steps=21 format=3 uid="uid://dwd0is40eq5wj"]
+[gd_scene load_steps=22 format=3 uid="uid://dwd0is40eq5wj"]
 
 [ext_resource type="Script" path="res://Main/Main.gd" id="1_1j77y"]
 [ext_resource type="Texture2D" uid="uid://dx3ccc7yij7di" path="res://Main/backgroundNew.png" id="2_v5620"]
 [ext_resource type="PackedScene" uid="uid://caciatigfr468" path="res://Cauldron/cauldron.tscn" id="3_c5n6v"]
+[ext_resource type="PackedScene" uid="uid://d34d62osrfh8v" path="res://Hair/Hair.tscn" id="3_wpo1m"]
 [ext_resource type="PackedScene" uid="uid://saa8d5nb64bu" path="res://Bowl/bowl.tscn" id="4_oqy5q"]
 [ext_resource type="Script" path="res://Bowl/IngredResource.gd" id="5_y2ain"]
 [ext_resource type="Texture2D" uid="uid://cmq0c8ug0pqur" path="res://Main/lavenderIng.png" id="6_vwjex"]
@@ -62,8 +63,12 @@ texture = ExtResource("2_v5620")
 centered = false
 
 [node name="CauldColor" type="Sprite2D" parent="."]
-position = Vector2(680, 743)
+position = Vector2(681, 743)
 texture = SubResource("PlaceholderTexture2D_7mg8t")
+
+[node name="Hair" parent="." instance=ExtResource("3_wpo1m")]
+position = Vector2(427, 306)
+scale = Vector2(0.3, 0.3)
 
 [node name="Cauldron" parent="." instance=ExtResource("3_c5n6v")]
 position = Vector2(680, 750)
