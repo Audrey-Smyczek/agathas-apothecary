@@ -3,6 +3,7 @@
 [ext_resource type="Script" path="res://Main/Main.gd" id="1_1j77y"]
 [ext_resource type="Texture2D" uid="uid://dx3ccc7yij7di" path="res://Main/backgroundNew.png" id="2_v5620"]
 [ext_resource type="PackedScene" uid="uid://caciatigfr468" path="res://Cauldron/cauldron.tscn" id="3_c5n6v"]
+[ext_resource type="Texture2D" uid="uid://bwr8x2jgr3pr3" path="res://Main/cauldFill.png" id="3_uwmjl"]
 [ext_resource type="PackedScene" uid="uid://d34d62osrfh8v" path="res://Hair/Hair.tscn" id="3_wpo1m"]
 [ext_resource type="PackedScene" uid="uid://saa8d5nb64bu" path="res://Bowl/bowl.tscn" id="4_oqy5q"]
 [ext_resource type="Script" path="res://Bowl/IngredResource.gd" id="5_y2ain"]
@@ -14,9 +15,6 @@
 [ext_resource type="Script" path="res://Main/IngredientSprite.gd" id="11_o5g3n"]
 [ext_resource type="Texture2D" uid="uid://c0anjy0cj0cjl" path="res://Main/parchmentScroll.png" id="12_gs6ng"]
 [ext_resource type="Script" path="res://Main/Welcome.gd" id="13_nsqdl"]
-
-[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_7mg8t"]
-size = Vector2(115, 115)
 
 [sub_resource type="Resource" id="Resource_6glc5"]
 script = ExtResource("5_y2ain")
@@ -63,8 +61,9 @@ texture = ExtResource("2_v5620")
 centered = false
 
 [node name="CauldColor" type="Sprite2D" parent="."]
-position = Vector2(681, 743)
-texture = SubResource("PlaceholderTexture2D_7mg8t")
+position = Vector2(679.375, 750.75)
+scale = Vector2(0.309337, 0.609375)
+texture = ExtResource("3_uwmjl")
 
 [node name="Hair" parent="." instance=ExtResource("3_wpo1m")]
 position = Vector2(427, 306)
