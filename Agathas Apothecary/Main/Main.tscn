@@ -61,8 +61,8 @@ texture = ExtResource("2_v5620")
 centered = false
 
 [node name="CauldColor" type="Sprite2D" parent="."]
-position = Vector2(679.375, 750.75)
-scale = Vector2(0.309337, 0.609375)
+position = Vector2(681.711, 688)
+scale = Vector2(0.409386, 0.40191)
 texture = ExtResource("3_uwmjl")
 
 [node name="Hair" parent="." instance=ExtResource("3_wpo1m")]
@@ -70,7 +70,7 @@ position = Vector2(680, 300)
 scale = Vector2(0.15, 0.15)
 
 [node name="Cauldron" parent="." instance=ExtResource("3_c5n6v")]
-position = Vector2(680, 750)
+position = Vector2(682, 752)
 scale = Vector2(0.3, 0.3)
 
 [node name="Bowl1" parent="." groups=["Bowls"] instance=ExtResource("4_oqy5q")]
