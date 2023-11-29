@@ -47,8 +47,8 @@ _data = {
 point_count = 2
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_hemfe"]
-radius = 730.0
-height = 1460.0
+radius = 580.0
+height = 1200.0
 
 [node name="Main" type="Node2D" groups=["Bowls", "Ingreds"]]
 script = ExtResource("1_1j77y")
@@ -66,8 +66,8 @@ scale = Vector2(0.309337, 0.609375)
 texture = ExtResource("3_uwmjl")
 
 [node name="Hair" parent="." instance=ExtResource("3_wpo1m")]
-position = Vector2(427, 306)
-scale = Vector2(0.3, 0.3)
+position = Vector2(680, 300)
+scale = Vector2(0.15, 0.15)
 
 [node name="Cauldron" parent="." instance=ExtResource("3_c5n6v")]
 position = Vector2(680, 750)
@@ -99,9 +99,8 @@ curve = SubResource("Curve2D_7seai")
 script = ExtResource("10_c6hfc")
 
 [node name="IngredPathFollow" type="PathFollow2D" parent="IngredPath"]
-position = Vector2(680, 582.414)
+position = Vector2(680, 550)
 rotation = 1.5708
-progress = 32.4299
 
 [node name="IngredSprite" type="Sprite2D" parent="IngredPath/IngredPathFollow"]
 rotation = -1.5708
@@ -114,10 +113,9 @@ script = ExtResource("11_o5g3n")
 shape = SubResource("CapsuleShape2D_hemfe")
 
 [node name="Welcome" type="TextureButton" parent="."]
-offset_left = 815.0
-offset_top = 19.0
-offset_right = 1613.0
-offset_bottom = 708.0
+offset_left = 960.0
+offset_right = 1761.0
+offset_bottom = 692.0
 action_mode = 0
 texture_normal = ExtResource("12_gs6ng")
 script = ExtResource("13_nsqdl")

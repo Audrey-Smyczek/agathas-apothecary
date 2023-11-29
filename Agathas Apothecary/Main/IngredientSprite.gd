@@ -24,8 +24,10 @@ func _on_area_2d_input_event(_viewport, event, _shape_idx):
 
 # Increases the ingredient's size when mouse hovers
 func _on_area_2d_mouse_entered():
-	scale = Vector2(0.12, 0.12)
+	if !Global.ingredClicked:
+		scale = Vector2(0.12, 0.12)
 
 # Set's ingredient's size back to original when mouse leaves
 func _on_area_2d_mouse_exited():
-	scale = Vector2(0.1, 0.1)
+	if !Global.ingredClicked:
+		scale = Vector2(0.1, 0.1)

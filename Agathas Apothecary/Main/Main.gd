@@ -8,17 +8,21 @@ func _ready():
 	var cauldron = get_node("CauldColor")
 	cauldron.modulate = Color(0,0,0,0)
 	Global.welcomeButton = get_node("Welcome")
-	rgb_to_hsv(45, 215, 0)
 
 
 func _process(_delta):
 	# if a bowl is clicked, change the sprite texture
 	if Global.bowlClicked:
 		spriteTexture()
+#		print("h ", Global.curIngredColor.h)
+#		print("s ", Global.curIngredColor.s)
+#		print("v ", Global.curIngredColor.v)
 	# if the ingredient is clicked, update the mixed color
-	if Global.ingredClicked:
-		mixing()
+	if Global.mixing:
+		print("mixing...")
+		mixingRGB()
 		$CauldColor.modulate = Global.mixedColor
+		Global.mixing = false
 	# if the hair is clicked, update the hair color to be the
 	# global mixed color and then set the hair click to be 
 	# false which ensures that the hair doesn't change color
@@ -33,64 +37,47 @@ func _process(_delta):
 func spriteTexture():
 	ingredSprite.texture = Global.curIngredTexture
 
-# Sets the mixed color global variable to be the average of the current 
-# ingredient color and the previous mixed color
-func mixing():
-	Global.mixedColor = (Global.curIngredColor + Global.mixedColor)/2
-
 
 func _on_ingred_sprite_texture_changed():
 	Global.bowlClicked = false
-#	pass
 
 
-# Python3 program change RGB Color 
-# Model to HSV Color Model 
-func rgb_to_hsv(r0, g0, b0): 
-	# declaring vars
-	var h
-	var s
-	var v
-	# R, G, B values are divided by 255 
-	# to change the range from 0..255 to 0..1: 
-	var r = r0 / 255
-	var g = g0 / 255
-	var b = b0 / 255
+# Sets the mixed color global variable to be the average of the current 
+# ingredient rgb values and the previous mixed rgb values
+func mixingRGB():
+#	Global.mixedColor = (Global.curIngredColor + Global.mixedColor)/2
+	if Global.mixedColor == Color(0, 0, 0, 1):
+		print("old mixed color ", Global.mixedColor)
+		print("curr color ",Global.curIngredColor)
+		Global.mixedColor = Global.curIngredColor
+		print("new mixed color ",Global.mixedColor)
+	else:
+		print("old mixed color ", Global.mixedColor)
+		print("curr color ",Global.curIngredColor)
+		var newR = (Global.curIngredColor.r+Global.mixedColor.r)/2
+		var newG = (Global.curIngredColor.g+Global.mixedColor.g)/2
+		var newB = (Global.curIngredColor.b+Global.mixedColor.b)/2
+		Global.mixedColor = Color(newR, newG, newB)
+		print("new mixed color ",Global.mixedColor)
+		print()
 
-	# h, s, v = hue, saturation, value 
-	var cmax = max(r, g, b) # maximum of r, g, b 
-	var cmin = min(r, g, b) # minimum of r, g, b 
-	var diff = cmax-cmin	 # diff of cmax and cmin. 
 
-	# if cmax and cmax are equal then h = 0 
-	if cmax == cmin: 
-		h = 0
+# Mixing two colors according to HSV
+func mixingHSV(): 
+	# s and v don't change, stay as 1
+	print("old mixed color ", Global.mixedColor)
+	print("curr color ",Global.curIngredColor)
+	var mixedH = Global.mixedColor.h
+	var mixedS = Global.mixedColor.s
+	var mixedV = Global.mixedColor.v
 	
-	# if cmax equal r then compute h 
-	elif cmax == r: 
-		h = (60 * ((g - b) / diff) + 360) % 360
+	var currH = Global.curIngredColor.h
+	var currS = Global.curIngredColor.s
+	var currV = Global.curIngredColor.v
 
-	# if cmax equal g then compute h 
-	elif cmax == g: 
-		h = (60 * ((b - r) / diff) + 120) % 360
-
-	# if cmax equal b then compute h 
-	elif cmax == b: 
-		h = (60 * ((r - g) / diff) + 240) % 360
-
-	# if cmax equal zero 
-	if cmax == 0: 
-		s = 0
-	else: 
-		s = (diff / cmax) * 100
-
-	# compute v 
-	v = cmax * 100
+	var newH = (currH + mixedH)/2
+	var newS = (currS + mixedS)/2
+	var newV = (currV + mixedV)/2
 	
-	print (h, s, v)
-	
-	# testing:
-	# print(rgb_to_hsv(45, 215, 0)) 
-	# print(rgb_to_hsv(31, 52, 29)) 
-	# print(rgb_to_hsv(129, 88, 47)) 
-
+	Global.mixedColor = Color.from_hsv(newH, newS, newV)
+	print("new mixed color ",Global.mixedColor)

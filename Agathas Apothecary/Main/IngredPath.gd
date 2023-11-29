@@ -9,6 +9,9 @@ func _process(delta):
 	var startCurve = get_curve( ).get_point_position(0).y
 	var endCurve = get_curve( ).get_point_position(1).y
 	
+	if pathProgress >= endCurve-startCurve-4 and pathProgress < endCurve-startCurve-2:
+		Global.mixing = true
+		
 	if pathProgress >= endCurve-startCurve-2:
 #		print("Path done")
 		Global.ingredClicked = false
@@ -21,3 +24,4 @@ func _process(delta):
 	if Global.ingredClicked:
 		const movespeed := 130.0
 		$IngredPathFollow.progress += movespeed * delta
+		

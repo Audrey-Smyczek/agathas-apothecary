@@ -5,7 +5,7 @@ extends Node2D
 
 
 func _ready():
-
+	$Image.modulate = ingredInfo.get_Color()
 	pass
 
 
