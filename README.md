@@ -102,5 +102,7 @@ Paul Cantrell for his willingness to assist us during [Dev Garden](https://devga
 
 [Character Moving on a Path](https://www.youtube.com/watch?v=ENpCQUj371k)
 
+[Writing Alt Text](https://accessibility.huit.harvard.edu/describe-content-images)
+
 ## Game License
 [MIT License](https://github.com/Audrey-Smyczek/agathas-apothecary/blob/current-main/LICENSE)
