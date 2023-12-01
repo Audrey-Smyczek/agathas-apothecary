@@ -5,9 +5,14 @@ extends Node2D
 
 
 func _ready():
-	var cauldron = get_node("CauldColor")
-	cauldron.modulate = Color(0,0,0,0)
+	Global.mixedColor = Color(0.502,0.502,0.502,1)
+	$CauldColor.modulate = Global.mixedColor
+	Global.hairColor = Color(0.502,0.502,0.502,1)
+	$Hair.modulate = Global.hairColor
+	
 	Global.welcomeButton = get_node("Welcome")
+	
+#	$MenuButton.get_popup()
 
 
 func _process(_delta):
@@ -46,7 +51,7 @@ func _on_ingred_sprite_texture_changed():
 # ingredient rgb values and the previous mixed rgb values
 func mixingRGB():
 #	Global.mixedColor = (Global.curIngredColor + Global.mixedColor)/2
-	if Global.mixedColor == Color(0, 0, 0, 1):
+	if Global.mixedColor == Color(0.502,0.502,0.502,1):
 		print("old mixed color ", Global.mixedColor)
 		print("curr color ",Global.curIngredColor)
 		Global.mixedColor = Global.curIngredColor
@@ -81,3 +86,12 @@ func mixingHSV():
 	
 	Global.mixedColor = Color.from_hsv(newH, newS, newV)
 	print("new mixed color ",Global.mixedColor)
+
+
+func _on_reset_button_pressed():
+	Global.mixedColor = Color(0.502,0.502,0.502,1)
+	Global.hairColor = Color(0.502,0.502,0.502,1)
+	$CauldColor.modulate = Global.mixedColor
+	$Hair.modulate = Global.hairColor
+	
+	

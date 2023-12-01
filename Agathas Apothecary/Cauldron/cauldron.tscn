@@ -9,8 +9,7 @@ radius = 158.111
 [node name="Cauldron" type="Node2D"]
 
 [node name="Image" type="Sprite2D" parent="."]
-position = Vector2(-24, -4)
-scale = Vector2(0.868, 0.764)
+scale = Vector2(0.25, 0.25)
 texture = ExtResource("1_8adig")
 script = ExtResource("2_wh37t")
 
@@ -20,7 +19,7 @@ scale = Vector2(6.62542, 8.31362)
 collision_layer = 3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Image/Area2D"]
-position = Vector2(702.826, 799.684)
+position = Vector2(700, 800)
 scale = Vector2(0.452801, 0.360854)
 shape = SubResource("CircleShape2D_xwqf8")
 

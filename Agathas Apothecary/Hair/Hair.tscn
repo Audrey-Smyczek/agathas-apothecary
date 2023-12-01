@@ -1,25 +1,24 @@
 [gd_scene load_steps=5 format=3 uid="uid://d34d62osrfh8v"]
 
 [ext_resource type="Script" path="res://Hair/Hair.gd" id="1_08auo"]
-[ext_resource type="Texture2D" uid="uid://dj5rerlnfvb37" path="res://Bowl/bowl.png" id="1_388bc"]
+[ext_resource type="Texture2D" uid="uid://cmsgpwyo7m6w6" path="res://Hair/agathaHair.png" id="2_ubhdf"]
 [ext_resource type="Script" path="res://Hair/HairScale.gd" id="3_jj4bk"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_xnd3b"]
-radius = 622.0
-height = 2033.06
+radius = 651.0
+height = 1390.0
 
 [node name="Hair" type="Node2D"]
 script = ExtResource("1_08auo")
 
 [node name="hairImage" type="Sprite2D" parent="."]
 rotation = -3.14159
-texture = ExtResource("1_388bc")
+texture = ExtResource("2_ubhdf")
 script = ExtResource("3_jj4bk")
 
 [node name="hairArea" type="Area2D" parent="hairImage"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="hairImage/hairArea"]
-rotation = 1.5708
 shape = SubResource("CapsuleShape2D_xnd3b")
 
 [connection signal="input_event" from="hairImage/hairArea" to="." method="_on_area_2d_input_event"]
