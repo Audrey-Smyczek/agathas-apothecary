@@ -63,12 +63,15 @@ Since the code is structured through Godot, it is formatted in a tree structure 
 In order to play, you need to first download the [Godot Game Engine](https://godotengine.org/). Then, clone the GitHub repository to your computer. Once that is done, open Godot and click the "Scan" button in the Project Manager window. Select the location of your cloned repository and let the project open. Once open, you can run by clicking the "add scene" button in the top right corner. Another window will pop up with Agatha's Apothecary. 
 
 ## Current Concerns
-The color mixing is not fully working, there are a series of bugs which cause the mixed color to be an incorrect mixture.
+
+Reset Button for the color mixing.
 
 No Alt Text for the images!
 
+Collecting User Testing.
+
 ## Future Work
-Changing Agatha's hair once a potion color has been created by the user. Allowing the user to clear the potion from the cauldron or allowing them to place the cauldron in a potion bottle.
+Allowing the user to clear the potion from the cauldron or allowing them to place the cauldron in a potion bottle.
 
 Recipe Book. More Animations. NPCs who are customers and request potions. A Bird. A Cat? More Ingredients.
 
@@ -77,13 +80,29 @@ Lauren Milne for her dedication to accessibility and support throughout the proc
 
 Paul Cantrell for his willingness to assist us during [Dev Garden](https://devgarden.macalester.edu/) Hours.
 
+[Godot Documentation](https://docs.godotengine.org/en/stable/tutorials/2d/index.html)
+
 [README Structure](https://www.mygreatlearning.com/blog/readme-file/#:~:text=readme%20file%20is.-,What%20is%20a%20README%20File%3F,about%20the%20patches%20or%20updates.)
 
 [Signal Import Code](https://kidscancode.org/godot_recipes/3.x/basics/custom_resources/index.html)
 
 [Global Variables](https://youtu.be/sc-tEPdLZhk?si=rPEOMSKtXi5BGy9X)
 
+[Custom Datatypes](https://www.reddit.com/r/godot/comments/y7prsm/is_there_a_way_to_do_custom_datatypes_like_c/) from user StewedAngelSkins
+
 [Custom Resources](https://www.youtube.com/watch?v=vzRZjM9MTGw)
+
+[Changing Sprite Textures](https://ask.godotengine.org/16683/answered-how-to-change-the-texture-of-a-sprite)
+
+[Clearing Spring Texture](https://ask.godotengine.org/64142/how-to-clear-texture-of-sprite)
+
+[Calling Class Methods from External Scripts](https://ask.godotengine.org/16097/how-do-you-call-class-methods-from-an-external-gdscript-file)
+
+[Object Moving on a Path](https://vionixstudio.com/2022/02/15/move-an-object-along-a-path-in-godot-2d/)
+
+[Character Moving on a Path](https://www.youtube.com/watch?v=ENpCQUj371k)
+
+[Writing Alt Text](https://accessibility.huit.harvard.edu/describe-content-images)
 
 ## Game License
 [MIT License](https://github.com/Audrey-Smyczek/agathas-apothecary/blob/current-main/LICENSE)
