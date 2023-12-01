@@ -71,7 +71,7 @@ No Alt Text for the images!
 Collecting User Testing.
 
 ## Future Work
-Changing Agatha's hair once a potion color has been created by the user. Allowing the user to clear the potion from the cauldron or allowing them to place the cauldron in a potion bottle.
+Allowing the user to clear the potion from the cauldron or allowing them to place the cauldron in a potion bottle.
 
 Recipe Book. More Animations. NPCs who are customers and request potions. A Bird. A Cat? More Ingredients.
 
