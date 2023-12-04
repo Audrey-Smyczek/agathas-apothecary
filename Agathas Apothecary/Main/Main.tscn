@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=3 uid="uid://dwd0is40eq5wj"]
+[gd_scene load_steps=25 format=3 uid="uid://dwd0is40eq5wj"]
 
 [ext_resource type="Script" path="res://Main/Main.gd" id="1_1j77y"]
 [ext_resource type="Texture2D" uid="uid://dx3ccc7yij7di" path="res://Main/backgroundNew.png" id="2_v5620"]
@@ -51,6 +51,10 @@ point_count = 2
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_hemfe"]
 radius = 580.0
 height = 1200.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_v38ek"]
+radius = 777.99
+height = 1555.98
 
 [node name="Main" type="Node2D" groups=["Bowls", "Ingreds"]]
 script = ExtResource("1_1j77y")
@@ -131,20 +135,20 @@ action_mode = 0
 texture_normal = ExtResource("12_gs6ng")
 script = ExtResource("13_nsqdl")
 
-[node name="MenuButton" type="MenuButton" parent="."]
-offset_left = 35.0
-offset_top = 27.0
-offset_right = 146.0
-offset_bottom = 114.0
-icon = ExtResource("17_fa3ta")
-expand_icon = true
-item_count = 1
-popup/item_0/text = ""
-popup/item_0/icon = ExtResource("12_gs6ng")
-popup/item_0/id = 0
+[node name="MenuButton" type="Sprite2D" parent="."]
+position = Vector2(83, 103)
+rotation = 3.14159
+scale = Vector2(0.0415584, 0.0993056)
+texture = ExtResource("17_fa3ta")
+
+[node name="Area2D" type="Area2D" parent="MenuButton"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MenuButton/Area2D"]
+shape = SubResource("CapsuleShape2D_v38ek")
 
 [connection signal="texture_changed" from="IngredPath/IngredPathFollow/IngredSprite" to="." method="_on_ingred_sprite_texture_changed"]
 [connection signal="input_event" from="IngredPath/IngredPathFollow/IngredSprite/Area2D" to="IngredPath/IngredPathFollow/IngredSprite" method="_on_area_2d_input_event"]
 [connection signal="mouse_entered" from="IngredPath/IngredPathFollow/IngredSprite/Area2D" to="IngredPath/IngredPathFollow/IngredSprite" method="_on_area_2d_mouse_entered"]
 [connection signal="mouse_exited" from="IngredPath/IngredPathFollow/IngredSprite/Area2D" to="IngredPath/IngredPathFollow/IngredSprite" method="_on_area_2d_mouse_exited"]
 [connection signal="pressed" from="ResetButton" to="." method="_on_reset_button_pressed"]
+[connection signal="input_event" from="MenuButton/Area2D" to="Welcome" method="_on_area_2d_input_event"]
