@@ -114,19 +114,19 @@ script = ExtResource("11_o5g3n")
 shape = SubResource("CapsuleShape2D_hemfe")
 
 [node name="ResetButton" type="Button" parent="."]
-offset_left = 1234.0
-offset_top = 835.0
-offset_right = 1430.0
-offset_bottom = 885.0
+offset_left = 1362.0
+offset_top = 918.0
+offset_right = 1558.0
+offset_bottom = 968.0
 theme_override_font_sizes/font_size = 30
-text = "Reset Button"
+text = "Reset Color"
 script = ExtResource("14_e0cea")
 
 [node name="Welcome" type="TextureButton" parent="."]
-offset_left = 1100.0
-offset_top = -48.0
-offset_right = 1901.0
-offset_bottom = 644.0
+offset_left = 384.0
+offset_top = 157.0
+offset_right = 1185.0
+offset_bottom = 849.0
 action_mode = 0
 texture_normal = ExtResource("12_gs6ng")
 script = ExtResource("13_nsqdl")

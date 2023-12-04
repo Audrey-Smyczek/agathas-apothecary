@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://d34d62osrfh8v"]
 
 [ext_resource type="Script" path="res://Hair/Hair.gd" id="1_08auo"]
-[ext_resource type="Texture2D" uid="uid://cmsgpwyo7m6w6" path="res://Hair/agathaHair.png" id="2_ubhdf"]
+[ext_resource type="Texture2D" uid="uid://jgb37bpy2arg" path="res://Hair/hair.png" id="2_g5svh"]
 [ext_resource type="Script" path="res://Hair/HairScale.gd" id="3_jj4bk"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_xnd3b"]
@@ -12,8 +12,7 @@ height = 1390.0
 script = ExtResource("1_08auo")
 
 [node name="hairImage" type="Sprite2D" parent="."]
-rotation = -3.14159
-texture = ExtResource("2_ubhdf")
+texture = ExtResource("2_g5svh")
 script = ExtResource("3_jj4bk")
 
 [node name="hairArea" type="Area2D" parent="hairImage"]
