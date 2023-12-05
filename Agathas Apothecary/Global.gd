@@ -12,6 +12,8 @@ var ingredClicked : bool = false
 
 var hairClicked : bool = false
 
+var potionClicked : bool = false
+
 var pathDone : bool = true
 
 var mixing : bool = false
@@ -19,3 +21,5 @@ var mixing : bool = false
 var mixedColor : Color
 
 var hairColor : Color
+
+var curPotionColor : Color

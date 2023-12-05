@@ -33,9 +33,15 @@ func _process(_delta):
 	# false which ensures that the hair doesn't change color
 	# everything the global is changed
 	if Global.hairClicked:
-		Global.hairColor = Global.mixedColor
-		$Hair.modulate = Global.hairColor
-		Global.hairClicked = false
+		if Global.potionClicked:
+			Global.hairColor = Global.curPotionColor
+			$Hair.modulate = Global.curPotionColor
+			Global.hairClicked = false
+			Global.potionClicked = false
+		else:
+			Global.hairColor = Global.mixedColor
+			$Hair.modulate = Global.hairColor
+			Global.hairClicked = false
 
 
 # Sets the sprite's texture to be whatever the current ingredient is
