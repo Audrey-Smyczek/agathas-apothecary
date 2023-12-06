@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=3 uid="uid://dwd0is40eq5wj"]
+[gd_scene load_steps=32 format=3 uid="uid://dwd0is40eq5wj"]
 
 [ext_resource type="Script" path="res://Main/Main.gd" id="1_1j77y"]
 [ext_resource type="Texture2D" uid="uid://dx3ccc7yij7di" path="res://Main/backgroundNew.png" id="2_v5620"]
@@ -14,8 +14,9 @@
 [ext_resource type="Script" path="res://Main/IngredPath.gd" id="10_c6hfc"]
 [ext_resource type="Script" path="res://Main/IngredientSprite.gd" id="11_o5g3n"]
 [ext_resource type="Texture2D" uid="uid://c0anjy0cj0cjl" path="res://Main/parchmentScroll.png" id="12_gs6ng"]
-[ext_resource type="PackedScene" uid="uid://82if227xq4b1" path="res://Potion Bottle/potion_bottle.tscn" id="13_6m1k2"]
+[ext_resource type="PackedScene" uid="uid://82if227xq4b1" path="res://Potion Bottle/potionFiller.tscn" id="13_6m1k2"]
 [ext_resource type="Script" path="res://Main/Welcome.gd" id="13_nsqdl"]
+[ext_resource type="PackedScene" uid="uid://bbm4feb5nhu75" path="res://Potion Bottle/potionBottle.tscn" id="13_vxoe3"]
 [ext_resource type="Script" path="res://Main/ResetButton.gd" id="14_e0cea"]
 [ext_resource type="Script" path="res://Main/CauldronScale.gd" id="17_nwgeh"]
 [ext_resource type="Texture2D" uid="uid://cl3rcopswf1fx" path="res://Main/menuIcon.png" id="18_c4fn2"]
@@ -96,57 +97,69 @@ position = Vector2(680, 750)
 
 [node name="Bowl1" parent="." groups=["Bowls"] instance=ExtResource("4_oqy5q")]
 position = Vector2(180, 830)
-scale = Vector2(0.07, 0.07)
+scale = Vector2(0.12, 0.12)
 ingredInfo = SubResource("Resource_6glc5")
 
 [node name="Bowl2" parent="." groups=["Bowls"] instance=ExtResource("4_oqy5q")]
 position = Vector2(380, 880)
-scale = Vector2(0.07, 0.07)
+scale = Vector2(0.12, 0.12)
 ingredInfo = SubResource("Resource_eha88")
 
 [node name="Bowl3" parent="." groups=["Bowls"] instance=ExtResource("4_oqy5q")]
 position = Vector2(580, 930)
-scale = Vector2(0.07, 0.07)
+scale = Vector2(0.12, 0.12)
 ingredInfo = SubResource("Resource_deqvn")
 
 [node name="Bowl4" parent="." groups=["Bowls"] instance=ExtResource("4_oqy5q")]
 position = Vector2(780, 930)
-scale = Vector2(0.07, 0.07)
+scale = Vector2(0.12, 0.12)
 ingredInfo = SubResource("Resource_pti66")
 
 [node name="Bowl5" parent="." groups=["Bowls"] instance=ExtResource("4_oqy5q")]
 position = Vector2(980, 880)
-scale = Vector2(0.07, 0.07)
+scale = Vector2(0.12, 0.12)
 ingredInfo = SubResource("Resource_x3q62")
 
 [node name="Bowl6" parent="." groups=["Bowls"] instance=ExtResource("4_oqy5q")]
 position = Vector2(1180, 830)
-scale = Vector2(0.07, 0.07)
+scale = Vector2(0.12, 0.12)
 ingredInfo = SubResource("Resource_3f5x8")
 
-[node name="PotionBottle1" parent="." instance=ExtResource("13_6m1k2")]
+[node name="PotionFiller1" parent="." instance=ExtResource("13_6m1k2")]
 position = Vector2(78, 210)
 scale = Vector2(0.07, 0.07)
 
-[node name="PotionBottle2" parent="." instance=ExtResource("13_6m1k2")]
+[node name="PotionBottle" parent="PotionFiller1" instance=ExtResource("13_vxoe3")]
+
+[node name="PotionFiller2" parent="." instance=ExtResource("13_6m1k2")]
 position = Vector2(188, 210)
 scale = Vector2(0.07, 0.07)
 
-[node name="PotionBottle3" parent="." instance=ExtResource("13_6m1k2")]
+[node name="PotionBottle" parent="PotionFiller2" instance=ExtResource("13_vxoe3")]
+
+[node name="PotionFiller3" parent="." instance=ExtResource("13_6m1k2")]
 position = Vector2(298, 210)
 scale = Vector2(0.07, 0.07)
 
-[node name="PotionBottle4" parent="." instance=ExtResource("13_6m1k2")]
+[node name="PotionBottle" parent="PotionFiller3" instance=ExtResource("13_vxoe3")]
+
+[node name="PotionFiller4" parent="." instance=ExtResource("13_6m1k2")]
 position = Vector2(78, 460)
 scale = Vector2(0.07, 0.07)
 
-[node name="PotionBottle5" parent="." instance=ExtResource("13_6m1k2")]
+[node name="PotionBottle" parent="PotionFiller4" instance=ExtResource("13_vxoe3")]
+
+[node name="PotionFiller5" parent="." instance=ExtResource("13_6m1k2")]
 position = Vector2(188, 460)
 scale = Vector2(0.07, 0.07)
 
-[node name="PotionBottle6" parent="." instance=ExtResource("13_6m1k2")]
+[node name="PotionBottle" parent="PotionFiller5" instance=ExtResource("13_vxoe3")]
+
+[node name="PotionFiller6" parent="." instance=ExtResource("13_6m1k2")]
 position = Vector2(298, 460)
 scale = Vector2(0.07, 0.07)
+
+[node name="PotionBottle" parent="PotionFiller6" instance=ExtResource("13_vxoe3")]
 
 [node name="IngredPath" type="Path2D" parent="."]
 position = Vector2(0, -2)

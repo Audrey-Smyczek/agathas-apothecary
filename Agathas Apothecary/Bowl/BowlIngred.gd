@@ -5,8 +5,7 @@ extends Node2D
 
 
 func _ready():
-	$Image.modulate = ingredInfo.get_Color()
-	pass
+	$BowlFiller.modulate = ingredInfo.get_Color()
 
 
 # When a bowl is clicked, set's the global variables to be the current bowl 
@@ -32,3 +31,13 @@ func _on_area_2d_input_event(_viewport, event, _shape_idx):
 		
 		Global.bowlClicked = true
 
+
+# Increases the bowl's size when mouse hovers
+func _on_area_2d_mouse_entered():
+	scale = Vector2(0.13, 0.13)
+
+
+# Set's bowl's size back to original when mouse leaves
+func _on_area_2d_mouse_exited():
+	scale = Vector2(0.12, 0.12)
+ 

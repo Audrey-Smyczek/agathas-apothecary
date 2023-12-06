@@ -2,33 +2,31 @@
 
 [ext_resource type="Script" path="res://Bowl/BowlIngred.gd" id="1_abjyn"]
 [ext_resource type="Texture2D" uid="uid://dj5rerlnfvb37" path="res://Bowl/bowl.png" id="2_18x1y"]
-[ext_resource type="Script" path="res://Bowl/BowlScale.gd" id="3_fca0s"]
+[ext_resource type="Texture2D" uid="uid://bhquh00h8phar" path="res://Bowl/bowlFiller.png" id="4_878wh"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_a024b"]
-radius = 712.0
-height = 2192.0
+radius = 157.099
+height = 432.537
 
 [node name="Bowl" type="Node2D"]
 script = ExtResource("1_abjyn")
 
-[node name="Image" type="Sprite2D" parent="."]
+[node name="Bowl" type="Sprite2D" parent="."]
+scale = Vector2(2.62174, 2.72337)
 texture = ExtResource("2_18x1y")
-script = ExtResource("3_fca0s")
 
-[node name="Area2D" type="Area2D" parent="Image"]
+[node name="Area2D" type="Area2D" parent="Bowl"]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Image/Area2D"]
-position = Vector2(-16, -24)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bowl/Area2D"]
+position = Vector2(3.3559, -13.7172)
 rotation = 1.5708
 shape = SubResource("CapsuleShape2D_a024b")
 
-[node name="BowlTextLabel" type="RichTextLabel" parent="."]
-offset_left = 678.0
-offset_top = -1046.0
-offset_right = 718.0
-offset_bottom = -1006.0
-bbcode_enabled = true
+[node name="BowlFiller" type="Sprite2D" parent="."]
+position = Vector2(2.08165e-12, -230)
+scale = Vector2(2.75, 2.75)
+texture = ExtResource("4_878wh")
 
-[connection signal="input_event" from="Image/Area2D" to="." method="_on_area_2d_input_event"]
-[connection signal="mouse_entered" from="Image/Area2D" to="Image" method="_on_area_2d_mouse_entered"]
-[connection signal="mouse_exited" from="Image/Area2D" to="Image" method="_on_area_2d_mouse_exited"]
+[connection signal="input_event" from="Bowl/Area2D" to="." method="_on_area_2d_input_event"]
+[connection signal="mouse_entered" from="Bowl/Area2D" to="." method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="Bowl/Area2D" to="." method="_on_area_2d_mouse_exited"]

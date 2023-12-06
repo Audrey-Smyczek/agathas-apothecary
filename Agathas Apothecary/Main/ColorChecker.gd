@@ -12,7 +12,7 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
 	if checkColor(Global.hairColor, curRequestColor):
-		text = "Thanks for beautiful hair!"
+		text = "Thanks for beautiful hair!\nClick here for another!"
 		$RequestColor.modulate = Color(0,0,0,0)
 		
 
@@ -24,8 +24,8 @@ func checkColor(firstCol, secondCol):
 	var bDif = (firstCol.b - secondCol.b)**2
 #	var dif = sqrt(r+g+b)
 #	print(r, " ", g, " ", b)
-	print(firstCol)
-	print(secondCol)
+#	print(firstCol)
+#	print(secondCol)
 #	var r = (firstCol.r - secondCol.r)*255
 #	var g = (firstCol.g - secondCol.g)*255
 #	var b = (firstCol.b - secondCol.b)*255
@@ -41,8 +41,8 @@ func checkColor(firstCol, secondCol):
 #	print(rDif, " ", gDif, " ", bDif)
 
 	var difVal = rDif+gDif+bDif
-	print(difVal)
-	print()
+#	print(difVal)
+#	print()
 	
 	if difVal <= 0.03:
 		return true
