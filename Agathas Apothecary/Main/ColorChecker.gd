@@ -6,12 +6,14 @@ var colorList = ["red", "yellow", "green", "blue", "black", "white"]
 
 func _ready():
 #	curRequestColor = Color(0,1,1,1)
-	pass
+	$RequestColor.modulate = Color(0,0,0,0)
+
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
 	if checkColor(Global.hairColor, curRequestColor):
 		text = "Thanks for beautiful hair!"
+		$RequestColor.modulate = Color(0,0,0,0)
 		
 
 func checkColor(firstCol, secondCol):
@@ -64,3 +66,4 @@ func _on_color_check_button_pressed():
 	curRequestColor = randColor
 #	print(curRequestColor)
 	text = "Please make my hair " + randColor + "!\nClick again for different color"
+	$RequestColor.modulate = curRequestColor

@@ -27,7 +27,9 @@ func _on_area_2d_mouse_entered():
 	if !Global.ingredClicked:
 		scale = Vector2(0.12, 0.12)
 
+
 # Set's ingredient's size back to original when mouse leaves
 func _on_area_2d_mouse_exited():
 	if !Global.ingredClicked:
 		scale = Vector2(0.1, 0.1)
+

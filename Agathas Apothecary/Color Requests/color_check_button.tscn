@@ -1,0 +1,54 @@
+[gd_scene load_steps=6 format=3 uid="uid://b25amxixi7ivy"]
+
+[ext_resource type="Texture2D" uid="uid://dyl38tifjonx" path="res://Main/textBubble.webp" id="1_j3u2g"]
+[ext_resource type="Script" path="res://Main/ColorCheckButton.gd" id="2_t3hg5"]
+[ext_resource type="Script" path="res://Main/ColorChecker.gd" id="3_pnm2d"]
+[ext_resource type="Texture2D" uid="uid://bwr8x2jgr3pr3" path="res://Main/cauldFill.png" id="4_ux0ia"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8gqp4"]
+size = Vector2(248.5, 141)
+
+[node name="ColorCheckButton" type="Node2D"]
+
+[node name="ColorCheckButton" type="TextureButton" parent="."]
+offset_left = 775.0
+offset_top = 27.0
+offset_right = 1062.0
+offset_bottom = 327.0
+texture_normal = ExtResource("1_j3u2g")
+script = ExtResource("2_t3hg5")
+
+[node name="BubbleText" type="Label" parent="ColorCheckButton"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -111.5
+offset_top = -68.0
+offset_right = 112.5
+offset_bottom = 61.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 20
+text = "Hello! Welcome to my Apothecary!
+Click here for my request!"
+autowrap_mode = 3
+script = ExtResource("3_pnm2d")
+
+[node name="RequestColor" type="Sprite2D" parent="ColorCheckButton/BubbleText"]
+position = Vector2(314.562, 57.375)
+scale = Vector2(0.193499, 0.363715)
+texture = ExtResource("4_ux0ia")
+
+[node name="Area2D" type="Area2D" parent="ColorCheckButton"]
+position = Vector2(-775, -27)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ColorCheckButton/Area2D"]
+position = Vector2(919.75, 173)
+shape = SubResource("RectangleShape2D_8gqp4")
+
+[connection signal="mouse_entered" from="ColorCheckButton" to="ColorCheckButton" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="ColorCheckButton" to="ColorCheckButton" method="_on_mouse_exited"]
+[connection signal="pressed" from="ColorCheckButton" to="ColorCheckButton/BubbleText" method="_on_color_check_button_pressed"]
