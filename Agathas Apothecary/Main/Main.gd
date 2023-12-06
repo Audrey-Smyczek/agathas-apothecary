@@ -101,3 +101,4 @@ func _on_reset_button_pressed():
 	$Hair.modulate = Global.hairColor
 	
 	
+

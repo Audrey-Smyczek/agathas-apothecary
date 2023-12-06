@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=3 uid="uid://dwd0is40eq5wj"]
+[gd_scene load_steps=31 format=3 uid="uid://dwd0is40eq5wj"]
 
 [ext_resource type="Script" path="res://Main/Main.gd" id="1_1j77y"]
 [ext_resource type="Texture2D" uid="uid://dx3ccc7yij7di" path="res://Main/backgroundNew.png" id="2_v5620"]
@@ -20,6 +20,7 @@
 [ext_resource type="Script" path="res://Main/CauldronScale.gd" id="17_nwgeh"]
 [ext_resource type="Texture2D" uid="uid://cl3rcopswf1fx" path="res://Main/menuIcon.png" id="18_c4fn2"]
 [ext_resource type="PackedScene" uid="uid://b25amxixi7ivy" path="res://Color Requests/color_check_button.tscn" id="18_hem06"]
+[ext_resource type="Script" path="res://Main/GameTypeButton.gd" id="21_1xi6p"]
 
 [sub_resource type="Resource" id="Resource_6glc5"]
 script = ExtResource("5_y2ain")
@@ -190,13 +191,23 @@ shape = SubResource("RectangleShape2D_u4l8t")
 position = Vector2(910, 172)
 
 [node name="Welcome" type="TextureButton" parent="."]
-offset_left = 287.0
-offset_top = 41.0
-offset_right = 1329.0
-offset_bottom = 941.0
+offset_left = 1369.0
+offset_top = 393.0
+offset_right = 2411.0
+offset_bottom = 1293.0
 action_mode = 0
 texture_normal = ExtResource("12_gs6ng")
 script = ExtResource("13_nsqdl")
+
+[node name="GameTypeButton" type="Button" parent="."]
+offset_left = 1394.0
+offset_top = 18.0
+offset_right = 1602.0
+offset_bottom = 102.0
+text = "Want to fullfill requests?
+
+Press here!"
+script = ExtResource("21_1xi6p")
 
 [connection signal="texture_changed" from="IngredPath/IngredPathFollow/IngredSprite" to="." method="_on_ingred_sprite_texture_changed"]
 [connection signal="input_event" from="IngredPath/IngredPathFollow/IngredSprite/Area2D" to="IngredPath/IngredPathFollow/IngredSprite" method="_on_area_2d_input_event"]
