@@ -2,21 +2,24 @@ extends Label
 
 var curRequestColor : Color
 
+var colorList = ["red", "yellow", "green", "blue", "black", "white"] 
+
 func _ready():
-	curRequestColor = Color(0,1,1,1)
+#	curRequestColor = Color(0,1,1,1)
+	pass
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
 	if checkColor(Global.hairColor, curRequestColor):
-		text = "Thanks for great hair"
+		text = "Thanks for beautiful hair!"
 		
 
 func checkColor(firstCol, secondCol):
-	print("in checkColor")
+#	print("in checkColor")
 
-#	var r = (firstCol.r - secondCol.r)**2
-#	var g = (firstCol.g - secondCol.g)**2
-#	var b = (firstCol.b - secondCol.b)**2
+	var rDif = (firstCol.r - secondCol.r)**2
+	var gDif = (firstCol.g - secondCol.g)**2
+	var bDif = (firstCol.b - secondCol.b)**2
 #	var dif = sqrt(r+g+b)
 #	print(r, " ", g, " ", b)
 	print(firstCol)
@@ -29,17 +32,17 @@ func checkColor(firstCol, secondCol):
 	
 #	var colorDistance = distance(firstCol, secondCol)
 #	if colorDistance < 90:
-	
-	var rDif = 0.3 * ((firstCol.r - secondCol.r)**2)
-	var gDif = 0.59 * ((firstCol.g - secondCol.g)**2)
-	var bDif = 0.11 * ((firstCol.b - secondCol.b)**2)
-	print(rDif, " ", gDif, " ", bDif)
+#
+#	var rDif = 0.3 * ((firstCol.r - secondCol.r)**2)
+#	var gDif = 0.59 * ((firstCol.g - secondCol.g)**2)
+#	var bDif = 0.11 * ((firstCol.b - secondCol.b)**2)
+#	print(rDif, " ", gDif, " ", bDif)
 
 	var difVal = rDif+gDif+bDif
 	print(difVal)
 	print()
 	
-	if difVal <= 0.05:
+	if difVal <= 0.03:
 		return true
 	else:
 		return false
@@ -53,3 +56,11 @@ func checkColor(firstCol, secondCol):
 #var g = (firstCol.g*255 - secondCol.g*255)**2
 #var b = (firstCol.b*255 - secondCol.b*255)**2
 #dif = sqrt(r+g+b)
+
+
+func _on_color_check_button_pressed():
+#	print("button clicked")
+	var randColor = colorList[randi() % colorList.size()]
+	curRequestColor = randColor
+#	print(curRequestColor)
+	text = "Please make my hair " + randColor + "!\nClick again for different color"

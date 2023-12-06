@@ -9,10 +9,10 @@ func _process(delta):
 	var startCurve = get_curve( ).get_point_position(0).y
 	var endCurve = get_curve( ).get_point_position(1).y
 	
-	if pathProgress >= endCurve-startCurve-4 and pathProgress < endCurve-startCurve-2:
+	if pathProgress >= endCurve-startCurve-4 and pathProgress < endCurve-startCurve-3:
 		Global.mixing = true
 		
-	if pathProgress >= endCurve-startCurve-2:
+	if pathProgress >= endCurve-startCurve-3:
 #		print("Path done")
 		Global.ingredClicked = false
 #		Global.bowlClicked = false

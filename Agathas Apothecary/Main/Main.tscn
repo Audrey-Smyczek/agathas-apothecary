@@ -181,16 +181,6 @@ action_mode = 0
 texture_normal = ExtResource("12_gs6ng")
 script = ExtResource("13_nsqdl")
 
-[node name="BubbleText" type="Label" parent="."]
-offset_left = 807.0
-offset_top = 109.0
-offset_right = 1031.0
-offset_bottom = 238.0
-theme_override_font_sizes/font_size = 24
-text = "Hello! Welcome to my Apothecary!"
-autowrap_mode = 3
-script = ExtResource("20_xhw7f")
-
 [node name="ColorCheckButton" type="TextureButton" parent="."]
 offset_left = 775.0
 offset_top = 27.0
@@ -198,9 +188,20 @@ offset_right = 1062.0
 offset_bottom = 327.0
 texture_normal = ExtResource("19_pfrga")
 
+[node name="BubbleText" type="Label" parent="ColorCheckButton"]
+offset_left = 32.0
+offset_top = 82.0
+offset_right = 256.0
+offset_bottom = 211.0
+theme_override_font_sizes/font_size = 20
+text = "Hello! Welcome to my Apothecary!"
+autowrap_mode = 3
+script = ExtResource("20_xhw7f")
+
 [connection signal="texture_changed" from="IngredPath/IngredPathFollow/IngredSprite" to="." method="_on_ingred_sprite_texture_changed"]
 [connection signal="input_event" from="IngredPath/IngredPathFollow/IngredSprite/Area2D" to="IngredPath/IngredPathFollow/IngredSprite" method="_on_area_2d_input_event"]
 [connection signal="mouse_entered" from="IngredPath/IngredPathFollow/IngredSprite/Area2D" to="IngredPath/IngredPathFollow/IngredSprite" method="_on_area_2d_mouse_entered"]
 [connection signal="mouse_exited" from="IngredPath/IngredPathFollow/IngredSprite/Area2D" to="IngredPath/IngredPathFollow/IngredSprite" method="_on_area_2d_mouse_exited"]
 [connection signal="pressed" from="ResetButton" to="." method="_on_reset_button_pressed"]
 [connection signal="input_event" from="MenuButton/Area2D" to="Welcome" method="_on_area_2d_input_event"]
+[connection signal="pressed" from="ColorCheckButton" to="ColorCheckButton/BubbleText" method="_on_color_check_button_pressed"]
