@@ -24,3 +24,7 @@ Global="*res://Global.gd"
 window/size/viewport_width=1600
 window/size/viewport_height=1000
 window/stretch/mode="canvas_items"
+
+[filesystem]
+
+import/blender/enabled=false
