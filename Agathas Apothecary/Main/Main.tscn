@@ -210,10 +210,10 @@ shape = SubResource("RectangleShape2D_u4l8t")
 position = Vector2(910, 172)
 
 [node name="Welcome" type="TextureButton" parent="."]
-offset_left = 1484.0
-offset_top = -4.0
-offset_right = 3496.0
-offset_bottom = 1837.0
+offset_left = 1383.0
+offset_top = -23.0
+offset_right = 3395.0
+offset_bottom = 1818.0
 scale = Vector2(0.55, 0.55)
 action_mode = 0
 texture_normal = ExtResource("20_10sln")
