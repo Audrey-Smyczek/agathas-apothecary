@@ -29,6 +29,7 @@ script = ExtResource("5_y2ain")
 name = "Lavender"
 texture = ExtResource("8_16f0o")
 color = Color(0, 1, 1, 1)
+audioFile = ExtResource("23_nap8i")
 
 [sub_resource type="Resource" id="Resource_eha88"]
 script = ExtResource("5_y2ain")

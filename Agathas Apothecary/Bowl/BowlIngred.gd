@@ -35,6 +35,9 @@ func _on_area_2d_input_event(_viewport, event, _shape_idx):
 # Increases the bowl's size when mouse hovers
 func _on_area_2d_mouse_entered():
 	scale = Vector2(0.13, 0.13)
+	$AudioStreamPlayer2D.set_stream(ingredInfo.get_AudioFile())
+	$AudioStreamPlayer2D.play()
+	
 
 
 # Set's bowl's size back to original when mouse leaves
