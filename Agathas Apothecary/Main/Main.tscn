@@ -13,7 +13,6 @@
 [ext_resource type="Texture2D" uid="uid://c7i5dbp4t66g7" path="res://Main/stJohnsWortIng.png" id="9_aqtup"]
 [ext_resource type="Script" path="res://Main/IngredPath.gd" id="10_c6hfc"]
 [ext_resource type="Script" path="res://Main/IngredientSprite.gd" id="11_o5g3n"]
-[ext_resource type="Texture2D" uid="uid://c0anjy0cj0cjl" path="res://Main/parchmentScroll.png" id="12_gs6ng"]
 [ext_resource type="PackedScene" uid="uid://82if227xq4b1" path="res://Potion Bottle/potionFiller.tscn" id="13_6m1k2"]
 [ext_resource type="Script" path="res://Main/Welcome.gd" id="13_nsqdl"]
 [ext_resource type="PackedScene" uid="uid://bbm4feb5nhu75" path="res://Potion Bottle/potionBottle.tscn" id="13_vxoe3"]
@@ -21,6 +20,7 @@
 [ext_resource type="Script" path="res://Main/CauldronScale.gd" id="17_nwgeh"]
 [ext_resource type="Texture2D" uid="uid://cl3rcopswf1fx" path="res://Main/menuIcon.png" id="18_c4fn2"]
 [ext_resource type="PackedScene" uid="uid://b25amxixi7ivy" path="res://Color Requests/color_check_button.tscn" id="18_hem06"]
+[ext_resource type="Texture2D" uid="uid://02hruuxftya5" path="res://Main/Parchment.png" id="20_10sln"]
 [ext_resource type="Script" path="res://Main/GameTypeButton.gd" id="21_1xi6p"]
 
 [sub_resource type="Resource" id="Resource_6glc5"]
@@ -210,12 +210,13 @@ shape = SubResource("RectangleShape2D_u4l8t")
 position = Vector2(910, 172)
 
 [node name="Welcome" type="TextureButton" parent="."]
-offset_left = 1369.0
-offset_top = 393.0
-offset_right = 2411.0
-offset_bottom = 1293.0
+offset_left = 1579.0
+offset_top = -9.0
+offset_right = 2344.0
+offset_bottom = 685.0
+scale = Vector2(1.4, 1.4)
 action_mode = 0
-texture_normal = ExtResource("12_gs6ng")
+texture_normal = ExtResource("20_10sln")
 script = ExtResource("13_nsqdl")
 
 [node name="GameTypeButton" type="Button" parent="."]
