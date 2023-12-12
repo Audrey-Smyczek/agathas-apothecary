@@ -1,17 +1,19 @@
 extends Label
 
-var curRequestColor : Color
+var defaultText : String = "Hello! Welcome to my Apothecary!"
+
+var curRequestColor : Color = Color(0,0,0,0)
 
 var colorList = ["red", "yellow", "green", "blue", "black", "white"] 
 
 func _ready():
 #	curRequestColor = Color(0,1,1,1)
-	$RequestColor.modulate = Color(0,0,0,0)
+	$RequestColor.modulate = curRequestColor
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
-	if checkColor(Global.hairColor, curRequestColor):
+	if checkColor(Global.hairColor, curRequestColor) and text != defaultText:
 		text = "Thanks for beautiful hair!\nClick here for another!"
 		$RequestColor.modulate = Color(0,0,0,0)
 		

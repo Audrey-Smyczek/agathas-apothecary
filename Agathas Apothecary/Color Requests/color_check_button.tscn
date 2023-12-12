@@ -33,8 +33,7 @@ offset_bottom = 64.6
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 20
-text = "Hello! Welcome to my Apothecary!
-Click here for my request!"
+text = "Hello! Welcome to my Apothecary!"
 autowrap_mode = 3
 script = ExtResource("3_pnm2d")
 metadata/_edit_use_anchors_ = true
