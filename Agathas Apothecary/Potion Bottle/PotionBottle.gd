@@ -1,7 +1,9 @@
 extends Node2D
 
-@export var potionColor: Color
+@export var potionColor: Color = Color(0,0,0,0)
 
+func _ready():
+	$Image.modulate = Color(0,0,0,0)
 
 func _on_area_2d_input_event(_viewport, event, _shape_idx):
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and Global.pathDone:

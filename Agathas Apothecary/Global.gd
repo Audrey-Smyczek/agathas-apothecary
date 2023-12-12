@@ -8,7 +8,7 @@ var gameTypePressed : bool = false
 
 var curIngredName : String
 var curIngredTexture : Texture
-var curIngredColor : Color
+var curIngredColor : Color = Color(0,0,0,0)
 
 var bowlClicked : bool = false
 
