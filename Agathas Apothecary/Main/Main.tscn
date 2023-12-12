@@ -78,6 +78,11 @@ size = Vector2(456.339, 357.414)
 script = ExtResource("1_1j77y")
 metadata/_edit_horizontal_guides_ = []
 
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("23_nap8i")
+volume_db = 24.0
+autoplay = true
+
 [node name="AaBackground" type="Sprite2D" parent="."]
 light_mask = 0
 position = Vector2(2.08165e-12, 2.08165e-12)
@@ -211,16 +216,6 @@ shape = SubResource("RectangleShape2D_u4l8t")
 [node name="ColorCheckButton" parent="." instance=ExtResource("18_hem06")]
 position = Vector2(910, 172)
 
-[node name="Welcome" type="TextureButton" parent="."]
-offset_left = 1383.0
-offset_top = -23.0
-offset_right = 3395.0
-offset_bottom = 1818.0
-scale = Vector2(0.55, 0.55)
-action_mode = 0
-texture_normal = ExtResource("20_10sln")
-script = ExtResource("13_nsqdl")
-
 [node name="GameTypeButton" type="Button" parent="."]
 offset_left = 1394.0
 offset_top = 18.0
@@ -231,10 +226,15 @@ text = "Want to fullfill requests?
 Press here!"
 script = ExtResource("21_1xi6p")
 
-[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("23_nap8i")
-volume_db = 24.0
-autoplay = true
+[node name="Welcome" type="TextureButton" parent="."]
+offset_left = 228.0
+offset_top = 3.0
+offset_right = 2240.0
+offset_bottom = 1844.0
+scale = Vector2(0.55, 0.55)
+action_mode = 0
+texture_normal = ExtResource("20_10sln")
+script = ExtResource("13_nsqdl")
 
 [connection signal="texture_changed" from="IngredPath/IngredPathFollow/IngredSprite" to="." method="_on_ingred_sprite_texture_changed"]
 [connection signal="input_event" from="IngredPath/IngredPathFollow/IngredSprite/Area2D" to="IngredPath/IngredPathFollow/IngredSprite" method="_on_area_2d_input_event"]
