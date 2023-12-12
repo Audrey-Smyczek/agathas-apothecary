@@ -43,4 +43,5 @@ func _on_area_2d_mouse_entered():
 # Set's bowl's size back to original when mouse leaves
 func _on_area_2d_mouse_exited():
 	scale = Vector2(0.12, 0.12)
+	$AudioStreamPlayer2D.stop()
  
