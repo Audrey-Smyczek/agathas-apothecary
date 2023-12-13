@@ -2,7 +2,7 @@ extends Label
 
 var defaultText : String = "Hello! Welcome to my Apothecary!"
 
-var curRequestColor : Color = Color(0,0,0,0)
+var curRequestColor : Color = Color(1,1,1,1)
 
 var colorList = ["red", "yellow", "green", "blue", "black", "white"] 
 
@@ -16,7 +16,7 @@ func _process(_delta):
 	if Global.requestsVisible and Global.firstRequestClick:
 		text = defaultText
 		Global.firstRequestClick = false
-		$RequestColor.modulate = Color(0,0,0,0)
+		$RequestColor.modulate = Color(1,1,1,1)
 	
 	if checkColor(Global.hairColor, curRequestColor) and text != defaultText:
 		text = "Thanks for beautiful hair!\nClick here for another!"

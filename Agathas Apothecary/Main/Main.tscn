@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=3 uid="uid://dwd0is40eq5wj"]
+[gd_scene load_steps=35 format=3 uid="uid://dwd0is40eq5wj"]
 
 [ext_resource type="Script" path="res://Main/Main.gd" id="1_1j77y"]
 [ext_resource type="Texture2D" uid="uid://dx3ccc7yij7di" path="res://Main/backgroundNew.png" id="2_v5620"]
@@ -61,6 +61,18 @@ name = "green"
 texture = ExtResource("7_rj6up")
 color = Color(0, 1, 0, 1)
 
+[sub_resource type="Resource" id="Resource_gskca"]
+script = ExtResource("5_y2ain")
+name = "Blue"
+texture = ExtResource("8_16f0o")
+color = Color(0, 0, 1, 1)
+
+[sub_resource type="Resource" id="Resource_wuya8"]
+script = ExtResource("5_y2ain")
+name = "Red"
+texture = ExtResource("8_3nfv3")
+color = Color(1, 0, 0, 1)
+
 [sub_resource type="Curve2D" id="Curve2D_7seai"]
 _data = {
 "points": PackedVector2Array(0, 0, 2.08165e-12, 2.08165e-12, 680, 475, 0, 0, 0, 0, 680, 650)
@@ -103,34 +115,44 @@ scale = Vector2(0.15, 0.15)
 position = Vector2(680, 750)
 
 [node name="Bowl1" parent="." groups=["Bowls"] instance=ExtResource("4_oqy5q")]
-position = Vector2(180, 830)
+position = Vector2(250, 775)
 scale = Vector2(0.12, 0.12)
 ingredInfo = SubResource("Resource_6glc5")
 
 [node name="Bowl2" parent="." groups=["Bowls"] instance=ExtResource("4_oqy5q")]
-position = Vector2(380, 880)
+position = Vector2(450, 768)
 scale = Vector2(0.12, 0.12)
 ingredInfo = SubResource("Resource_eha88")
 
 [node name="Bowl3" parent="." groups=["Bowls"] instance=ExtResource("4_oqy5q")]
-position = Vector2(580, 930)
+position = Vector2(250, 915)
 scale = Vector2(0.12, 0.12)
 ingredInfo = SubResource("Resource_deqvn")
 
 [node name="Bowl4" parent="." groups=["Bowls"] instance=ExtResource("4_oqy5q")]
-position = Vector2(780, 930)
+position = Vector2(450, 915)
 scale = Vector2(0.12, 0.12)
 ingredInfo = SubResource("Resource_pti66")
 
 [node name="Bowl5" parent="." groups=["Bowls"] instance=ExtResource("4_oqy5q")]
-position = Vector2(980, 880)
+position = Vector2(915, 774)
 scale = Vector2(0.12, 0.12)
 ingredInfo = SubResource("Resource_x3q62")
 
 [node name="Bowl6" parent="." groups=["Bowls"] instance=ExtResource("4_oqy5q")]
-position = Vector2(1180, 830)
+position = Vector2(1115, 915)
 scale = Vector2(0.12, 0.12)
 ingredInfo = SubResource("Resource_3f5x8")
+
+[node name="Bowl7" parent="." groups=["Bowls"] instance=ExtResource("4_oqy5q")]
+position = Vector2(915, 915)
+scale = Vector2(0.12, 0.12)
+ingredInfo = SubResource("Resource_gskca")
+
+[node name="Bowl8" parent="." groups=["Bowls"] instance=ExtResource("4_oqy5q")]
+position = Vector2(1115, 777)
+scale = Vector2(0.12, 0.12)
+ingredInfo = SubResource("Resource_wuya8")
 
 [node name="PotionFiller1" parent="." instance=ExtResource("13_6m1k2")]
 position = Vector2(78, 220)
@@ -214,7 +236,8 @@ script = ExtResource("17_nwgeh")
 shape = SubResource("RectangleShape2D_u4l8t")
 
 [node name="ColorCheckButton" parent="." instance=ExtResource("18_hem06")]
-position = Vector2(910, 172)
+position = Vector2(971, 211)
+scale = Vector2(1.2, 1.2)
 
 [node name="GameTypeButton" type="Button" parent="."]
 offset_left = 1319.0
