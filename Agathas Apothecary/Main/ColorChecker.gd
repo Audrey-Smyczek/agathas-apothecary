@@ -24,23 +24,6 @@ func checkColor(firstCol, secondCol):
 	var rDif = (firstCol.r - secondCol.r)**2
 	var gDif = (firstCol.g - secondCol.g)**2
 	var bDif = (firstCol.b - secondCol.b)**2
-#	var dif = sqrt(r+g+b)
-#	print(r, " ", g, " ", b)
-#	print(firstCol)
-#	print(secondCol)
-#	var r = (firstCol.r - secondCol.r)*255
-#	var g = (firstCol.g - secondCol.g)*255
-#	var b = (firstCol.b - secondCol.b)*255
-#	var dif = sqrt(r+g+b)
-#	print(r, " ", g, " ", b)
-	
-#	var colorDistance = distance(firstCol, secondCol)
-#	if colorDistance < 90:
-#
-#	var rDif = 0.3 * ((firstCol.r - secondCol.r)**2)
-#	var gDif = 0.59 * ((firstCol.g - secondCol.g)**2)
-#	var bDif = 0.11 * ((firstCol.b - secondCol.b)**2)
-#	print(rDif, " ", gDif, " ", bDif)
 
 	var difVal = rDif+gDif+bDif
 #	print(difVal)

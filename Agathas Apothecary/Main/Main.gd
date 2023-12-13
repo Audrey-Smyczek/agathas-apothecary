@@ -9,7 +9,9 @@ func _ready():
 	$CauldColor.modulate = Global.mixedColor
 	Global.hairColor = Color(0.502,0.502,0.502,1)
 	$Hair.modulate = Global.hairColor
-	
+	Global.gameTypeButton = get_node("GameTypeButton")
+	Global.colorCheckButton = get_node("ColorCheckButton")
+	Global.colorCheckButton.hide()
 	Global.welcomeButton = get_node("Welcome")
 	
 #	$MenuButton.get_popup()
@@ -65,9 +67,9 @@ func mixingRGB():
 	else:
 		print("old mixed color ", Global.mixedColor)
 		print("curr color ",Global.curIngredColor)
-		var newR = (Global.curIngredColor.r+Global.mixedColor.r)/2
-		var newG = (Global.curIngredColor.g+Global.mixedColor.g)/2
-		var newB = (Global.curIngredColor.b+Global.mixedColor.b)/2
+		var newR = (Global.curIngredColor.r*0.4)+(Global.mixedColor.r*0.6)
+		var newG = (Global.curIngredColor.g*0.4)+(Global.mixedColor.g*0.6)
+		var newB = (Global.curIngredColor.b*0.4)+(Global.mixedColor.b*0.6)
 		Global.mixedColor = Color(newR, newG, newB)
 		print("new mixed color ",Global.mixedColor)
 		print()

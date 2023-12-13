@@ -1,8 +1,9 @@
 extends Node
 
 var welcomeButton : TextureButton
-# leave this please -a
+
 var gameTypeButton : Button
+
 var colorCheckButton : Node
 var gameTypePressed : bool = false
 
@@ -22,8 +23,7 @@ var pathDone : bool = true
 
 var mixing : bool = false
 
-#leave this please -a
-var requestVisible : bool = false
+var requestsVisible : bool = false
 
 var mixedColor : Color
 

@@ -1,11 +1,15 @@
 extends Button
 
-# leave this please -a
 func _pressed():
-	Global.gameTypeButton.hide()
-	Global.requestVisible = true
-	Global.colorCheckButton.show()
-	Global.gameTypePressed = false
-
+# if the requests are visible, make the global variable false
+# and hide the requests
+	if (Global.requestsVisible):
+		Global.requestsVisible = false
+		Global.colorCheckButton.hide()
+# if the requests are not visible, make the global variable
+# true and show the requests
+	elif (!Global.requestsVisible):
+		Global.requestsVisible = true
+		Global.colorCheckButton.show()
 
 
