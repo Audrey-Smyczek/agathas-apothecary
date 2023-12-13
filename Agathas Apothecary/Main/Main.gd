@@ -9,7 +9,9 @@ func _ready():
 	$CauldColor.modulate = Global.mixedColor
 	Global.hairColor = Color(0.502,0.502,0.502,1)
 	$Hair.modulate = Global.hairColor
-	
+	Global.gameTypeButton = get_node("GameTypeButton")
+	Global.colorCheckButton = get_node("ColorCheckButton")
+	Global.colorCheckButton.hide()
 	Global.welcomeButton = get_node("Welcome")
 	
 #	$MenuButton.get_popup()

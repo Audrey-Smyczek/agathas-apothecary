@@ -217,11 +217,11 @@ shape = SubResource("RectangleShape2D_u4l8t")
 position = Vector2(910, 172)
 
 [node name="GameTypeButton" type="Button" parent="."]
-offset_left = 1394.0
-offset_top = 18.0
-offset_right = 1602.0
-offset_bottom = 102.0
-text = "Want to fullfill requests?
+offset_left = 1319.0
+offset_top = 30.0
+offset_right = 1581.0
+offset_bottom = 126.0
+text = "Want to change the game mode?
 
 Press here!"
 script = ExtResource("21_1xi6p")
