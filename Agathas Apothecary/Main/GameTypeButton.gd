@@ -1,4 +1,4 @@
-extends Button
+extends TextureButton
 
 func _pressed():
 # if the requests are visible, make the global variable false
