@@ -11,5 +11,6 @@ func _pressed():
 	elif (!Global.requestsVisible):
 		Global.requestsVisible = true
 		Global.colorCheckButton.show()
+		Global.firstRequestClick = true
 
 

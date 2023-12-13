@@ -13,6 +13,11 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
+	if Global.requestsVisible and Global.firstRequestClick:
+		text = defaultText
+		Global.firstRequestClick = false
+		$RequestColor.modulate = Color(0,0,0,0)
+	
 	if checkColor(Global.hairColor, curRequestColor) and text != defaultText:
 		text = "Thanks for beautiful hair!\nClick here for another!"
 		$RequestColor.modulate = Color(0,0,0,0)
@@ -47,8 +52,9 @@ func checkColor(firstCol, secondCol):
 
 func _on_color_check_button_pressed():
 #	print("button clicked")
-	var randColor = colorList[randi() % colorList.size()]
-	curRequestColor = randColor
-#	print(curRequestColor)
-	text = "Please make my hair " + randColor + "!\nClick again for different color"
-	$RequestColor.modulate = curRequestColor
+	if Global.requestsVisible:
+		var randColor = colorList[randi() % colorList.size()]	
+		curRequestColor = randColor
+	#	print(curRequestColor)
+		text = "Please make my hair " + randColor + "!\nClick again for different color"
+		$RequestColor.modulate = curRequestColor

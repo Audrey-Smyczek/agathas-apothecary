@@ -24,6 +24,7 @@ var pathDone : bool = true
 var mixing : bool = false
 
 var requestsVisible : bool = false
+var firstRequestClick : bool  = false
 
 var mixedColor : Color
 
