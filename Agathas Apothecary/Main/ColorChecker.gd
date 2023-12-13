@@ -4,7 +4,7 @@ var defaultText : String = "Hello! Welcome to my Apothecary!"
 
 var curRequestColor : Color = Color(1,1,1,1)
 
-var colorList = ["red", "yellow", "green", "blue", "black", "white"] 
+var colorList = ["red", "yellow", "green", "blue", "black", "white", "cyan", "magenta", "pink", "orange", "yellow-green", "purple"] 
 
 func _ready():
 #	curRequestColor = Color(0,1,1,1)
@@ -19,8 +19,8 @@ func _process(_delta):
 		$RequestColor.modulate = Color(1,1,1,1)
 	
 	if checkColor(Global.hairColor, curRequestColor) and text != defaultText:
-		text = "Thanks for beautiful hair!\nClick here for another!"
-		$RequestColor.modulate = Color(0,0,0,0)
+		text = "Thanks for the beautiful hair!\nClick here for another!"
+		$RequestColor.modulate = Color(1,1,1,1)
 		
 
 func checkColor(firstCol, secondCol):
@@ -31,10 +31,12 @@ func checkColor(firstCol, secondCol):
 	var bDif = (firstCol.b - secondCol.b)**2
 
 	var difVal = rDif+gDif+bDif
-#	print(difVal)
+	print(firstCol)
+	print(secondCol)
+	print(difVal)
 #	print()
 	
-	if difVal <= 0.03:
+	if difVal <= 0.1:
 		return true
 	else:
 		return false
@@ -55,6 +57,6 @@ func _on_color_check_button_pressed():
 	if Global.requestsVisible:
 		var randColor = colorList[randi() % colorList.size()]	
 		curRequestColor = randColor
-	#	print(curRequestColor)
+#		print(curRequestColor)
 		text = "Please make my hair " + randColor + "!\nClick again for different color"
 		$RequestColor.modulate = curRequestColor

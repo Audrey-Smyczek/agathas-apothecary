@@ -98,7 +98,9 @@ func mixingHSV():
 
 func _on_reset_button_pressed():
 	Global.mixedColor = Global.defaultCauldColor
-	$CauldColor.modulate = Global.mixedColor
+	$CauldColor.modulate = Global.defaultCauldColor
+	Global.hairColor = Global.defaultCauldColor
+	$Hair.modulate = Global.defaultCauldColor
 	
 	
 
