@@ -19,7 +19,7 @@ func _process(_delta):
 		$RequestColor.modulate = Color(1,1,1,1)
 	
 	if checkColor(Global.hairColor, curRequestColor) and text != defaultText:
-		text = "Thanks for the beautiful hair!\nClick here for another!"
+		text = "Thank you for the beautiful hair!\nClick here for another request"
 		$RequestColor.modulate = Color(1,1,1,1)
 		
 
@@ -58,5 +58,5 @@ func _on_color_check_button_pressed():
 		var randColor = colorList[randi() % colorList.size()]	
 		curRequestColor = randColor
 #		print(curRequestColor)
-		text = "Please make my hair " + randColor + "!\nClick again for different color"
+		text = "Please make my hair " + randColor + "!\nClick again for a different request"
 		$RequestColor.modulate = curRequestColor
