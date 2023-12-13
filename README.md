@@ -63,22 +63,19 @@ Since the code is structured through Godot, it is formatted in a tree structure 
 In order to play, you need to first download the [Godot Game Engine](https://godotengine.org/). Then, clone the GitHub repository to your computer. Once that is done, open Godot and click the "Scan" button in the Project Manager window. Select the location of your cloned repository and let the project open. Once open, you can run by clicking the "add scene" button in the top right corner. Another window will pop up with Agatha's Apothecary. 
 
 ## How to Play the Game
-Experimental Mode: 
-
+**Experimental Mode:**
 Click a bowl to choose the ingredient. 
 Click the ingredient above the cauldron to mix it in. 
 Mix as many ingredients as you would like. 
 Click Agatha's hair to change it to the cauldron potion color. 
 Select the reset color button to reset the cauldron.
 
-Request Mode: 
-
+**Request Mode:**
 Click the button in the top right corner to enter Request Mode. 
 Mix her desired color, and click her hair to change the color.
 Click the speech bubble again for a new request!
 
-Potion Bottles: 
-
+**Potion Bottles:**
 Double click the potion bottle to save the color.
 Single click a bottle to change Agatha's hair to that color!
 
