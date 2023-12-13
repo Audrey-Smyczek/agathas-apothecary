@@ -7,9 +7,9 @@ Agatha's Apothecary is a potion mixing game where the user is able to select the
 Created by [Cat Martins](https://github.com/catmartz), [Audrey Smyczek](https://github.com/Audrey-Smyczek), and [Daniela Martinez](https://github.com/martinezdaniela17).
 
 ## Code Structure
-The code is split into 4 main folders, _**Bowl, Cauldron, Fonts, and Main.**_
+The code is split into 7 main folders, _**Bowl, Cauldron, Color Requests, Fonts, Hair, Main, and Potion Bottle.**_
 
-_Bowl, Cauldron, and Main contain the following:_
+_Bowl, Cauldron, Color Requests, Hair, Main, and Potion Bottle contain the following:_
 
 **Scripts**, the written out code, that are uppercase and end in '.gd'.
 
@@ -17,7 +17,7 @@ _Bowl, Cauldron, and Main contain the following:_
 
 **Scenes**, that are the containers which combine the scripts and images, which are a combination of uppercase and lowercase and end in '.tscn'. There is no standard since they are automatically created and there is a concern that updating the names will create issues.
 
-_Bowl also contains:_
+_Bowl and Color Requests also contains:_
 
 **Resources**, custom item type that can be shared across files and hold custom fields, which are camelCase and end in '.tres'.
 
@@ -40,7 +40,7 @@ Comments are marked with '#' at the start of the line, they are bypassed when th
 
 There are multiple branches of the Agatha's Apothecary repository. The one to use is 'current-main', there were many issues with GitHub over the course of the project which pushed the creation of different branches forward.
 
-## Main Gameplay Screen
+## Main Gameplay Screen UPDATE
 <img width="991" alt="Agatha's-Apothecary-Main-Screen" src="https://github.com/Audrey-Smyczek/agathas-apothecary/assets/98111335/8a4a1c9b-bc45-4aaa-b3f1-b4a73c4cf8c3">
 
 ## Framework Used
@@ -49,7 +49,7 @@ Agatha's Apothecary was created using the [Godot Game Engine](https://godotengin
 All of the images used in Agatha's Apothecary were designed and created by Daniela Martinez using [Krita](https://krita.org/en/).
 
 ## Reason for Creation
-Agatha's Apothecary was created specifically for Software Design and Development (Comp 225) at Macalester College. 
+Agatha's Apothecary was created specifically for Software Design and Development (Comp 225) at Macalester College for the Fall Semester 2023. 
 
 We were fearlessly led by Lauren Milne.
 
@@ -62,18 +62,23 @@ Since the code is structured through Godot, it is formatted in a tree structure 
 ## How to Download the Game
 In order to play, you need to first download the [Godot Game Engine](https://godotengine.org/). Then, clone the GitHub repository to your computer. Once that is done, open Godot and click the "Scan" button in the Project Manager window. Select the location of your cloned repository and let the project open. Once open, you can run by clicking the "add scene" button in the top right corner. Another window will pop up with Agatha's Apothecary. 
 
+## How to Play the Game
+**Experimental Mode (default):**
+Click a bowl to see which ingredient is inside it and the color that will be mixed. Then, click the ingredient above the cauldron to mix it into the cauldron. Mix as many colors as you would like to reach your desired color. Click Agatha's hair to change it to the cauldron potion color. Click the reset color button to reset the cauldron.
+
+**Request Mode:**
+Click the button in the top right corner to enter Request Mode. Select Agatha's speech bubble to start her request. Cultivate her desired color, and change her hair to it. When you have succeeded, she will thank you and you may click the speech bubble again for the next request.
+
+**Potion Bottles:**
+Save colors to the potion bottles on the shelf by double clicking. Single click a bottle to change Agatha's hair to that color!
+
+
 ## Current Concerns
-
-Reset Button for the color mixing.
-
-No Alt Text for the images!
-
-Collecting User Testing.
+There are no major concerns or bugs in the game. 
+This will be updated as the game is user tested.
 
 ## Future Work
-Allowing the user to clear the potion from the cauldron or allowing them to place the cauldron in a potion bottle.
-
-Recipe Book. More Animations. NPCs who are customers and request potions. A Bird. A Cat? More Ingredients.
+Adding a recipe book which saves the quanitity of items that are added to the cauldron for each mix. Adding more animations. NPCs who are customers and request potions. An additional animated pet that is a bird or cat.
 
 ## Credits
 Lauren Milne for her dedication to accessibility and support throughout the process.
@@ -102,7 +107,7 @@ Paul Cantrell for his willingness to assist us during [Dev Garden](https://devga
 
 [Character Moving on a Path](https://www.youtube.com/watch?v=ENpCQUj371k)
 
-[Writing Alt Text](https://accessibility.huit.harvard.edu/describe-content-images)
+[Audio Stream](https://docs.godotengine.org/en/stable/classes/class_audiostream.html)
 
 ## Game License
 [MIT License](https://github.com/Audrey-Smyczek/agathas-apothecary/blob/current-main/LICENSE)

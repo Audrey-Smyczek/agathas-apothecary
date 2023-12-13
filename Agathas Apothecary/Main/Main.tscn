@@ -1,6 +1,7 @@
 [gd_scene load_steps=35 format=3 uid="uid://dwd0is40eq5wj"]
 
 [ext_resource type="Script" path="res://Main/Main.gd" id="1_1j77y"]
+[ext_resource type="AudioStream" uid="uid://cncfumfknpdnn" path="res://Audio/magic_music.mp3" id="2_0sa1h"]
 [ext_resource type="Texture2D" uid="uid://dx3ccc7yij7di" path="res://Main/backgroundNew.png" id="2_v5620"]
 [ext_resource type="PackedScene" uid="uid://caciatigfr468" path="res://Cauldron/cauldron.tscn" id="3_c5n6v"]
 [ext_resource type="Texture2D" uid="uid://bwr8x2jgr3pr3" path="res://Main/cauldFill.png" id="3_uwmjl"]
@@ -9,57 +10,67 @@
 [ext_resource type="Script" path="res://Bowl/IngredResource.gd" id="5_y2ain"]
 [ext_resource type="Texture2D" uid="uid://cps8ox7yiud4l" path="res://Main/daisyIng.png" id="7_rj6up"]
 [ext_resource type="Texture2D" uid="uid://dknt5r58tpvhs" path="res://Main/roseIng.png" id="8_3nfv3"]
+[ext_resource type="AudioStream" uid="uid://b7siu0lc0nwan" path="res://Audio/cyan.mp3" id="8_8f8cl"]
 [ext_resource type="Texture2D" uid="uid://djfh24hidagi2" path="res://Main/butterflyPea.png" id="8_16f0o"]
 [ext_resource type="Texture2D" uid="uid://c7i5dbp4t66g7" path="res://Main/stJohnsWortIng.png" id="9_aqtup"]
 [ext_resource type="Script" path="res://Main/IngredPath.gd" id="10_c6hfc"]
 [ext_resource type="Script" path="res://Main/IngredientSprite.gd" id="11_o5g3n"]
+[ext_resource type="AudioStream" uid="uid://bpttsyf6rlmq3" path="res://Audio/white.mp3" id="11_sw4j2"]
 [ext_resource type="PackedScene" uid="uid://82if227xq4b1" path="res://Potion Bottle/potionFiller.tscn" id="13_6m1k2"]
+[ext_resource type="AudioStream" uid="uid://ct8fmx51tench" path="res://Audio/magenta.mp3" id="13_dfn80"]
 [ext_resource type="Script" path="res://Main/Welcome.gd" id="13_nsqdl"]
 [ext_resource type="PackedScene" uid="uid://bbm4feb5nhu75" path="res://Potion Bottle/potionBottle.tscn" id="13_vxoe3"]
 [ext_resource type="Script" path="res://Main/ResetButton.gd" id="14_e0cea"]
+[ext_resource type="AudioStream" uid="uid://b3unaut3crx7t" path="res://Audio/yellow.mp3" id="15_m0s3q"]
 [ext_resource type="Script" path="res://Main/CauldronScale.gd" id="17_nwgeh"]
+[ext_resource type="AudioStream" uid="uid://bvckyfjlwamp3" path="res://Audio/black.mp3" id="17_u1x02"]
 [ext_resource type="Texture2D" uid="uid://cl3rcopswf1fx" path="res://Main/menuIcon.png" id="18_c4fn2"]
 [ext_resource type="PackedScene" uid="uid://b25amxixi7ivy" path="res://Color Requests/color_check_button.tscn" id="18_hem06"]
+[ext_resource type="AudioStream" uid="uid://dfy1sqjav841e" path="res://Audio/green.mp3" id="18_iewu0"]
 [ext_resource type="Texture2D" uid="uid://02hruuxftya5" path="res://Main/Parchment.png" id="20_10sln"]
 [ext_resource type="Script" path="res://Main/GameTypeButton.gd" id="21_1xi6p"]
-[ext_resource type="AudioStream" uid="uid://cncfumfknpdnn" path="res://Main/magic_music.mp3" id="23_nap8i"]
 
 [sub_resource type="Resource" id="Resource_6glc5"]
 script = ExtResource("5_y2ain")
-name = "Lavender"
+name = "Butterfly Pea"
 texture = ExtResource("8_16f0o")
 color = Color(0, 1, 1, 1)
-audioFile = ExtResource("23_nap8i")
+audioFile = ExtResource("8_8f8cl")
 
 [sub_resource type="Resource" id="Resource_eha88"]
 script = ExtResource("5_y2ain")
 name = "Daisy"
 texture = ExtResource("7_rj6up")
 color = Color(1, 1, 1, 1)
+audioFile = ExtResource("11_sw4j2")
 
 [sub_resource type="Resource" id="Resource_deqvn"]
 script = ExtResource("5_y2ain")
 name = "Rose"
 texture = ExtResource("8_3nfv3")
 color = Color(1, 0, 1, 1)
+audioFile = ExtResource("13_dfn80")
 
 [sub_resource type="Resource" id="Resource_pti66"]
 script = ExtResource("5_y2ain")
 name = "StJohnWorts"
 texture = ExtResource("9_aqtup")
 color = Color(1, 1, 0, 1)
+audioFile = ExtResource("15_m0s3q")
 
 [sub_resource type="Resource" id="Resource_x3q62"]
 script = ExtResource("5_y2ain")
 name = "Black"
 texture = ExtResource("8_16f0o")
 color = Color(0, 0, 0, 1)
+audioFile = ExtResource("17_u1x02")
 
 [sub_resource type="Resource" id="Resource_3f5x8"]
 script = ExtResource("5_y2ain")
 name = "green"
 texture = ExtResource("7_rj6up")
 color = Color(0, 1, 0, 1)
+audioFile = ExtResource("18_iewu0")
 
 [sub_resource type="Resource" id="Resource_gskca"]
 script = ExtResource("5_y2ain")
@@ -91,7 +102,7 @@ script = ExtResource("1_1j77y")
 metadata/_edit_horizontal_guides_ = []
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("23_nap8i")
+stream = ExtResource("2_0sa1h")
 volume_db = 24.0
 autoplay = true
 
