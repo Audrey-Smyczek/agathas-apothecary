@@ -1,4 +1,4 @@
-[gd_scene load_steps=41 format=3 uid="uid://dwd0is40eq5wj"]
+[gd_scene load_steps=43 format=3 uid="uid://dwd0is40eq5wj"]
 
 [ext_resource type="Script" path="res://Main/Main.gd" id="1_1j77y"]
 [ext_resource type="AudioStream" uid="uid://cncfumfknpdnn" path="res://Audio/magic_music.mp3" id="2_0sa1h"]
@@ -20,15 +20,17 @@
 [ext_resource type="AudioStream" uid="uid://ct8fmx51tench" path="res://Audio/magenta.mp3" id="13_dfn80"]
 [ext_resource type="Script" path="res://Main/Welcome.gd" id="13_nsqdl"]
 [ext_resource type="PackedScene" uid="uid://bbm4feb5nhu75" path="res://Potion Bottle/potionBottle.tscn" id="13_vxoe3"]
-[ext_resource type="Script" path="res://Main/ResetButton.gd" id="14_e0cea"]
 [ext_resource type="AudioStream" uid="uid://b3unaut3crx7t" path="res://Audio/yellow.mp3" id="15_m0s3q"]
 [ext_resource type="Script" path="res://Main/CauldronScale.gd" id="17_nwgeh"]
 [ext_resource type="AudioStream" uid="uid://bvckyfjlwamp3" path="res://Audio/black.mp3" id="17_u1x02"]
 [ext_resource type="Texture2D" uid="uid://cl3rcopswf1fx" path="res://Main/menuIcon.png" id="18_c4fn2"]
 [ext_resource type="PackedScene" uid="uid://b25amxixi7ivy" path="res://Color Requests/color_check_button.tscn" id="18_hem06"]
 [ext_resource type="AudioStream" uid="uid://dfy1sqjav841e" path="res://Audio/green.mp3" id="18_iewu0"]
+[ext_resource type="Texture2D" uid="uid://b60h2a8k7o7ug" path="res://Main/petunia.png" id="18_uksqr"]
 [ext_resource type="Texture2D" uid="uid://02hruuxftya5" path="res://Main/Parchment.png" id="20_10sln"]
+[ext_resource type="Texture2D" uid="uid://cussklpnj6mc1" path="res://Main/hydrangea.png" id="20_hcdgf"]
 [ext_resource type="Script" path="res://Main/GameTypeButton.gd" id="21_1xi6p"]
+[ext_resource type="Texture2D" uid="uid://cjramlyhhp3p3" path="res://Main/reset.png" id="25_kvh8o"]
 
 [sub_resource type="Resource" id="Resource_6glc5"]
 script = ExtResource("5_y2ain")
@@ -61,20 +63,20 @@ audioFile = ExtResource("15_m0s3q")
 [sub_resource type="Resource" id="Resource_x3q62"]
 script = ExtResource("5_y2ain")
 name = "Black"
-texture = ExtResource("8_16f0o")
+texture = ExtResource("18_uksqr")
 color = Color(0, 0, 0, 1)
 audioFile = ExtResource("17_u1x02")
 
 [sub_resource type="Resource" id="Resource_3f5x8"]
 script = ExtResource("5_y2ain")
-name = "green"
-texture = ExtResource("7_rj6up")
+name = "Hydrangea"
+texture = ExtResource("20_hcdgf")
 color = Color(0, 1, 0, 1)
 audioFile = ExtResource("18_iewu0")
 
 [sub_resource type="Resource" id="Resource_gskca"]
 script = ExtResource("5_y2ain")
-name = "Blue"
+name = "Butterfly Pea"
 texture = ExtResource("8_16f0o")
 color = Color(0, 0, 1, 1)
 
@@ -226,14 +228,13 @@ script = ExtResource("11_o5g3n")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="IngredPath/IngredPathFollow/IngredSprite/Area2D"]
 shape = SubResource("CapsuleShape2D_hemfe")
 
-[node name="ResetButton" type="Button" parent="."]
-offset_left = 1362.0
-offset_top = 918.0
-offset_right = 1558.0
-offset_bottom = 968.0
-theme_override_font_sizes/font_size = 30
-text = "Reset Color"
-script = ExtResource("14_e0cea")
+[node name="ResetButton" type="TextureButton" parent="."]
+offset_left = 1399.0
+offset_top = 808.0
+offset_right = 1524.0
+offset_bottom = 933.0
+texture_normal = ExtResource("25_kvh8o")
+stretch_mode = 4
 
 [node name="MenuButton" type="Sprite2D" parent="."]
 position = Vector2(73, 60)
@@ -261,10 +262,10 @@ Press here!"
 script = ExtResource("21_1xi6p")
 
 [node name="Welcome" type="TextureButton" parent="."]
-offset_left = 1562.0
-offset_top = -35.0
-offset_right = 3887.0
-offset_bottom = 2109.0
+offset_left = 1723.0
+offset_top = -30.0
+offset_right = 4048.0
+offset_bottom = 2114.0
 scale = Vector2(0.5, 0.5)
 action_mode = 0
 texture_normal = ExtResource("20_10sln")

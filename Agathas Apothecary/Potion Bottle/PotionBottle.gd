@@ -22,24 +22,22 @@ func _on_area_2d_input_event(_viewport, event, _shape_idx):
 			OnDoubleClick()
 			LastPressedTime = 0
 		else:
-			LastPressedTime = 0.2
+			LastPressedTime = 0.3
 
 
 func OnDoubleClick():
-	print("double click")
-	$Image.scale = Vector2(4.5, 4.5)
-	$Image.modulate = Global.mixedColor
-	potionColor = Global.mixedColor
-	Global.curPotionColor = Global.mixedColor
+	if Global.mixedColor != Global.defaultCauldColor:
+		print("double click")
+		$Image.scale = Vector2(4.5, 4.5)
+		$Image.modulate = Global.mixedColor
+		potionColor = Global.mixedColor
+		Global.curPotionColor = Global.mixedColor
 
 
 func OnSingleClick():
 	print("single click")
-	if potionColor == Color(0,0,0,0):
-		Global.curPotionColor = Global.mixedColor
-	else:
+	if potionColor != Color(0,0,0,0):
 		Global.curPotionColor = potionColor
-	
-	$Image.scale = Vector2(4.5, 4.5)
-	Global.hairClicked = true
-	Global.potionClicked = true
+		$Image.scale = Vector2(4.5, 4.5)
+		Global.hairClicked = true
+		Global.potionClicked = true

@@ -11,6 +11,8 @@ var curIngredName : String
 var curIngredTexture : Texture
 var curIngredColor : Color = Color(0,0,0,0)
 
+var defaultCauldColor : Color = Color(0.502,0.502,0.502,1)
+
 var bowlClicked : bool = false
 
 var ingredClicked : bool = false

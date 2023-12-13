@@ -5,7 +5,7 @@ extends Node2D
 
 
 func _ready():
-	Global.mixedColor = Color(0.502,0.502,0.502,1)
+	Global.mixedColor = Global.defaultCauldColor
 	$CauldColor.modulate = Global.mixedColor
 	Global.hairColor = Color(0.502,0.502,0.502,1)
 	$Hair.modulate = Global.hairColor
