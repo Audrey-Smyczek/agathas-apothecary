@@ -1,8 +1,8 @@
 [gd_scene load_steps=6 format=3 uid="uid://b25amxixi7ivy"]
 
 [ext_resource type="Texture2D" uid="uid://y032j6n01n43" path="res://Color Requests/chatBoxInside.png" id="1_1jk41"]
-[ext_resource type="Script" path="res://Main/ColorCheckButton.gd" id="2_t3hg5"]
-[ext_resource type="Script" path="res://Main/ColorChecker.gd" id="3_pnm2d"]
+[ext_resource type="Script" path="res://Color Requests/ColorCheckButton.gd" id="2_lqpov"]
+[ext_resource type="Script" path="res://Color Requests/ColorChecker.gd" id="3_ew2b5"]
 [ext_resource type="Texture2D" uid="uid://4tdg13tets0l" path="res://Color Requests/chatBoxBorder.png" id="4_ti8fw"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8gqp4"]
@@ -16,7 +16,7 @@ offset_top = -145.0
 offset_right = 156.0
 offset_bottom = 155.0
 texture_normal = ExtResource("1_1jk41")
-script = ExtResource("2_t3hg5")
+script = ExtResource("2_lqpov")
 metadata/_edit_use_anchors_ = true
 
 [node name="BubbleText" type="Label" parent="ColorCheckButton"]
@@ -32,7 +32,7 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 20
 text = "Hello! Welcome to my Apothecary!"
 autowrap_mode = 3
-script = ExtResource("3_pnm2d")
+script = ExtResource("3_ew2b5")
 metadata/_edit_use_anchors_ = true
 
 [node name="RequestColor" type="Sprite2D" parent="ColorCheckButton/BubbleText"]
