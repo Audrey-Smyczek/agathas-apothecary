@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dey6cp4ux8xhb"
-path="res://.godot/imported/agathaBody.png-11c3229f2d37e1c5c93f79700c044b5f.ctex"
+uid="uid://taqrtbpt1cef"
+path="res://.godot/imported/cat.png-e4900e74bb6668b8b6f019ca67763e35.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Main/agathaBody.png"
-dest_files=["res://.godot/imported/agathaBody.png-11c3229f2d37e1c5c93f79700c044b5f.ctex"]
+source_file="res://Main/Graphics/cat.png"
+dest_files=["res://.godot/imported/cat.png-e4900e74bb6668b8b6f019ca67763e35.ctex"]
 
 [params]
 

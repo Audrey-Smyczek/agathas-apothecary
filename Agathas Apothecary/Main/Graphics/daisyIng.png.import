@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://taqrtbpt1cef"
-path="res://.godot/imported/cat.png-d6047455684eb892a22d235ba6214f8c.ctex"
+uid="uid://cps8ox7yiud4l"
+path="res://.godot/imported/daisyIng.png-2cb5d668c733f8e1ed2c573b13dbd58f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Main/cat.png"
-dest_files=["res://.godot/imported/cat.png-d6047455684eb892a22d235ba6214f8c.ctex"]
+source_file="res://Main/Graphics/daisyIng.png"
+dest_files=["res://.godot/imported/daisyIng.png-2cb5d668c733f8e1ed2c573b13dbd58f.ctex"]
 
 [params]
 
@@ -30,5 +30,5 @@ process/premult_alpha=false
 process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
-process/size_limit=0
+process/size_limit=1000
 detect_3d/compress_to=1

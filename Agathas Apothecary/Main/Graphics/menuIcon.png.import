@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cmq0c8ug0pqur"
-path="res://.godot/imported/lavenderIng.png-8e9e41f24331c6dbb4afdaaca228177f.ctex"
+uid="uid://cl3rcopswf1fx"
+path="res://.godot/imported/menuIcon.png-e118e8e1c99b82cb67cd34a576df614d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Main/lavenderIng.png"
-dest_files=["res://.godot/imported/lavenderIng.png-8e9e41f24331c6dbb4afdaaca228177f.ctex"]
+source_file="res://Main/Graphics/menuIcon.png"
+dest_files=["res://.godot/imported/menuIcon.png-e118e8e1c99b82cb67cd34a576df614d.ctex"]
 
 [params]
 
@@ -30,5 +30,5 @@ process/premult_alpha=false
 process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
-process/size_limit=1200
+process/size_limit=0
 detect_3d/compress_to=1

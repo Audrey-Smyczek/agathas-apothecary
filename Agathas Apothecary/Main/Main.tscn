@@ -4,90 +4,90 @@
 [ext_resource type="AudioStream" uid="uid://cncfumfknpdnn" path="res://Audio/magic_music.mp3" id="2_0sa1h"]
 [ext_resource type="PackedScene" uid="uid://caciatigfr468" path="res://Cauldron/cauldron.tscn" id="3_c5n6v"]
 [ext_resource type="Texture2D" uid="uid://cx81clwrbb00g" path="res://Main/DuckDuckGoose.png" id="3_hijh1"]
-[ext_resource type="Texture2D" uid="uid://bwr8x2jgr3pr3" path="res://Main/cauldFill.png" id="3_uwmjl"]
 [ext_resource type="PackedScene" uid="uid://d34d62osrfh8v" path="res://Hair/Hair.tscn" id="3_wpo1m"]
 [ext_resource type="PackedScene" uid="uid://saa8d5nb64bu" path="res://Bowl/bowl.tscn" id="4_oqy5q"]
+[ext_resource type="Texture2D" uid="uid://bwr8x2jgr3pr3" path="res://Main/Graphics/cauldFill.png" id="4_ulhko"]
 [ext_resource type="Script" path="res://Bowl/IngredResource.gd" id="5_y2ain"]
-[ext_resource type="Texture2D" uid="uid://cps8ox7yiud4l" path="res://Main/daisyIng.png" id="7_rj6up"]
-[ext_resource type="Texture2D" uid="uid://dknt5r58tpvhs" path="res://Main/roseIng.png" id="8_3nfv3"]
 [ext_resource type="AudioStream" uid="uid://b7siu0lc0nwan" path="res://Audio/cyan.mp3" id="8_8f8cl"]
-[ext_resource type="Texture2D" uid="uid://djfh24hidagi2" path="res://Main/butterflyPea.png" id="8_16f0o"]
-[ext_resource type="Texture2D" uid="uid://c7i5dbp4t66g7" path="res://Main/stJohnsWortIng.png" id="9_aqtup"]
 [ext_resource type="Script" path="res://Main/IngredPath.gd" id="10_c6hfc"]
+[ext_resource type="Texture2D" uid="uid://djfh24hidagi2" path="res://Main/Graphics/butterflyPea.png" id="10_cjri6"]
 [ext_resource type="Script" path="res://Main/IngredientSprite.gd" id="11_o5g3n"]
 [ext_resource type="AudioStream" uid="uid://bpttsyf6rlmq3" path="res://Audio/white.mp3" id="11_sw4j2"]
+[ext_resource type="Texture2D" uid="uid://cps8ox7yiud4l" path="res://Main/Graphics/daisyIng.png" id="12_xyxf1"]
 [ext_resource type="PackedScene" uid="uid://82if227xq4b1" path="res://Potion Bottle/potionFiller.tscn" id="13_6m1k2"]
 [ext_resource type="AudioStream" uid="uid://ct8fmx51tench" path="res://Audio/magenta.mp3" id="13_dfn80"]
 [ext_resource type="Script" path="res://Main/Welcome.gd" id="13_nsqdl"]
 [ext_resource type="PackedScene" uid="uid://bbm4feb5nhu75" path="res://Potion Bottle/potionBottle.tscn" id="13_vxoe3"]
+[ext_resource type="Texture2D" uid="uid://dknt5r58tpvhs" path="res://Main/Graphics/roseIng.png" id="14_iyrbw"]
 [ext_resource type="AudioStream" uid="uid://b3unaut3crx7t" path="res://Audio/yellow.mp3" id="15_m0s3q"]
+[ext_resource type="Texture2D" uid="uid://c7i5dbp4t66g7" path="res://Main/Graphics/stJohnsWortIng.png" id="16_n6xqb"]
 [ext_resource type="Script" path="res://Main/CauldronScale.gd" id="17_nwgeh"]
 [ext_resource type="AudioStream" uid="uid://bvckyfjlwamp3" path="res://Audio/black.mp3" id="17_u1x02"]
-[ext_resource type="Texture2D" uid="uid://cl3rcopswf1fx" path="res://Main/menuIcon.png" id="18_c4fn2"]
 [ext_resource type="PackedScene" uid="uid://b25amxixi7ivy" path="res://Color Requests/color_check_button.tscn" id="18_hem06"]
 [ext_resource type="AudioStream" uid="uid://dfy1sqjav841e" path="res://Audio/green.mp3" id="18_iewu0"]
-[ext_resource type="Texture2D" uid="uid://b60h2a8k7o7ug" path="res://Main/petunia.png" id="18_uksqr"]
-[ext_resource type="Texture2D" uid="uid://cussklpnj6mc1" path="res://Main/hydrangea.png" id="20_hcdgf"]
+[ext_resource type="Texture2D" uid="uid://b60h2a8k7o7ug" path="res://Main/Graphics/petunia.png" id="18_xln3k"]
+[ext_resource type="Texture2D" uid="uid://cussklpnj6mc1" path="res://Main/Graphics/hydrangea.png" id="20_5xmma"]
 [ext_resource type="Script" path="res://Main/GameTypeButton.gd" id="21_1xi6p"]
-[ext_resource type="Texture2D" uid="uid://cjramlyhhp3p3" path="res://Main/reset.png" id="25_kvh8o"]
-[ext_resource type="Texture2D" uid="uid://cnnb85jglvj8i" path="res://Main/gameMode.png" id="29_u68kk"]
-[ext_resource type="Texture2D" uid="uid://02hruuxftya5" path="res://Main/welcomeParchment.png" id="31_fe3hi"]
-[ext_resource type="Texture2D" uid="uid://dey6cp4ux8xhb" path="res://Main/agathaBody.png" id="33_rruwy"]
-[ext_resource type="Texture2D" uid="uid://0ka2wx0opi3s" path="res://Main/agathaHat.png" id="34_mmab5"]
-[ext_resource type="Texture2D" uid="uid://taqrtbpt1cef" path="res://Main/cat.png" id="36_ldfgg"]
+[ext_resource type="Texture2D" uid="uid://cjramlyhhp3p3" path="res://Main/Graphics/reset.png" id="25_nsyvr"]
+[ext_resource type="Texture2D" uid="uid://cl3rcopswf1fx" path="res://Main/Graphics/menuIcon.png" id="26_bkyan"]
+[ext_resource type="Texture2D" uid="uid://cnnb85jglvj8i" path="res://Main/Graphics/gameMode.png" id="29_hgvib"]
+[ext_resource type="Texture2D" uid="uid://02hruuxftya5" path="res://Main/Graphics/welcomeParchment.png" id="31_afoek"]
+[ext_resource type="Texture2D" uid="uid://dey6cp4ux8xhb" path="res://Main/Graphics/agathaBody.png" id="33_acu7t"]
+[ext_resource type="Texture2D" uid="uid://0ka2wx0opi3s" path="res://Main/Graphics/agathaHat.png" id="34_4bp6l"]
+[ext_resource type="Texture2D" uid="uid://taqrtbpt1cef" path="res://Main/Graphics/cat.png" id="35_50scx"]
 
 [sub_resource type="Resource" id="Resource_6glc5"]
 script = ExtResource("5_y2ain")
 name = "Butterfly Pea"
-texture = ExtResource("8_16f0o")
+texture = ExtResource("10_cjri6")
 color = Color(0, 1, 1, 1)
 audioFile = ExtResource("8_8f8cl")
 
 [sub_resource type="Resource" id="Resource_eha88"]
 script = ExtResource("5_y2ain")
 name = "Daisy"
-texture = ExtResource("7_rj6up")
+texture = ExtResource("12_xyxf1")
 color = Color(1, 1, 1, 1)
 audioFile = ExtResource("11_sw4j2")
 
 [sub_resource type="Resource" id="Resource_deqvn"]
 script = ExtResource("5_y2ain")
 name = "Rose"
-texture = ExtResource("8_3nfv3")
+texture = ExtResource("14_iyrbw")
 color = Color(1, 0, 1, 1)
 audioFile = ExtResource("13_dfn80")
 
 [sub_resource type="Resource" id="Resource_pti66"]
 script = ExtResource("5_y2ain")
 name = "StJohnWorts"
-texture = ExtResource("9_aqtup")
+texture = ExtResource("16_n6xqb")
 color = Color(1, 1, 0, 1)
 audioFile = ExtResource("15_m0s3q")
 
 [sub_resource type="Resource" id="Resource_x3q62"]
 script = ExtResource("5_y2ain")
 name = "Black"
-texture = ExtResource("18_uksqr")
+texture = ExtResource("18_xln3k")
 color = Color(0, 0, 0, 1)
 audioFile = ExtResource("17_u1x02")
 
 [sub_resource type="Resource" id="Resource_3f5x8"]
 script = ExtResource("5_y2ain")
 name = "Hydrangea"
-texture = ExtResource("20_hcdgf")
+texture = ExtResource("20_5xmma")
 color = Color(0, 1, 0, 1)
 audioFile = ExtResource("18_iewu0")
 
 [sub_resource type="Resource" id="Resource_gskca"]
 script = ExtResource("5_y2ain")
 name = "Butterfly Pea"
-texture = ExtResource("8_16f0o")
+texture = ExtResource("10_cjri6")
 color = Color(0, 0, 1, 1)
 
 [sub_resource type="Resource" id="Resource_wuya8"]
 script = ExtResource("5_y2ain")
 name = "Red"
-texture = ExtResource("8_3nfv3")
+texture = ExtResource("14_iyrbw")
 color = Color(1, 0, 0, 1)
 
 [sub_resource type="Curve2D" id="Curve2D_7seai"]
@@ -123,7 +123,7 @@ centered = false
 z_index = 1
 position = Vector2(687, 696)
 scale = Vector2(0.339074, 0.259983)
-texture = ExtResource("3_uwmjl")
+texture = ExtResource("4_ulhko")
 
 [node name="Hair" parent="." instance=ExtResource("3_wpo1m")]
 position = Vector2(658, 484)
@@ -242,13 +242,13 @@ offset_left = 1339.0
 offset_top = 859.0
 offset_right = 1464.0
 offset_bottom = 984.0
-texture_normal = ExtResource("25_kvh8o")
+texture_normal = ExtResource("25_nsyvr")
 stretch_mode = 4
 
 [node name="MenuButton" type="Sprite2D" parent="."]
 position = Vector2(73, 60)
 scale = Vector2(0.2, 0.2)
-texture = ExtResource("18_c4fn2")
+texture = ExtResource("26_bkyan")
 script = ExtResource("17_nwgeh")
 
 [node name="Area2D" type="Area2D" parent="MenuButton"]
@@ -265,7 +265,7 @@ offset_left = 1327.0
 offset_top = 22.0
 offset_right = 1577.0
 offset_bottom = 149.0
-texture_normal = ExtResource("29_u68kk")
+texture_normal = ExtResource("29_hgvib")
 script = ExtResource("21_1xi6p")
 
 [node name="Welcome" type="TextureButton" parent="."]
@@ -275,7 +275,7 @@ offset_right = 3889.0
 offset_bottom = 2257.0
 scale = Vector2(0.5, 0.5)
 action_mode = 0
-texture_normal = ExtResource("31_fe3hi")
+texture_normal = ExtResource("31_afoek")
 script = ExtResource("13_nsqdl")
 
 [node name="Agatha" type="Node2D" parent="."]
@@ -283,19 +283,19 @@ script = ExtResource("13_nsqdl")
 [node name="AgathasBody" type="Sprite2D" parent="Agatha"]
 position = Vector2(667.85, 521)
 scale = Vector2(0.34282, 0.35)
-texture = ExtResource("33_rruwy")
+texture = ExtResource("33_acu7t")
 
 [node name="AgathasHat" type="Sprite2D" parent="Agatha"]
 position = Vector2(693, 269)
 scale = Vector2(0.25, 0.267659)
-texture = ExtResource("34_mmab5")
+texture = ExtResource("34_4bp6l")
 
 [node name="Cat" type="Node2D" parent="."]
 
 [node name="Cat" type="Sprite2D" parent="Cat"]
 position = Vector2(1403, 746)
 scale = Vector2(0.25, 0.25)
-texture = ExtResource("36_ldfgg")
+texture = ExtResource("35_50scx")
 
 [connection signal="texture_changed" from="IngredPath/IngredPathFollow/IngredSprite" to="." method="_on_ingred_sprite_texture_changed"]
 [connection signal="input_event" from="IngredPath/IngredPathFollow/IngredSprite/Area2D" to="IngredPath/IngredPathFollow/IngredSprite" method="_on_area_2d_input_event"]

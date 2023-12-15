@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cps8ox7yiud4l"
-path="res://.godot/imported/daisyIng.png-6bcbe1da0e63ff383649b8942e1e1dca.ctex"
+uid="uid://g0e6jn61ubqo"
+path="res://.godot/imported/whiteSage.png-bc1a8750ba123cb00352e9d22aaddec9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Main/daisyIng.png"
-dest_files=["res://.godot/imported/daisyIng.png-6bcbe1da0e63ff383649b8942e1e1dca.ctex"]
+source_file="res://Main/Graphics/whiteSage.png"
+dest_files=["res://.godot/imported/whiteSage.png-bc1a8750ba123cb00352e9d22aaddec9.ctex"]
 
 [params]
 

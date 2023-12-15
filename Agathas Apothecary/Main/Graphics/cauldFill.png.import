@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dknt5r58tpvhs"
-path="res://.godot/imported/roseIng.png-20ff471a3c103451e52c074102eb5b85.ctex"
+uid="uid://bwr8x2jgr3pr3"
+path="res://.godot/imported/cauldFill.png-036855f286f7b8cd257793641d8ac9c6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Main/roseIng.png"
-dest_files=["res://.godot/imported/roseIng.png-20ff471a3c103451e52c074102eb5b85.ctex"]
+source_file="res://Main/Graphics/cauldFill.png"
+dest_files=["res://.godot/imported/cauldFill.png-036855f286f7b8cd257793641d8ac9c6.ctex"]
 
 [params]
 
@@ -30,5 +30,5 @@ process/premult_alpha=false
 process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
-process/size_limit=1000
+process/size_limit=0
 detect_3d/compress_to=1
