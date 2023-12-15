@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dlr3jeb6wtk1n"
-path="res://.godot/imported/agathaBangs.png-f7715388c50cd3d38915155144be92ad.ctex"
+path="res://.godot/imported/agathaBangs.png-18d1880366cc7159eab644c8fce45281.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Hair/agathaBangs.png"
-dest_files=["res://.godot/imported/agathaBangs.png-f7715388c50cd3d38915155144be92ad.ctex"]
+source_file="res://Main/agathaBangs.png"
+dest_files=["res://.godot/imported/agathaBangs.png-18d1880366cc7159eab644c8fce45281.ctex"]
 
 [params]
 
