@@ -27,13 +27,13 @@
 [ext_resource type="PackedScene" uid="uid://b25amxixi7ivy" path="res://Color Requests/color_check_button.tscn" id="18_hem06"]
 [ext_resource type="AudioStream" uid="uid://dfy1sqjav841e" path="res://Audio/green.mp3" id="18_iewu0"]
 [ext_resource type="Texture2D" uid="uid://b60h2a8k7o7ug" path="res://Main/petunia.png" id="18_uksqr"]
-[ext_resource type="Texture2D" uid="uid://02hruuxftya5" path="res://Main/Parchment.png" id="20_10sln"]
 [ext_resource type="Texture2D" uid="uid://cussklpnj6mc1" path="res://Main/hydrangea.png" id="20_hcdgf"]
 [ext_resource type="Script" path="res://Main/GameTypeButton.gd" id="21_1xi6p"]
 [ext_resource type="Texture2D" uid="uid://cjramlyhhp3p3" path="res://Main/reset.png" id="25_kvh8o"]
 [ext_resource type="Texture2D" uid="uid://cnnb85jglvj8i" path="res://Main/gameMode.png" id="29_u68kk"]
-[ext_resource type="Texture2D" uid="uid://dey6cp4ux8xhb" path="res://Main/Agatha.png" id="33_63m2y"]
-[ext_resource type="Texture2D" uid="uid://0ka2wx0opi3s" path="res://Main/Hat.png" id="34_pwty7"]
+[ext_resource type="Texture2D" uid="uid://02hruuxftya5" path="res://Main/welcomeParchment.png" id="31_fe3hi"]
+[ext_resource type="Texture2D" uid="uid://dey6cp4ux8xhb" path="res://Main/agathaBody.png" id="33_rruwy"]
+[ext_resource type="Texture2D" uid="uid://0ka2wx0opi3s" path="res://Main/agathaHat.png" id="34_mmab5"]
 [ext_resource type="Texture2D" uid="uid://taqrtbpt1cef" path="res://Main/cat.png" id="36_ldfgg"]
 
 [sub_resource type="Resource" id="Resource_6glc5"]
@@ -275,7 +275,7 @@ offset_right = 3889.0
 offset_bottom = 2257.0
 scale = Vector2(0.5, 0.5)
 action_mode = 0
-texture_normal = ExtResource("20_10sln")
+texture_normal = ExtResource("31_fe3hi")
 script = ExtResource("13_nsqdl")
 
 [node name="Agatha" type="Node2D" parent="."]
@@ -283,12 +283,12 @@ script = ExtResource("13_nsqdl")
 [node name="AgathasBody" type="Sprite2D" parent="Agatha"]
 position = Vector2(667.85, 521)
 scale = Vector2(0.34282, 0.35)
-texture = ExtResource("33_63m2y")
+texture = ExtResource("33_rruwy")
 
 [node name="AgathasHat" type="Sprite2D" parent="Agatha"]
 position = Vector2(693, 269)
 scale = Vector2(0.25, 0.267659)
-texture = ExtResource("34_pwty7")
+texture = ExtResource("34_mmab5")
 
 [node name="Cat" type="Node2D" parent="."]
 
