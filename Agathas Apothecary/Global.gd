@@ -1,35 +1,34 @@
+"""
+Holds global variables used throughout project
+"""
+
 extends Node
 
-var welcomeButton : TextureButton
+# Colors
+var mixedColor : Color
+var hairColor : Color
+var curPotionColor : Color
+var defaultCauldColor : Color = Color(0.502,0.502,0.502,1)
 
-var gameTypeButton : Button
-
-var colorCheckButton : Node
-var gameTypePressed : bool = false
-
+# Current Ingredient Information
 var curIngredName : String
 var curIngredTexture : Texture
 var curIngredColor : Color = Color(0,0,0,0)
 
-var defaultCauldColor : Color = Color(0.502,0.502,0.502,1)
+# Buttons
+var welcomeButton : TextureButton
+var gameTypeButton : Button
+var colorCheckButton : Node
 
+# Objects Clicked
 var bowlClicked : bool = false
-
 var ingredClicked : bool = false
-
 var hairClicked : bool = false
-
 var potionClicked : bool = false
 
+# Misc Bools
 var pathDone : bool = true
-
 var mixing : bool = false
-
 var requestsVisible : bool = false
 var firstRequestClick : bool  = false
-
-var mixedColor : Color
-
-var hairColor : Color
-
-var curPotionColor : Color
+var gameTypePressed : bool = false

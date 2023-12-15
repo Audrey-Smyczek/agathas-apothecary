@@ -31,9 +31,9 @@ func checkColor(firstCol, secondCol):
 	var bDif = (firstCol.b - secondCol.b)**2
 
 	var difVal = rDif+gDif+bDif
-	print(firstCol)
-	print(secondCol)
-	print(difVal)
+#	print(firstCol)
+#	print(secondCol)
+#	print(difVal)
 #	print()
 	
 	if difVal <= 0.1:
