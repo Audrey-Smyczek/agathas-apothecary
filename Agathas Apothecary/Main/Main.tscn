@@ -21,7 +21,6 @@
 [ext_resource type="Texture2D" uid="uid://dknt5r58tpvhs" path="res://Main/Graphics/roseIng.png" id="14_iyrbw"]
 [ext_resource type="AudioStream" uid="uid://b3unaut3crx7t" path="res://Audio/yellow.mp3" id="15_m0s3q"]
 [ext_resource type="Texture2D" uid="uid://c7i5dbp4t66g7" path="res://Main/Graphics/stJohnsWortIng.png" id="16_n6xqb"]
-[ext_resource type="Script" path="res://Main/CauldronScale.gd" id="17_nwgeh"]
 [ext_resource type="AudioStream" uid="uid://bvckyfjlwamp3" path="res://Audio/black.mp3" id="17_u1x02"]
 [ext_resource type="PackedScene" uid="uid://b25amxixi7ivy" path="res://Color Requests/color_check_button.tscn" id="18_hem06"]
 [ext_resource type="AudioStream" uid="uid://dfy1sqjav841e" path="res://Audio/green.mp3" id="18_iewu0"]
@@ -99,6 +98,18 @@ point_count = 2
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_hemfe"]
 radius = 580.0
 height = 1200.0
+
+[sub_resource type="GDScript" id="GDScript_53ty2"]
+script/source = "extends Sprite2D
+
+
+func _on_area_2d_mouse_entered():
+	scale = Vector2(0.21, 0.21)
+
+func _on_area_2d_mouse_exited():
+	scale = Vector2(0.2, 0.2)
+
+"
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_u4l8t"]
 size = Vector2(456.339, 357.414)
@@ -249,7 +260,7 @@ stretch_mode = 4
 position = Vector2(73, 60)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("26_bkyan")
-script = ExtResource("17_nwgeh")
+script = SubResource("GDScript_53ty2")
 
 [node name="Area2D" type="Area2D" parent="MenuButton"]
 
