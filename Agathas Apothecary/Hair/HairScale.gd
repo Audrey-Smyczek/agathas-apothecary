@@ -11,4 +11,4 @@ func _on_hair_area_mouse_exited():
 
 """Sets the hair's size back to original when the mouse leaves its area."""
 func _on_hair_area_mouse_entered():
-	scale = Vector2(1.1, 1.1)
+	scale = Vector2(1.04, 1.04)

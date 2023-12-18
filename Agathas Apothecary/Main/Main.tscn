@@ -146,7 +146,8 @@ scale = Vector2(0.34282, 0.35)
 texture = ExtResource("33_acu7t")
 
 [node name="AgathasHat" type="Sprite2D" parent="Agatha"]
-position = Vector2(693, 269)
+position = Vector2(691, 260)
+rotation = -0.0872665
 scale = Vector2(0.25, 0.267659)
 texture = ExtResource("34_4bp6l")
 
@@ -199,42 +200,42 @@ scale = Vector2(0.12, 0.12)
 ingredInfo = SubResource("Resource_wuya8")
 
 [node name="PotionFiller1" parent="." instance=ExtResource("13_6m1k2")]
-position = Vector2(78, 220)
+position = Vector2(78, 195)
 scale = Vector2(0.06, 0.06)
 
 [node name="PotionBottle" parent="PotionFiller1" instance=ExtResource("13_vxoe3")]
 scale = Vector2(1.02, 1.02)
 
 [node name="PotionFiller2" parent="." instance=ExtResource("13_6m1k2")]
-position = Vector2(188, 220)
+position = Vector2(188, 195)
 scale = Vector2(0.06, 0.06)
 
 [node name="PotionBottle" parent="PotionFiller2" instance=ExtResource("13_vxoe3")]
 scale = Vector2(1.02, 1.02)
 
 [node name="PotionFiller3" parent="." instance=ExtResource("13_6m1k2")]
-position = Vector2(298, 220)
+position = Vector2(298, 195)
 scale = Vector2(0.06, 0.06)
 
 [node name="PotionBottle" parent="PotionFiller3" instance=ExtResource("13_vxoe3")]
 scale = Vector2(1.02, 1.02)
 
 [node name="PotionFiller4" parent="." instance=ExtResource("13_6m1k2")]
-position = Vector2(78, 470)
+position = Vector2(78, 445)
 scale = Vector2(0.06, 0.06)
 
 [node name="PotionBottle" parent="PotionFiller4" instance=ExtResource("13_vxoe3")]
 scale = Vector2(1.02, 1.02)
 
 [node name="PotionFiller5" parent="." instance=ExtResource("13_6m1k2")]
-position = Vector2(188, 470)
+position = Vector2(188, 445)
 scale = Vector2(0.06, 0.06)
 
 [node name="PotionBottle" parent="PotionFiller5" instance=ExtResource("13_vxoe3")]
 scale = Vector2(1.02, 1.02)
 
 [node name="PotionFiller6" parent="." instance=ExtResource("13_6m1k2")]
-position = Vector2(298, 470)
+position = Vector2(298, 445)
 scale = Vector2(0.06, 0.06)
 
 [node name="PotionBottle" parent="PotionFiller6" instance=ExtResource("13_vxoe3")]
@@ -260,15 +261,15 @@ script = ExtResource("11_o5g3n")
 shape = SubResource("CapsuleShape2D_hemfe")
 
 [node name="ResetButton" type="TextureButton" parent="."]
-offset_left = 1339.0
-offset_top = 859.0
-offset_right = 1464.0
-offset_bottom = 984.0
+offset_left = 28.0
+offset_top = 623.0
+offset_right = 153.0
+offset_bottom = 748.0
 texture_normal = ExtResource("25_nsyvr")
 stretch_mode = 4
 
 [node name="MenuButton" type="Sprite2D" parent="."]
-position = Vector2(73, 60)
+position = Vector2(1529, 75)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("26_bkyan")
 script = SubResource("GDScript_53ty2")
@@ -279,29 +280,29 @@ script = SubResource("GDScript_53ty2")
 shape = SubResource("RectangleShape2D_u4l8t")
 
 [node name="ColorCheckButton" parent="." instance=ExtResource("18_hem06")]
-position = Vector2(1063, 240)
+position = Vector2(1073, 372)
 scale = Vector2(1.2, 1.2)
 
 [node name="GameTypeButton" type="TextureButton" parent="."]
-offset_left = 1327.0
-offset_top = 22.0
-offset_right = 1577.0
-offset_bottom = 149.0
+offset_left = 1198.0
+offset_top = 41.0
+offset_right = 1448.0
+offset_bottom = 168.0
 texture_normal = ExtResource("29_hgvib")
 script = ExtResource("21_1xi6p")
 
 [node name="Cat" type="Node2D" parent="."]
+position = Vector2(1399, 839)
 
 [node name="Cat" type="Sprite2D" parent="Cat"]
-position = Vector2(1403, 746)
 scale = Vector2(0.25, 0.25)
 texture = ExtResource("35_50scx")
 
 [node name="Welcome" type="TextureButton" parent="."]
-offset_left = 304.0
-offset_top = 29.0
-offset_right = 2629.0
-offset_bottom = 2173.0
+offset_left = -239.0
+offset_top = 1215.0
+offset_right = 2086.0
+offset_bottom = 3359.0
 scale = Vector2(0.5, 0.5)
 action_mode = 0
 texture_normal = ExtResource("31_afoek")
