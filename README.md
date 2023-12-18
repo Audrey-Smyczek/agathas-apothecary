@@ -54,7 +54,7 @@ Comments are marked with '#' at the start of the line, they are bypassed when th
 There are multiple branches of the Agatha's Apothecary repository. The one to use is 'current-main', there were many issues with GitHub over the course of the project which pushed the creation of different branches forward.
 
 ## Main Gameplay Screen
-[Uploading Screenshot 2023-12-18 at 10.30.32 AM.png…]()
+![Agatha's Apothecary Main Game Screen](https://github.com/Audrey-Smyczek/agathas-apothecary/blob/current-main/Screenshot%202023-12-18%20at%2010.30.32%E2%80%AFAM.png)
 
 ## Framework Used
 Agatha's Apothecary was created using the [Godot Game Engine](https://godotengine.org/) (version 4.1.1) with gdscript.
