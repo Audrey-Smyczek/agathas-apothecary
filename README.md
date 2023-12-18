@@ -19,40 +19,6 @@ Click the button in the top right corner to enter Request Mode. Select Agatha's 
 **Potion Bottles:**
 Save colors to the potion bottles on the shelf by double clicking. Single click a bottle to change Agatha's hair to that color!
 
-## Code Structure
-The code is split into 7 main folders, _**Bowl, Cauldron, Color Requests, Fonts, Hair, Main, and Potion Bottle.**_
-
-_Bowl, Cauldron, Color Requests, Hair, Main, and Potion Bottle contain the following:_
-
-**Scripts**, the written out code, that are uppercase and end in '.gd'.
-
-**Images** that are lowercase and end in '.png'.
-
-**Scenes**, that are the containers which combine the scripts and images, which are a combination of uppercase and lowercase and end in '.tscn'. There is no standard since they are automatically created and there is a concern that updating the names will create issues.
-
-_Bowl and Color Requests also contains:_
-
-**Resources**, custom item type that can be shared across files and hold custom fields, which are camelCase and end in '.tres'.
-
-_Fonts contains:_
-
-Files of downloadable fonts which are uppercase and end in '.ttf'.
-
-## Code Styling
-The code is located in the '.gd' script files. 
-
-The files start with 'extends' which informs the code what type of node the script is created for.
-
-There are two ways to load information into the script immediatly, either '@onready' below the 'extends' statement and above any function statements or through the function '_ready()'.
-
-Following the ready statements, which are not neccesary, functions are defined using 'func' followed by the function name. The function can either take parameters, information that it needs to use within the function, or not.
-
-Functions that are marked with a green arrow to the left of the line numbers indicates that the function has a connection to an outside signal that will indicate for the function when to run.
-
-Comments are marked with '#' at the start of the line, they are bypassed when the code is run.
-
-There are multiple branches of the Agatha's Apothecary repository. The one to use is 'current-main', there were many issues with GitHub over the course of the project which pushed the creation of different branches forward.
-
 ## Main Gameplay Screen
 <img width="991" alt="Agatha's-Apothecary-Main-Screen" src="https://github.com/Audrey-Smyczek/agathas-apothecary/assets/98111335/8a4a1c9b-bc45-4aaa-b3f1-b4a73c4cf8c3">
 
@@ -72,9 +38,38 @@ Agatha's Apothecary was created for burnt out college students who need a relaxi
 ## Code Information and Explanation
 Since the code is structured through Godot, it is formatted in a tree structure which means that the children nodes (also known as Scenes) can be accessed through the parent nodes. This allows the parent nodes, such as the main screen, to hold children nodes, such as bowls or ingredients. Scripts can be attached to any number of nodes in Godot and the overlap of code can often be confusing. Code that was written in a child's script can be pulled by the parent, for example, the code for the bowls to expand when the mouse hovers over it is linked to the image sprite. The image sprite is a child of the larger bowl node. When the bowl node is loaded into the main scene, it automatically includes the image sprite and the script that accomanies it. This means that the main node cannot directly access the image's script however it does inherit the code that is included in it. 
 
+## Code Structure
+The code is split into 6 main folders, _**Bowl, Cauldron, Color Requests, Hair, Main, and Potion Bottle.**_
+
+_Bowl, Cauldron, Color Requests, Hair, Main, and Potion Bottle contain the following:_
+
+**Scripts**, the written out code, that are uppercase and end in '.gd'.
+
+**Images** that are lowercase and end in '.png'.
+
+**Scenes**, that are the containers which combine the scripts and images, which are a combination of uppercase and lowercase and end in '.tscn'. There is no standard since they are automatically created and there is a concern that updating the names will create issues.
+
+_Bowl and Color Requests also contains:_
+
+**Resources**, custom item type that can be shared across files and hold custom fields, which are camelCase and end in '.tres'.
+
+## Code Styling
+The code is located in the '.gd' script files. 
+
+The files start with 'extends' which informs the code what type of node the script is created for.
+
+There are two ways to load information into the script immediatly, either '@onready' below the 'extends' statement and above any function statements or through the function '_ready()'.
+
+Following the ready statements, which are not neccesary, functions are defined using 'func' followed by the function name. The function can either take parameters, information that it needs to use within the function, or not.
+
+Functions that are marked with a green arrow to the left of the line numbers indicates that the function has a connection to an outside signal that will indicate for the function when to run.
+
+Comments are marked with '#' at the start of the line, they are bypassed when the code is run.
+
+There are multiple branches of the Agatha's Apothecary repository. The one to use is 'current-main', there were many issues with GitHub over the course of the project which caused the creation of different branches.
+
 ## Current Concerns
-There are no major concerns or bugs in the game. 
-This will be updated as the game is user tested.
+Due to the lack of framework for accessibility, only the bowls and ingredients have audio-streams which allow for 'text-to-speech' to occur when the user hovers over the different items on the screen with the mouse. This means that a number of items are not accessible for people with low or no vision.
 
 ## Future Work
 Adding a recipe book which saves the quanitity of items that are added to the cauldron for each mix. Adding more animations. NPCs who are customers and request potions. An additional animated pet that is a bird or cat.
