@@ -1,12 +1,11 @@
 extends Node2D
 
-var ingredInfo : Ingredient
 
-# Increases the bowl's size when mouse hovers
+"""Increases the bottle's size when the mouse enteres its area."""
 func _on_area_2d_mouse_entered():
 	scale = Vector2(4.7, 4.7)
 
 
-# Set's bowl's size back to original when mouse leaves
+"""Sets the bottle's size back to original when the mouse leaves its area."""
 func _on_area_2d_mouse_exited():
 	scale = Vector2(4.5, 4.5)
