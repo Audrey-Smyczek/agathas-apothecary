@@ -6,6 +6,19 @@ Agatha's Apothecary is a potion mixing game where the user is able to select the
 
 Created by [Cat Martins](https://github.com/catmartz), [Audrey Smyczek](https://github.com/Audrey-Smyczek), and [Daniela Martinez](https://github.com/martinezdaniela17).
 
+## How to Download the Game
+In order to play, you need to first download the [Godot Game Engine](https://godotengine.org/). Then, clone the GitHub repository to your computer. Once that is done, open Godot and click the "Scan" button in the Project Manager window. Select the location of your cloned repository and let the project open. Once open, you can run by clicking the "add scene" button in the top right corner. Another window will pop up with Agatha's Apothecary. 
+
+## How to Play the Game
+**Experimental Mode (default):**
+Click a bowl to see which ingredient is inside it and the color that will be mixed. Then, click the ingredient above the cauldron to mix it into the cauldron. Mix as many colors as you would like to reach your desired color. Click Agatha's hair to change it to the cauldron potion color. Click the reset color button to reset the cauldron.
+
+**Request Mode:**
+Click the button in the top right corner to enter Request Mode. Select Agatha's speech bubble to start her request. Cultivate her desired color, and change her hair to it. When you have succeeded, she will thank you and you may click the speech bubble again for the next request.
+
+**Potion Bottles:**
+Save colors to the potion bottles on the shelf by double clicking. Single click a bottle to change Agatha's hair to that color!
+
 ## Code Structure
 The code is split into 7 main folders, _**Bowl, Cauldron, Color Requests, Fonts, Hair, Main, and Potion Bottle.**_
 
@@ -40,7 +53,7 @@ Comments are marked with '#' at the start of the line, they are bypassed when th
 
 There are multiple branches of the Agatha's Apothecary repository. The one to use is 'current-main', there were many issues with GitHub over the course of the project which pushed the creation of different branches forward.
 
-## Main Gameplay Screen UPDATE
+## Main Gameplay Screen
 <img width="991" alt="Agatha's-Apothecary-Main-Screen" src="https://github.com/Audrey-Smyczek/agathas-apothecary/assets/98111335/8a4a1c9b-bc45-4aaa-b3f1-b4a73c4cf8c3">
 
 ## Framework Used
@@ -58,20 +71,6 @@ Agatha's Apothecary was created for burnt out college students who need a relaxi
 
 ## Code Information and Explanation
 Since the code is structured through Godot, it is formatted in a tree structure which means that the children nodes (also known as Scenes) can be accessed through the parent nodes. This allows the parent nodes, such as the main screen, to hold children nodes, such as bowls or ingredients. Scripts can be attached to any number of nodes in Godot and the overlap of code can often be confusing. Code that was written in a child's script can be pulled by the parent, for example, the code for the bowls to expand when the mouse hovers over it is linked to the image sprite. The image sprite is a child of the larger bowl node. When the bowl node is loaded into the main scene, it automatically includes the image sprite and the script that accomanies it. This means that the main node cannot directly access the image's script however it does inherit the code that is included in it. 
-
-## How to Download the Game
-In order to play, you need to first download the [Godot Game Engine](https://godotengine.org/). Then, clone the GitHub repository to your computer. Once that is done, open Godot and click the "Scan" button in the Project Manager window. Select the location of your cloned repository and let the project open. Once open, you can run by clicking the "add scene" button in the top right corner. Another window will pop up with Agatha's Apothecary. 
-
-## How to Play the Game
-**Experimental Mode (default):**
-Click a bowl to see which ingredient is inside it and the color that will be mixed. Then, click the ingredient above the cauldron to mix it into the cauldron. Mix as many colors as you would like to reach your desired color. Click Agatha's hair to change it to the cauldron potion color. Click the reset color button to reset the cauldron.
-
-**Request Mode:**
-Click the button in the top right corner to enter Request Mode. Select Agatha's speech bubble to start her request. Cultivate her desired color, and change her hair to it. When you have succeeded, she will thank you and you may click the speech bubble again for the next request.
-
-**Potion Bottles:**
-Save colors to the potion bottles on the shelf by double clicking. Single click a bottle to change Agatha's hair to that color!
-
 
 ## Current Concerns
 There are no major concerns or bugs in the game. 
