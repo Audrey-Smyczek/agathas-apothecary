@@ -20,7 +20,7 @@ Click the button in the top right corner to enter Request Mode. Select Agatha's 
 Save colors to the potion bottles on the shelf by double clicking. Single click a bottle to change Agatha's hair to that color!
 
 ## Main Gameplay Screen
-<img width="991" alt="Agatha's-Apothecary-Main-Screen" src="https://github.com/Audrey-Smyczek/agathas-apothecary/assets/98111335/8a4a1c9b-bc45-4aaa-b3f1-b4a73c4cf8c3">
+![Agatha's Apothecary Main Game Screen](https://github.com/Audrey-Smyczek/agathas-apothecary/blob/current-main/Screenshot%202023-12-18%20at%2010.30.32%E2%80%AFAM.png)
 
 ## Framework Used
 Agatha's Apothecary was created using the [Godot Game Engine](https://godotengine.org/) (version 4.1.1) with gdscript.
