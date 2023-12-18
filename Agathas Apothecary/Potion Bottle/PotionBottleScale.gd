@@ -1,3 +1,7 @@
+"""
+Scales the Potion Bottle when the mouse enteres or leaves its area.
+"""
+
 extends Node2D
 
 

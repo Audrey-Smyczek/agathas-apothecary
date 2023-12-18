@@ -1,3 +1,7 @@
+"""
+Scales Potion Filler when the mouse enteres or leaves its area.
+"""
+
 extends Sprite2D
 
 
